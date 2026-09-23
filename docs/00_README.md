@@ -4,7 +4,7 @@ FinTrace is a 2-hour hackathon prototype: an AI-powered banking customer query a
 
 It understands **English, Hindi, and Kannada**, calls **mock banking APIs**, retrieves **banking FAQ and policy** from a small vector store, and answers only with numbers and policy text that exist in simulated data. It then explains *why* a number moved, and traces a policy answer back to retrieved chunks.
 
-This folder is the only planning source of truth. Spec-driven order: problem → spec → architecture → data → API → AI → eval → build → demo → Q&A.
+This `docs/` folder is the only planning source of truth. Spec-driven order: problem → spec → architecture → data → API → AI → eval → build → demo → Q&A.
 
 **Prototype · simulated data · not a real bank.**
 
@@ -90,13 +90,13 @@ Real bank APIs, OTP login, payments, voice, mobile app, model fine-tuning, admin
 ## Proposed repo layout (for the build hour)
 
 ```text
+docs/                 this spec pack (00–10)
+app/                  orchestrator, mock bank, insights, rag, privacy
 data/                 synthetic JSON + labeled eval queries
 data/kb/              curated policy markdown (must-have topics)
-data/kb/hf_chunks.json  cached subset from Hugging Face
 data/chroma/          local vector persist
-app/                  orchestrator, mock bank, insights, rag, privacy
-streamlit_app.py      Streamlit UI
 tests/                pytest against the labeled query set
+streamlit_app.py      Streamlit UI
 .env                  GEMINI_API_KEY (never commit)
 ```
 
