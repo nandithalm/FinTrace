@@ -30,3 +30,14 @@ copy .env.example .env
 python -m app.rag_ingest
 streamlit run streamlit_app.py
 ```
+
+## Builder 4 (this branch)
+
+```text
+pip install -r requirements.txt
+python -m app.rag_ingest
+pytest tests/test_insights.py tests/test_rag.py tests/test_eval.py
+python tests/eval_run.py
+```
+
+Builder 3 should import `getWhyBalance`, `getSpendBreakdown` from `app.insights` and `retrieve_policy` / `retrievePolicyChunks` from `app.rag`. Do not change those JSON keys.
