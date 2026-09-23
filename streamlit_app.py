@@ -9,6 +9,7 @@ Talks only to app.orchestrator.handle_turn so Builder 3 can merge in place.
 
 from __future__ import annotations
 
+import html
 import json
 
 import streamlit as st
@@ -154,8 +155,16 @@ div.stButton > button:hover {{
   background: {NAVY};
   color: white;
 }}
-[data-testid="stChatInput"] textarea {{
-  border-radius: 16px !important;
+.step code {{
+  word-break: break-word;
+  white-space: pre-wrap;
+}}
+.xray, .step, .user-bubble, .bot-bubble {{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}}
+section[data-testid="stSidebar"] {{
+  overflow-x: hidden;
 }}
 </style>
 """
@@ -252,17 +261,23 @@ def _xray(lang: str) -> None:
     grounded = bool(trace.get("grounded"))
     latency = trace.get("latency_ms", "—")
 
+    filled = {k: v for k, v in entities.items() if v not in (None, False, "", [])}
+    entity_line = html.escape(json.dumps(filled, ensure_ascii=False)) if filled else "—"
+    intent = html.escape(str(resp.get("intent") or ""))
+    language = html.escape(str(resp.get("language") or ""))
+    api = html.escape(str(trace.get("api_called") or "—"))
+    nlu_src = html.escape(str(trace.get("nlu_source") or "—"))
+
     st.markdown(
         f'<div class="step"><strong>1. {t(lang, "intent")}</strong><br>'
-        f'Intent: <code>{resp.get("intent")}</code><br>'
-        f'Language: <code>{resp.get("language")}</code><br>'
-        f'Entities: <code>{json.dumps(entities, ensure_ascii=False)}</code></div>',
+        f'Intent: <code>{intent}</code> · Language: <code>{language}</code><br>'
+        f'Entities: <code>{entity_line}</code></div>',
         unsafe_allow_html=True,
     )
     st.markdown(
         f'<div class="step"><strong>2. {t(lang, "api")}</strong><br>'
-        f'<code>{trace.get("api_called")}</code> · {t(lang, "nlu")}: '
-        f'{trace.get("nlu_source")}</div>',
+        f'<code>{api}</code> · {t(lang, "nlu")}: '
+        f'<code>{nlu_src}</code></div>',
         unsafe_allow_html=True,
     )
     st.markdown(
@@ -361,14 +376,14 @@ def main() -> None:
         for msg in st.session_state.messages:
             if msg["role"] == "user":
                 st.markdown(
-                    f'<div class="user-bubble">{msg["content"]}</div>',
+                    f'<div class="user-bubble">{html.escape(msg["content"])}</div>',
                     unsafe_allow_html=True,
                 )
             else:
-                html = f'<div class="bot-bubble">{msg["content"]}'
-                html += _render_facts(msg.get("facts") or {}, msg.get("intent") or "")
-                html += "</div>"
-                st.markdown(html, unsafe_allow_html=True)
+                html_block = f'<div class="bot-bubble">{html.escape(msg["content"])}'
+                html_block += _render_facts(msg.get("facts") or {}, msg.get("intent") or "")
+                html_block += "</div>"
+                st.markdown(html_block, unsafe_allow_html=True)
 
         st.caption(t(lang, "chips_label"))
         chips = [

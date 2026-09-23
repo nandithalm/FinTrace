@@ -40,6 +40,7 @@ def test_keyword_labels():
     assert keyword_classify("Why is my balance lower than last month?", "en")["intent"] == "why_balance_change"
     assert keyword_classify("I want to speak to an agent", "en")["intent"] == "human_handoff"
     assert keyword_classify("Show my PIN", "en")["intent"] == "unsafe_refusal"
+    assert keyword_classify("what loan can I claim", "en")["intent"] == "loan_eligibility"
     assert keyword_classify("Blue mango account thing", "en")["intent"] == "fallback"
 
 

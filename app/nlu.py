@@ -3,9 +3,14 @@
 from __future__ import annotations
 
 import json
-import os
 import re
 from typing import Optional
+
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
+
+from app.env import gemini_enabled, gemini_api_key, gemini_model
+
+_GEMINI_OK = True
 
 ALLOWED_INTENTS = {
     "balance_check",
@@ -260,7 +265,12 @@ def keyword_classify(message: str, ui_language: str) -> dict:
     if re.search(r"\bwhy\b|lower|last month|कम|क्यों|ಏಕೆ|ಕಳೆದ ತಿಂಗಳ", text, re.I):
         entities["period"] = _period(text) or "this_month"
         return _pack("why_balance_change", 0.75, entities, language, False, "fallback")
-    if re.search(r"eligible|eligibility|\bemi\b|पात्र|ಅರ್ಹ", text, re.I):
+    if re.search(
+        r"eligible|eligibility|\bemi\b|पात्र|ಅರ್ಹ|\bclaim\b|\bapply\b|"
+        r"can i (get|take|have)|what loan|\bloan\b|लोन|ಸಾಲ",
+        text,
+        re.I,
+    ):
         entities["loan_type"] = _loan_type(text)
         return _pack("loan_eligibility", 0.75, entities, language, False, "fallback")
     if re.search(r"\bspend(?:ing)?\b|\bspent\b|shopping|लेनदेन खर्च", text, re.I):
@@ -291,34 +301,36 @@ def _session_prompt(session: Optional[dict]) -> str:
 
 
 def _gemini_nlu(message: str, session: Optional[dict], ui_language: str) -> Optional[dict]:
-    key = os.getenv("GEMINI_API_KEY", "").strip()
-    if not key:
+    global _GEMINI_OK
+    if not _GEMINI_OK or not gemini_enabled():
         return None
-    try:
-        from dotenv import load_dotenv
-
-        load_dotenv()
-    except ImportError:
-        pass
-    key = os.getenv("GEMINI_API_KEY", "").strip()
+    key = gemini_api_key()
     if not key:
         return None
     try:
         from google import genai
         from google.genai import types
     except ImportError:
+        _GEMINI_OK = False
         return None
-    prompt = _NLU_PROMPT.format(session=_session_prompt(session), message=message)
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-    try:
+
+    def _call() -> Optional[str]:
+        prompt = _NLU_PROMPT.format(session=_session_prompt(session), message=message)
         client = genai.Client(api_key=key)
         response = client.models.generate_content(
-            model=model,
+            model=gemini_model(),
             contents=prompt,
             config=types.GenerateContentConfig(temperature=0, response_mime_type="application/json"),
         )
-        raw = (response.text or "").strip()
-    except Exception:
+        return (response.text or "").strip()
+
+    try:
+        with ThreadPoolExecutor(max_workers=1) as pool:
+            raw = pool.submit(_call).result(timeout=4)
+    except (Exception, FuturesTimeout):
+        _GEMINI_OK = False
+        return None
+    if not raw:
         return None
     return _parse_nlu_json(raw, message, ui_language)
 

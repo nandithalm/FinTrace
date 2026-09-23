@@ -9,19 +9,15 @@ Those imports are optional until that branch is merged.
 
 from __future__ import annotations
 
-import os
 import time
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
 from typing import Optional
 
 from app import nlu, session_store, templates
+from app.env import gemini_api_key, gemini_enabled, gemini_model
 from app.safety import is_unsafe
 
-try:
-    from dotenv import load_dotenv
-
-    load_dotenv()
-except ImportError:
-    pass
+_GEMINI_WORD_OK = True
 
 ACCOUNT_INTENTS = frozenset(
     {
@@ -262,8 +258,8 @@ def _word(message: str, intent: str, language: str, facts: dict, first_turn: boo
         return templates.insufficient(language)
 
     elapsed = time.perf_counter() - started
-    key = os.getenv("GEMINI_API_KEY", "").strip()
-    if key and elapsed < 12:
+    global _GEMINI_WORD_OK
+    if _GEMINI_WORD_OK and gemini_enabled() and elapsed < 6:
         try:
             from google import genai
             from google.genai import types
@@ -278,17 +274,22 @@ def _word(message: str, intent: str, language: str, facts: dict, first_turn: boo
                 facts=prompt_facts,
                 chunks=chunks or [],
             )
-            client = genai.Client(api_key=key)
-            response = client.models.generate_content(
-                model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
-                contents=prompt,
-                config=types.GenerateContentConfig(temperature=0.2),
-            )
-            text = (getattr(response, "text", "") or "").strip()
+
+            def _call() -> str:
+                client = genai.Client(api_key=gemini_api_key())
+                response = client.models.generate_content(
+                    model=gemini_model(),
+                    contents=prompt,
+                    config=types.GenerateContentConfig(temperature=0.2),
+                )
+                return (getattr(response, "text", "") or "").strip()
+
+            with ThreadPoolExecutor(max_workers=1) as pool:
+                text = pool.submit(_call).result(timeout=4)
             if text:
                 return text
-        except Exception:
-            pass
+        except (Exception, FuturesTimeout):
+            _GEMINI_WORD_OK = False
     return templates.render(intent, language, facts or {}, message)
 
 
