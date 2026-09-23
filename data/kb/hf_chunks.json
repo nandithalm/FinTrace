@@ -1,0 +1,902 @@
+[
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on Prepaid Payment Instruments (PPIs), Paytm KYC Framework Documentation, NPCI UPI Wallet Linking Guidelines.",
+    "text": "আমি পেটিএম-এর মতো ডিজিটাল ওয়ালেটের ক্ষেত্রে রেগুলার কেওয়াইসি (KYC), ফুল কেওয়াইসি এবং মিনিমাম কেওয়াইসির মধ্যে গুলিয়ে ফেলি। আপনি কি বুঝিয়ে বলতে পারেন যে প্রতিটিতে কী কী সুবিধা পাওয়া যায় এবং আমার কোনটি করা উচিত? (r/personalfinanceindia / r/personalfinanceindia আলোচনার প্রেক্ষাপটে)\nFor prepaid payment instruments (PPIs) like Paytm Wallet under RBI's Master Directions: (1) Minimum KYC: Self-declared name and mobile number only; wallet limit ₹10,000/month, cannot be used for merchant payments only for specific P2P, valid for 24 months. (2) Full KYC: Aadhaar/PAN verified physically or via V-CIP; wallet limit ₹2 lakh, can transact freely, UPI linking enabled, cash withdrawal at ATMs. Bank accounts follow a separate KYC framework. As per RBI's Master Directions on Prepaid Payment Instruments (PPIs).",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC — Minor Account Provisions, Individual Bank Minor Account Policy Documentation, NPCI UPI Eligibility Requirements.",
+    "text": "हमर बेटी अगिला महीना १८ बरिसक भऽ रहल अछि। ओकर नाम पर एकटा नाबालिग बचत खाता अछि जेकरा हम देखभाल करैत छी। हम ओकरा सामान्य खाता मे कएना आ ओकर लेल UPI सेटअप कएना चाहैत छी? (ई विषय r/personalfinanceindia / r/india पर चर्चा भेल अछि)\nWhen a minor account holder turns 18, the 'minor' status must be removed and the account converted to a regular individual savings account through a fresh KYC exercise. The bank will require full adult KYC: Aadhaar, PAN (if applicable), photograph, and signature. Until conversion is done, the account remains in minor mode and UPI registration is not possible. Most banks mandate this conversion within 30–90 days of the minor turning 18. As per RBI's Master Direction on KYC and individual bank minor account policies.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Phishing Alert Advisories, RBI Anti-Phishing Guidelines, TRAI Unsolicited Commercial Communications Regulations, SBI Official Security Policy.",
+    "text": "I received an SMS claiming to be from 'SBI-ALERTT' saying my account will be blocked and to click a link and update KYC. I clicked and entered my details. Was this phishing? (Discussed on r/personalfinanceindia / r/india context)\nYes, this is a phishing SMS (smishing). Fraudsters spoof SMS sender IDs to make messages look like they are from your bank. The link directs to a fake website that harvests your credentials. Legitimate banks never ask for credentials, card numbers, PINs, or OTPs via SMS links. Regulatory TRAI mandates make unsolicited links with credential collection illegal. As per CERT-In's phishing attack advisory for Indian banking customers.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Authentication Architecture, TRAI SIM Security Guidelines, CERT-In Data Breach Response Advisory.",
+    "text": "என்னுடைய பெயரும் கைப்பேசி எண்ணும் மட்டும் தெரிந்திருந்தால், ஆனால் UPI PIN தெரியாவிட்டால், யாராவது என்னுடைய UPI-யை தவறாக பயன்படுத்த முடியுமா? என்னுடைய தரவு ஒரு பாதுகாப்பு மீறலில் (data breach) கசிந்த பிறகு நான் கவலையடைகிறேன். (r/personalfinanceindia / r/india சூழலில் விவாதிக்கப்பட்டது)\nA name and mobile number alone are not sufficient to initiate UPI transactions from your account. To transact, an attacker would need: (1) physical or remote access to your registered device, (2) your UPI PIN, and (3) ability to receive OTPs on your registered SIM. However, with just your mobile number, a fraudster can attempt social engineering attacks (pretending to be your bank), SIM swap attacks via your telecom provider, or phishing. The real risk is indirect — your phone number is a social engineering entry point. As per NPCI's authentication architecture documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Biller List (npci.org.in/bbps), PhonePe BBPS Municipal Services, Ministry of Housing Urban Affairs Smart Cities Digital Payment Guidelines, various state municipal app guides.",
+    "text": "म्हका नगरपालिकेच्या वेबसाइट वयल्यान उदक कर / मालमत्ता कर भरपाचो आशिल्लो. पूण थंय फकत NEFT आनी चालान अशेच पर्याय दाखयतात. UPI वा कार्डाचो कसलोच पर्याय ना. जर वेबसाइटार UPI पर्याय दिसना, तरी लेगीत BHIM वा खंयच्याय UPI ॲप वरवीं डिजिटल पद्धतीन हो कर भरपाचो कसलो तरी मार्ग आसा काय?\nMany municipal corporations are now integrated with BBPS (Bharat Bill Payment System) even if their own website doesn't show it prominently. This means you can pay municipal taxes via BBPS on any payment app (PhonePe, Google Pay, Paytm, BHIM) by searching for the municipal corporation under 'Municipal Services' or 'Utility Payments' within the app's bill payment section. BBPS covers over 20,000 billers across utilities, municipalities, and government services. Check if your specific municipal corporation/nagar palika is listed on BBPS. Additionally, many state government portals (like UP's e-nagarpalika, Maharashtra's mahaaonline) have integrated UPI payment options on their dedicated apps.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Digital Payment Security Controls Circular 2021, NPCI Consumer Security Guidelines, Personal Finance Security Best Practice Frameworks.",
+    "text": "मी ऑनलाईन वाचलं आहे की UPI व्यवहारांसाठी मर्यादित शिल्लक असलेलं वेगळं बँक खातं ठेवणं चांगलं आहे. ही खरोखर चांगली रणनीती आहे का आणि मी ती कशी अंमलात आणावी? (हे r/personalfinanceindia / r/developersIndia च्या संदर्भात चर्चिलं गेलं आहे)\nYes, this is one of the most effective personal security strategies for UPI users. By maintaining a low-balance transaction account (ideally at a different bank than your savings), the maximum exposure in any fraud event is limited to only the amount in the transaction account. Your main savings remain insulated. This mirrors the security principle of least privilege — minimizing exposure. As corroborated by personal finance security best practices endorsed by RBI's security framework.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Consumer Awareness Portal, RBI Payment Fraud Reporting Circular 2024, cybercrime.gov.in Freelancer Fraud Advisory.",
+    "text": "व्हाट्सॲपचेर एका मनशान म्हणकां की ते म्हाका फ्रिलान्स कामा खातीर पैसे दिवपाक तयार आसात, पूण पयलीं म्हाका ₹1 धाडून माझें UPI खातें सक्रीय आसा काय ना हे तपासपाक सांगलें. म्हाका तें धाडलें आनी उपरांत ताणीं म्हाका ₹10,000 चो 'कलेक्ट रिक्वेस्ट' धाडलो. हो फटवो (scam) आसा काय? (हें r/personalfinanceindia / r/india चर्चे प्रमाण विचारलां)\nYes, this is a classic advance verification scam. The ₹1 payment was only used to identify and confirm your active UPI handle. The ₹10,000 collect request is designed to make you believe you are receiving your payment, but approving it would instead debit ₹10,000 from your account. No legitimate client or employer requires a UPI test payment from a freelancer. As per RBI's fraud awareness circulars.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "CERSAI CKYC Registry Guidelines, SEBI CKYC Regulations 2016, PMLA KYC Rules Amendment 2019, Ministry of Finance CKYC Framework.",
+    "text": "CKYC क्या है और यह कैसे काम करता है? अगर मैंने एक बैंक के साथ CKYC पूरा कर लिया है, तो क्या मुझे नए बैंक के साथ फिर से KYC करवाना होगा? (चर्चा r/personalfinanceindia / r/personalfinanceindia संदर्भ में)\nCentral KYC (CKYC) is a centralized KYC registry managed by CERSAI under the Ministry of Finance. Once you complete KYC with any regulated entity (bank, mutual fund, broker), a unique 14-digit CKYC number is issued to you. Any subsequent regulated entity can fetch your KYC records from the CKYC registry using your CKYC number, eliminating the need for fresh documentation. However, the new entity must still perform liveness verification. CKYC is mandatory for new accounts opened after 1 February 2017. As per PMLA Rules and SEBI CKYC Regulations.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "MHA Advisory on Task-Based Job Frauds 2024, India Cybercrime Coordination Centre (I4C) Alerts, National Cybercrime Reporting Portal (cybercrime.gov.in).",
+    "text": "লিঙ্কডইনে একটা চাকরির অফারে বলা হয়েছে, ইউটিউব ভিডিও লাইক করলে আমি সপ্তাহে ₹১৫,০০০ পাব এবং আমার অ্যাকাউন্ট 'সক্রিয়' করতে আমাকে UPI-এর মাধ্যমে ₹৩,০০০ অগ্রিম দিতে হবে। আমি প্রায় এর ফাঁদে পড়েই যাচ্ছিলাম। এটা কি প্রতারণা? (r/personalfinanceindia / r/india প্রসঙ্গে আলোচিত)\nYes, this is a 'task-based job scam', which has surged dramatically across India. Fraudsters use professional-looking platforms and initially pay small amounts (₹200–₹500) as 'commissions' to build trust, then ask for escalating advance UPI payments to 'unlock higher-paying tasks'. The advance payments are never returned. As per MHA's alert on task-based investment and job frauds on LinkedIn, Telegram, and WhatsApp.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Bank Charges & Account Management",
+    "source": "RBI Master Circular on Customer Service in Banks (2024), Banking Codes and Standards Board of India (BCSBI) Code of Bank's Commitment to Customers, RBI SACHET Portal (sachet.rbi.org.in).",
+    "text": "I see a charge of ₹177 on my bank statement labeled 'INCIDENTAL CHARGES'. I have no idea what this is. When I called customer care they couldn't explain it properly. Do banks have to explain every charge? How do I get a clear breakdown?\nBanks are legally required to disclose all charges and their reasons to customers. Under RBI's Customer Service Master Circular and the Banking Codes and Standards Board of India (BCSBI), banks must: (1) Publish their complete schedule of charges on their website and at branches. (2) Provide itemized explanation of any charge on request. (3) Not levy charges that are not in their published tariff. 'Incidental charges' is a broad category that includes charges for various services — but you're entitled to know exactly which service triggered it. A vague 'incidental charges' description without further detail may itself be a deficiency.",
+    "subdomain": "Bank Charges & Account Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI Fraud Pattern Documentation, RBI Transaction Monitoring Guidelines, Digital Payments Intelligence Platform (DPIP) Alerts.",
+    "text": "I noticed an unknown transaction of ₹1 on my UPI statement. Should I be worried about this small random debit? (Discussed on r/personalfinanceindia / r/personalfinanceindia context)\nYes, unexplained ₹1 debits should be treated as a potential security indicator. Fraudsters often test compromised accounts with a small ₹1 transaction to confirm the account is active and the payment method works before conducting a larger fraudulent transaction. This is called 'card testing' or 'account probing'. It's also possible you signed up for a subscription service with a ₹1 authentication charge. Either way, an unexplained debit warrants immediate investigation. As per NPCI's fraud pattern documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "ATM Operations & Card Issues",
+    "source": "NPCI RuPay Card FAQs (npci.org.in), RBI PMJDY RuPay Card Product Features, Vineesh Rohini PMJDY RuPay Card Review 2025.",
+    "text": "My RuPay debit card (Jan Dhan account) doesn't work on online shopping websites. It says 'card not supported'. I wanted to buy fertilizer seeds online during a sale. Is RuPay card usable online or not?\nRuPay debit cards are fully usable for online transactions on Indian e-commerce platforms (Amazon, Flipkart, Meesho, Agribazaar, etc.) that accept RuPay. The issue 'card not supported' usually means: (1) The specific merchant doesn't support RuPay (some international payment gateways don't). (2) The card's online transaction feature is disabled by the bank (some banks disable online transactions on PMJDY RuPay cards by default for fraud prevention). (3) You need to enable the 'online payment' feature via your bank's mobile app. (4) For the PMJDY RuPay card, daily online transaction limits are sometimes lower. Most agri-input websites and government e-marketplaces like GeM, eNAM do support RuPay.",
+    "subdomain": "ATM Operations & Card Issues"
+  },
+  {
+    "title": "ATM Operations & Card Issues",
+    "source": "RBI Circular on Harmonisation of TAT and Customer Compensation for Failed Transactions (2019, updated 2024-25), Paytm ATM Refund Guide, RBI CMS Portal (cms.rbi.org.in), The420.in ATM Failed Transaction article 2026.",
+    "text": "म्हंणे एका बँकेच्या (जो म्हजो घरचो बँक न्हय) ATM चेर पयशे काडपाचो यत्न केलो. मशिनान 'व्यवहार मान्य जाला' अशें दाखयलें, पूण पयशे भायर आयले नात. म्हज्या खात्यांतल्यान ₹10,000 जमा जाल्यात. म्हज्या लागीं पावती (receipt) ना. म्हजे कितें हक्क आसात आनी पयशे परत मेळपाक कितलो वेळ लागतलो?\nThis is a 'cash not dispensed' ATM transaction failure. Under RBI's Harmonised TAT (Turn-Around Time) circular, your bank must automatically reverse the debit within T+5 working days (T = transaction date). If they fail to do so, you are entitled to ₹100 per day compensation for every day of delay after the 5th working day, credited automatically. You must file a complaint to start the clock — automatic reversal doesn't always happen for non-home ATM transactions without a complaint trigger.",
+    "subdomain": "ATM Operations & Card Issues"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Mobile Malware Advisory, NPCI UPI Security Guidelines for Consumers, Google Play Protect Documentation, Android Security Bulletin.",
+    "text": "मी टेलिग्राम ग्रुपवरून एक APK डाउनलोड केलं होतं, ज्यामध्ये 'कॅशबॅक' देणाऱ्या modified PhonePe अॅपचा दावा केला होता. ते इन्स्टॉल केल्यानंतर माझे UPI व्यवहार अयशस्वी होऊ लागले आहेत. नेमकं काय झालं असावं? (हे चर्चा r/personalfinanceindia / r/india संदर्भात आहे)\nThe APK was almost certainly a trojan or overlay malware designed to steal your UPI credentials. Modified unofficial apps for payment platforms are a primary malware delivery method. These fake apps often display overlay screens on top of the real app to capture your PIN, or run background keyloggers. NPCI and Google Play Protect specifically block sideloaded APKs from running certified UPI flows. As per CERT-In's mobile malware advisory for Android UPI users.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Error Code Reference Guide, RBI KYC PAN Linking Mandate, Income Tax Department PAN-Bank Linking Advisory.",
+    "text": "എന്റെ UPI-യിൽ 'PAN ബാങ്ക് അക്കൗണ്ടുമായി ലിങ്ക് ചെയ്തിട്ടില്ല' എന്ന പിശകാണ് കാണിക്കുന്നത്. ഞാൻ വർഷങ്ങൾക്ക് മുൻപ് തന്നെ PAN ലിങ്ക് ചെയ്തിരുന്നു. ബാങ്ക് അത് ലിങ്ക് ചെയ്തിട്ടുണ്ടെന്ന് പറയുന്നു. ഇതിന് കാരണമെന്താണ്, ഇത് പരിഹരിക്കുന്നത് എങ്ങനെ? (r/personalfinanceindia / r/personalfinanceindia ചർച്ചയുടെ പശ്ചാത്തലത്തിൽ)\nThe error 'PAN not linked' in UPI can stem from: (1) PAN linked at bank level but not propagated to NPCI's mapper, (2) incorrect PAN entry by the bank (character transposition), or (3) UPI apps pulling stale KYC data cached during app registration. The NPCI UPI ecosystem validates PAN via the bank's core banking system and its own central mapper. A mismatch at any level throws this error. As per NPCI's technical error code documentation for UPI apps.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI UPI Participant Guidelines, RBI Cyber Hygiene Circular 2024, cybercrime.gov.in Awareness Portal, CERT-In Consumer Advisories.",
+    "text": "हमका बार-बार अनजान नंबर से UPI कलेक्ट रिक्वेस्ट आवत बा जे में हमका रिफंड पावे खातिर पेमेंट कन्फर्म करे के कहल जात बा। हम एक बेर अपना PIN डाले ही वाला रहि। अगर हम अइसन करतें त का होखी? (ई चर्चा r/personalfinanceindia / r/india संदर्भ में भइल बा)\nApproving a UPI collect request means you are authorizing money to LEAVE your account, not receive it. Fraudsters send fake collect requests instructing victims to 'confirm' a refund or prize by entering their PIN. The moment you enter your PIN to approve, the requested amount is debited from your account to the fraudster. Legitimate refunds are always credited automatically without requiring any PIN from the recipient. As confirmed by NPCI's consumer awareness guidelines.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Bank Charges & Account Management",
+    "source": "RBI Circular on Pre-Closure Charges for Savings Accounts, RBI Master Circular on Customer Service, NPCI NACH Mandate Transfer Procedures, IBA Model Customer Service Policy.",
+    "text": "ਮੈਂ ਬੈਂਕ A ਵਿੱਚ ਆਪਣਾ ਬਚਤ ਖਾਤਾ ਬੰਦ ਕਰਵਾਉਣਾ ਅਤੇ ਬੈਂਕ B ਵਿੱਚ ਤਬਦੀਲ ਕਰਵਾਉਣਾ ਚਾਹੁੰਦਾ ਹਾਂ। ਬੈਂਕ A ਕਹਿ ਰਿਹਾ ਹੈ ਕਿ ਮੈਨੂੰ 'ਪਹਿਲਾਂ ਤੋਂ ਬੰਦ ਕਰਵਾਉਣ ਦਾ ਸ਼ੁਲਕ' (pre-closure charge) ₹500 ਦੇਣਾ ਪਵੇਗਾ। ਕੀ ਇਹ ਕਾਨੂੰਨੀ ਹੈ? ਅਤੇ ਮੈਂ ਆਪਣਾ ਖਾਤਾ ਅਤੇ ਸਾਰੇ ਡਾਇਰੈਕਟ ਡੈਬਿਟ/NACH ਨਵੇਂ ਬੈਂਕ ਵਿੱਚ ਕਿਵੇਂ ਤਬਦੀਲ ਕਰਵਾਵਾਂ?\nPre-closure charges on savings accounts are allowed by RBI within the first 12 months for some banks and account types. However: (1) These charges must be disclosed upfront in account opening T&Cs. (2) For BSBD (Basic/Jan Dhan) accounts, no pre-closure charges are allowed. (3) After the lock-in period (usually 12 months), most banks don't charge. If within the disclosed period, the ₹500 may be valid. For migrating: (a) Change all salary credits and direct debits to the new account separately — NACH mandates must be updated with each lender. (b) Carry a copy of your bank statements when opening the new account for reference. (c) Keep the old account open for 3-6 months to catch any stray payments.",
+    "subdomain": "Bank Charges & Account Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "RBI Consumer Awareness Guidelines 2023, NPCI Fraud Prevention Circulars, CERT-In Advisory on Remote Access Trojan Scams, India Cybercrime Coordination Centre (I4C) Alerts.",
+    "text": "ಯಾರೋ ಒಬ್ಬರು SBI ಗ್ರಾಹಕ ಸೇವೆ ಎಂದು ನಟಿಸಿ ಕರೆ ಮಾಡಿ, 'ರಿಮೋಟ್ KYC ಪರಿಶೀಲನೆ'ಗಾಗಿ AnyDesk ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಕೇಳಿದರು. ನಾನು ಬೇರೆ ಏನೂ ಯೋಚಿಸದೆ ಅದನ್ನು ಮಾಡಬೇಕೆಂದಿದ್ದೆ. ನಿಜವಾಗಿಯೂ ಏನಾಗುತ್ತಿತ್ತು? (ಇದನ್ನು r/personalfinanceindia / r/india ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nThis is a remote access scam. Once AnyDesk or TeamViewer is installed and the access code is shared, the fraudster can view your screen in real time — including your UPI PINs and OTPs — and can initiate transactions themselves without your awareness. Banks never ask customers to install remote desktop software for any purpose including KYC. As confirmed by RBI's official consumer awareness guidelines and CERT-In advisories.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC 2016 (Updated 2023), RBI FAQ on Periodic KYC Update, Ministry of Finance Notification on PMLA KYC Compliance.",
+    "text": "My bank is threatening to freeze my account if I don't complete the 'periodic KYC update' within 30 days. Is this mandatory? What happens if I don't comply? (Discussed on r/personalfinanceindia / r/india context)\nYes, periodic KYC update is mandatory under RBI's KYC Master Directions. The frequency depends on your risk category: low-risk customers every 10 years, medium-risk every 8 years, and high-risk every 2 years. If you do not update KYC when asked, the bank is mandated by RBI to first restrict and then freeze the account for debits. However, the bank cannot arbitrarily classify you as high-risk without reason. As per RBI's Master Direction — Know Your Customer (KYC) Direction, 2016 (updated through 2023).",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "UIDAI Aadhaar Bank Account Seeding Guidelines, PMJDY Financial Inclusion Mission Documentation, RBI KYC Master Directions 2016.",
+    "text": "My bank says my UPI is blocked because my Aadhaar isn't linked to my account. I linked my Aadhaar years ago, but the bank has no record of it. What should I do? (Discussed in the context of r/personalfinanceindia / r/india)\nAadhaar-bank account seeding data can be lost or incorrectly stored during bank system migrations, database purges, or manual entry errors at the branch level. This is a known issue particularly for accounts that were seeded in 2016–2018 during the initial drive. The UIDAI's Aadhaar seeding status can be independently verified online via the UIDAI portal. If your Aadhaar was linked previously but the record is lost, you will need to re-link. As per UIDAI's Aadhaar Seeding Guidelines for Banks.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Authentication Architecture, TRAI SIM Security Guidelines, CERT-In Data Breach Response Advisory.",
+    "text": "की कोनो व्यक्ति मोर नाम आ मोबाइल नंबर पाबि कए मोर UPI गलत इस्तेमाल कऽ सकैत अछि, जँ हुनका मोर UPI PIN नहि छैक? डेटा लीक भेलाक बाद ई बात सुनि कए हम चिंतित छी। (एकर चर्चा r/personalfinanceindia / r/india संदर्भ मे भेल अछि)\nA name and mobile number alone are not sufficient to initiate UPI transactions from your account. To transact, an attacker would need: (1) physical or remote access to your registered device, (2) your UPI PIN, and (3) ability to receive OTPs on your registered SIM. However, with just your mobile number, a fraudster can attempt social engineering attacks (pretending to be your bank), SIM swap attacks via your telecom provider, or phishing. The real risk is indirect — your phone number is a social engineering entry point. As per NPCI's authentication architecture documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI LRS Guidelines, Finance Act 2023 TCS on LRS Investments, India-US DTAA, SEBI Guidelines on Overseas Investment by Individuals.",
+    "text": "I have ₹50 lakh in savings and wish to invest it in US stocks and ETFs from India. Could you please explain the process and the applicable limits? (This topic has been discussed on r/personalfinanceindia)\nIndian residents can invest in US stocks and ETFs under LRS (Liberalised Remittance Scheme) — the annual limit is $250,000 (approximately ₹2 crore) per individual per financial year. Your ₹50 lakh is within this limit. From 2023, a 20% TCS is levied on LRS remittances above ₹7 lakh per year (this is your advance tax, adjusted when you file ITR). US investment gains are taxable in India: dividends are taxed as income, short-term capital gains at your slab rate, long-term gains at 20% with indexation or 10% flat. The India-US DTAA allows credit for US withholding tax. As per RBI LRS Guidelines and Income Tax Act.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI UPI Product Design Documentation, RBI Consumer Awareness Material, Digital Payments Intelligence Platform (DPIP) Guidelines.",
+    "text": "আমার এক বন্ধু হুট করেই একটি হোয়াটসঅ্যাপ গ্রুপে 'চ্যারিটির জন্য ডোনেশন' পোস্ট হিসেবে আমার UPI ID টি পাবলিকলি শেয়ার করে দিয়েছে। আমি বেশ ভয় পেয়ে গেছি — শুধুমাত্র আমার UPI ID দিয়ে কি কেউ অপব্যবহার করতে পারে? (এটি r/personalfinanceindia / r/india প্রসঙ্গে আলোচনা করা হয়েছে)\nSharing a UPI ID (VPA) publicly is generally safe in terms of financial risk — your UPI ID can only be used to send you money, not withdraw from your account. However, there are secondary risks: fraudsters can use your UPI ID to impersonate you and create fake collection campaigns, your name (shown when someone enters your UPI ID to pay) reveals your full legal name, and some social engineering attacks use publicly known UPI IDs to increase credibility. As per NPCI's UPI design documentation.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI UPI Transaction Finality Guidelines, NPCI Dispute Redressal Mechanism, Supreme Court of India Judgments on Bank Transaction Reversal, NPCI UDIR Framework.",
+    "text": "माझ्या ७५ वर्षांच्या वडिलांनी चुकून एका चुकीच्या UPI आयडीवर २ लाख रुपयांचे UPI पेमेंट केले आहे. ते प्रॉपर्टीच्या डाउन पेमेंटसाठी पैसे ट्रान्सफर करत होते. हे रद्द करता येईल का? (चर्चा r/personalfinanceindia / r/india संदर्भात)\nOnce a UPI transaction is completed, there is no automatic reversal mechanism — unlike NEFT/RTGS where a recall is possible in some cases. The money has been credited to the recipient's account instantly. However, if the recipient is cooperative, they can voluntarily transfer the money back. If they are unresponsive, you must escalate: file a complaint with your bank, NPCI's dispute portal, and if the recipient refuses, a cybercrime complaint. For large amounts, a civil court injunction can freeze the recipient's account. As per RBI's UPI transaction finality guidelines.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Classified Marketplace Fraud Pattern Report, MHA OLX Scam Advisories, India Cybercrime Coordination Centre (I4C), Consumer Forum Case Studies.",
+    "text": "నేను నా పాత ఫోన్‌ను OLXలో అమ్మాను. కొనుగోలుదారు UPI ద్వారా చెల్లించాడు, కానీ తర్వాత 'తప్పుడుగా ఎక్కువ మొత్తం చెల్లించాను' అని చెప్పి, మరో UPI ఐడీకి రీఫండ్ చేయమని అడిగాడు. నాకు అనుమానం వచ్చింది — ఇది మోసమా? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nYes, this is an OLX overpayment and refund scam targeting sellers. The initial payment often comes from a hacked bank account. The fraudster then asks for a 'refund' to a different UPI ID (usually a mule account they control). When the original hacked account owner recovers their money, your account ends up at a net loss. As per NPCI's documented fraud patterns for classified marketplace scams.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "SEBI Investor Alert List, MHA Pig-Butchering Scam Advisory 2024, India Cybercrime Coordination Centre (I4C), Enforcement Directorate Crypto Fraud Guidelines.",
+    "text": "ஒரு டெலிகிராம் குழு, UPI மூலம் போடப்பட்ட கிரிப்டோ முதலீடுகளுக்கு 3 மடங்கு லாபம் கிடைக்கும் என்று வாக்குறுதி அளித்தது. நான் ₹50,000 போட்டேன், அவர்களின் டாஷ்போர்டில் 'லாபம்' வருவதைப் பார்க்க முடிந்தது, ஆனால் பணத்தை வெளியே எடுக்க முடியவில்லை. இது ஒரு பொன்சி திட்டமா? (r/personalfinanceindia / r/india சூழலில் விவாதிக்கப்பட்டது)\nYes, this is a pig butchering or crypto investment Ponzi scam. Fraudsters build fake dashboards showing growing 'profits' to encourage larger deposits. Withdrawals are blocked or require additional deposits to 'unlock'. The UPI deposits are immediately withdrawn by fraudsters through mule account chains. SEBI has issued multiple warnings about fake crypto investment groups on Telegram and WhatsApp. As per SEBI's Investor Alert List and MHA advisories.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Consumer Awareness Portal, RBI Payment Fraud Reporting Circular 2024, cybercrime.gov.in Freelancer Fraud Advisory.",
+    "text": "వాట్సాప్‌లో ఒకరు నాకు ఫ్రీలాన్స్ పనికి డబ్బు ఇస్తామన్నారు, కానీ ముందు నా UPI ఖాతా యాక్టివ్‌గా ఉందో లేదో నిర్ధారించుకోవడానికి ₹1 పంపమన్నారు. నేను పంపించాను, ఆ తర్వాత వారు ₹10,000 కలెక్ట్ రిక్వెస్ట్ పంపించారు. ఇది మోసమా? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nYes, this is a classic advance verification scam. The ₹1 payment was only used to identify and confirm your active UPI handle. The ₹10,000 collect request is designed to make you believe you are receiving your payment, but approving it would instead debit ₹10,000 from your account. No legitimate client or employer requires a UPI test payment from a freelancer. As per RBI's fraud awareness circulars.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Consumer Awareness Portal, RBI Payment Fraud Reporting Circular 2024, cybercrime.gov.in Freelancer Fraud Advisory.",
+    "text": "വാട്‌സ്ആപ്പിൽ ആരോ എനിക്ക് ഒരു ഫ്രീലാൻസ് ജോലിക്ക് പണം തരാമെന്ന് പറഞ്ഞു, പക്ഷേ എന്റെ യുപിഐ അക്കൗണ്ട് സജീവമാണെന്ന് ഉറപ്പുവരുത്താൻ ആദ്യം 1 രൂപ അയക്കാൻ ആവശ്യപ്പെട്ടു. ഞാൻ അത് അയച്ചു, പിന്നെ അവർ 10,000 രൂപയുടെ ഒരു കളക്റ്റ് റിക്വസ്റ്റ് അയച്ചു. ഇതൊരു തട്ടിപ്പാണോ? (r/personalfinanceindia / r/india എന്നിവിടങ്ങളിൽ ചർച്ച ചെയ്ത സാഹചര്യം)\nYes, this is a classic advance verification scam. The ₹1 payment was only used to identify and confirm your active UPI handle. The ₹10,000 collect request is designed to make you believe you are receiving your payment, but approving it would instead debit ₹10,000 from your account. No legitimate client or employer requires a UPI test payment from a freelancer. As per RBI's fraud awareness circulars.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Mobile Malware Advisory, NPCI UPI Security Guidelines for Consumers, Google Play Protect Documentation, Android Security Bulletin.",
+    "text": "मैंने टेलीग्राम ग्रुप से एक APK डाउनलोड किया था जो कथित तौर पर 'कैशबैक' वाला संशोधित PhonePe था। इंस्टॉल करने के बाद, मेरे UPI लेन-देन विफल होने लगे। क्या हुआ? (चर्चा r/personalfinanceindia / r/india संदर्भ में)\nThe APK was almost certainly a trojan or overlay malware designed to steal your UPI credentials. Modified unofficial apps for payment platforms are a primary malware delivery method. These fake apps often display overlay screens on top of the real app to capture your PIN, or run background keyloggers. NPCI and Google Play Protect specifically block sideloaded APKs from running certified UPI flows. As per CERT-In's mobile malware advisory for Android UPI users.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Kisan Credit Card & Agricultural Banking",
+    "source": "RBI Master Circular on Kisan Credit Card Scheme (updated 2025), RBI Priority Sector Lending Guidelines, NABARD KCC Operational Guidelines, NITI Aayog Agricultural Credit Report 2024.",
+    "text": "நான் ஒரு குறு விவசாயி — எனக்கு 0.5 ஏக்கர் நிலம் உள்ளது, ஆனால் அது என் தாயார் பெயரில் உள்ளது. எனக்கு விவசாயக் கடன் அட்டை (Kisan Credit Card) வழங்க வங்கி மறுக்கிறது, நிலம் என் பெயரில் இருக்க வேண்டும் என்று அவர்கள் கூறுகிறார்கள். ஆனால் நான்தான் உண்மையான விவசாயி. வாடகைக்கு நிலம் பயிரிடும் விவசாயிகள் அல்லது மற்றவர்களின் நிலத்தைப் பயிரிடும் விவசாயிகளுக்கான ஏதேனும் சட்டப்பூர்வமான வகைகள் உள்ளதா?\nYes — RBI's KCC guidelines explicitly allow Kisan Credit Cards for farmers who don't hold land title, including: (1) Tenant farmers who cultivate leased land. (2) Oral lessees — those who farm land under informal arrangements. (3) Share croppers who receive a share of the harvest. (4) Allied activity workers — fishermen, poultry/dairy farmers. The bank's refusal citing land title is technically incorrect under RBI KCC Master Circular. However, you will need alternative documentation to prove actual cultivation — like a NOC from landowner (your mother), past crop loan receipts, crop insurance records, or a certificate from the village panchayat or agriculture department.",
+    "subdomain": "Kisan Credit Card & Agricultural Banking"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Error Code Reference Guide, RBI KYC PAN Linking Mandate, Income Tax Department PAN-Bank Linking Advisory.",
+    "text": "मेरे UPI में 'PAN बैंक खाते से लिंक नहीं है' वाली त्रुटि आ रही है। मैंने तो सालों पहले PAN लिंक कर दिया था। बैंक का कहना है कि यह लिंक है। इसका कारण क्या हो सकता है और इसे कैसे ठीक करें? (चर्चा r/personalfinanceindia / r/personalfinanceindia संदर्भ में हुई)\nThe error 'PAN not linked' in UPI can stem from: (1) PAN linked at bank level but not propagated to NPCI's mapper, (2) incorrect PAN entry by the bank (character transposition), or (3) UPI apps pulling stale KYC data cached during app registration. The NPCI UPI ecosystem validates PAN via the bank's core banking system and its own central mapper. A mismatch at any level throws this error. As per NPCI's technical error code documentation for UPI apps.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Kisan Credit Card & Agricultural Banking",
+    "source": "RBI Master Circular KCC (2025), Ministry of Agriculture KCC 2.0 Digital Renewal Guide, NABARD KCC Operational Handbook, Krishi Jagran KCC 2.0 Article (March 2025).",
+    "text": "केसीसी (KCC) में ई की होला कि हर साल 'वार्षिक नवीनीकरण' (annual renewal) करे के पड़े ला? का मुका फिर से कर्ज भर के अर्जी देवे के पड़ी? बैंक के चक्कर लगावे में बहुत परेशानी हो रहल बा आ हम बार-बार शहर ना जा सकत बानी।\nThe Kisan Credit Card is a revolving credit facility valid for 5 years, but it requires an Annual Review/Renewal (called 'enhanced annual limit review') every year — this is not the same as reapplying from scratch. The annual renewal is a simpler process: (1) The bank reviews your crop production and repayment record. (2) You provide the latest season's crop details and land records. (3) If your repayment record is satisfactory, the limit is typically maintained or enhanced. You do NOT have to repay the full amount to renew — the revolving nature means you can draw and repay as needed within your limit. Under the KCC 2.0 digital initiative, many banks now allow online renewal via mobile app or net banking for existing customers.",
+    "subdomain": "Kisan Credit Card & Agricultural Banking"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "NPCI UPI One World International Expansion Documentation, Monzo and Starling UK Student Account Eligibility, RBI Outward Remittance Guidelines for Students.",
+    "text": "हंव भारतांतलो आनी हांव UK-ांत शिकपाक वचपाची तयारी करतां. हांव UK-ांत पैसे दिवपाक भारताच्या UPI ॲप्सचो वापर करूंक शकतां, वा हाकां UK-ांतलो बँक खातो लागींच काडचो पडटलो? (हें r/personalfinanceindia / r/india संदर्भांत चर्चा जाल्या)\nUPI is primarily a domestic India payment system. NPCI has expanded UPI internationally to select countries (UAE, Singapore, Bhutan, Nepal, France, UK, and others) but this is for Indian tourists — it allows UPI at specific merchant QR codes that accept international UPI. For day-to-day UK living (rent, groceries, transport), you will need a UK bank account. UK challenger banks (Monzo, Starling) can be opened digitally in a few days after arrival with just your passport. As per NPCI's UPI One World international expansion documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC 2016 (Updated 2023), RBI FAQ on Periodic KYC Update, Ministry of Finance Notification on PMLA KYC Compliance.",
+    "text": "నా బ్యాంక్ ఖాతాను 30 రోజుల్లో 'ఆవర్తన KYC నవీకరణ' పూర్తి చేయకపోతే స్తంభింపజేస్తామని బెదిరిస్తోంది. ఇది తప్పనిసరియా? నేను పాటిస్తే ఏమవుతుంది? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nYes, periodic KYC update is mandatory under RBI's KYC Master Directions. The frequency depends on your risk category: low-risk customers every 10 years, medium-risk every 8 years, and high-risk every 2 years. If you do not update KYC when asked, the bank is mandated by RBI to first restrict and then freeze the account for debits. However, the bank cannot arbitrarily classify you as high-risk without reason. As per RBI's Master Direction — Know Your Customer (KYC) Direction, 2016 (updated through 2023).",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Jan Dhan & Zero-Balance Accounts",
+    "source": "RBI Guidelines on BSBD Accounts (2013, updated 2024), PMJDY Framework (Ministry of Finance), RBI Master Direction on Customer Service in Banks (2024), Banking Regulation Act 1949.",
+    "text": "আমার ব্যাঙ্ক বলছে যে আমার জনধন অ্যাকাউন্টে এখন ন্যূনতম ৫০০ টাকা জমা রাখতে হবে, নাহলে জরিমানা করা হবে। আমার তো মনে ছিল জনধন অ্যাকাউন্ট শূন্য ব্যালেন্সের হয়। তারা আমার সম্মতি ছাড়াই সেটাকে রেগুলার সেভিংস অ্যাকাউন্টে বদলে দিয়েছে। এটা কি আইনত বৈধ?\nThis is illegal. Banks cannot convert a PMJDY Basic Savings Bank Deposit (BSBD) account to a regular account without explicit written consent from the account holder. RBI guidelines under the Banking Regulation Act and PMJDY scheme framework explicitly state that BSBD/Jan Dhan accounts cannot have minimum balance requirements, and no charges can be levied for non-maintenance of minimum balance. If a bank has converted your account and charged a penalty, this is a clear regulatory violation and the charges must be reversed.",
+    "subdomain": "Jan Dhan & Zero-Balance Accounts"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Fraud Prevention Awareness, RBI Guidelines on OTP Confidentiality, PhonePe Official Security Advisory, India Cybercrime Coordination Centre (I4C).",
+    "text": "મેં ગૂગલ પર 'PhonePe કસ્ટમર કેર નંબર' સર્ચ કર્યો અને પ્રથમ આવતા નંબર પર કોલ કર્યો. બીજી તરફથી વ્યક્તિએ મારા ખાતાની 'ચકાસણી' કરવા માટે મારો OTP માંગ્યો. મેં તે આપી દીધો. હવે પૈસા ગાયબ થઈ ગયા છે. શું થયું? (ચર્ચા r/personalfinanceindia / r/india સંદર્ભમાં)\nFraudsters purchase Google Ads or use SEO to rank fake customer care numbers at the top of search results. These are not official numbers. Sharing an OTP with anyone — including someone claiming to be customer care — is the single most common cause of UPI fraud. No legitimate payment company representative will ever ask for your OTP or UPI PIN over a call. As per NPCI's official communication policy.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA Notification 13/2000 on Residential Status Change, RBI NRE Account Conversion Guidelines, Income Tax Act NRI to Resident Tax Status Change.",
+    "text": "నేను గత 5 సంవత్సరాలుగా యూఏఈలో నివసిస్తున్నాను మరియు ఏఈడీ (AED)లో జీతం పొందుతున్నాను. నేను భారతదేశానికి శాశ్వతంగా తిరిగి వెళ్లాలనుకుంటున్నాను. నేను తిరిగి వచ్చినప్పుడు నా ఎన్‌ఆర్‌ఐ (NRI) హోదా మరియు బ్యాంక్ ఖాతాలకు ఏమవుతుంది? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nYour NRI status under FEMA changes when you return to India to stay permanently (or for >182 days in a financial year) — you become a Resident Individual. Upon returning permanently: (1) NRE accounts must be converted to resident accounts within a reasonable time (no strict deadline but banks expect you to update within 3 months), (2) NRO accounts continue as resident accounts automatically, (3) FCNR deposits can be held until maturity. Tax changes: NRE account interest (previously tax-free) becomes taxable once you become a resident. As per FEMA Notification 13/2000 on change of residential status.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Digital Payment Security Controls Circular 2021, NPCI Consumer Security Guidelines, Personal Finance Security Best Practice Frameworks.",
+    "text": "हम ऑनलाइन पढ़लहुँ जे हमरा सबके UPI लेन-देन खातिर सीमित शेष राशि वाला अलग बैंक खाता राखब चाही। ई वास्तव में एक अच्छा उपाय छी आ हम ई केना लागू करी? (ई चर्चा r/personalfinanceindia / r/developersIndia संदर्भ में भेल अछि)\nYes, this is one of the most effective personal security strategies for UPI users. By maintaining a low-balance transaction account (ideally at a different bank than your savings), the maximum exposure in any fraud event is limited to only the amount in the transaction account. Your main savings remain insulated. This mirrors the security principle of least privilege — minimizing exposure. As corroborated by personal finance security best practices endorsed by RBI's security framework.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Jan Dhan & Zero-Balance Accounts",
+    "source": "PMJDY RuPay Card Guidelines (pib.gov.in), NPCI RuPay Card FAQs, PMJDY Account Features (bharatschemes.com), RBI Circular on Free Card Replacement.",
+    "text": "મને 2022માં જન ધન ખાતું અને રુપે કાર્ડ મળ્યું હતું, પણ કાર્ડ પર મારું નામ ખોટું છપાયેલું આવ્યું અને તે ક્યારેય કોઈ એટીએમમાં કામ કર્યું નથી. મેં ફરિયાદ કરી હતી પણ કોઈ કાર્યવાહી થઈ નથી. શું હવે કાર્ડની મુદત પૂરી થઈ ગઈ છે? મને નવું કાર્ડ કેવી રીતે મળશે?\nRuPay debit cards under PMJDY come with a validity of 5 years from issuance. A card with the wrong name is a defective card and the bank is obligated to replace it free of cost. The accidental insurance benefit of ₹2 lakh embedded in the RuPay PMJDY card also gets activated only after the card is used at least once in 90 days — so a non-functional card means you have been losing out on insurance coverage all this while. You need to get a replacement card immediately to restore your insurance eligibility and ATM access.",
+    "subdomain": "Jan Dhan & Zero-Balance Accounts"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Technical Onboarding Guidelines, TRAI Telecom Subscriber Registration Norms, RBI Mobile Banking Circular on Device Authentication.",
+    "text": "நான் UPI இணைக்கப்பட்ட கணக்கு ஒன்றைத் தொடங்க விரும்புகிறேன், ஆனால் மெய்நிகர் அல்லது இணைய சிம் எண்ணைப் (virtual/internet SIM) பயன்படுத்த விரும்புகிறேன். வங்கி எனது சிம் ஒரு உண்மையான சிம் (physical SIM) ஆக இருக்க வேண்டும் என்கிறது. இது ஒரு சட்டரீப்பான கட்டாயமா? (இது r/personalfinanceindia மற்றும் r/developersIndia சூழலில் விவாதிக்கப்பட்டது)\nYes, this is a regulatory requirement. UPI registration requires a physical SIM-based mobile number because the device binding process uses an SMS sent by NPCI to the registered number to verify device authenticity. Virtual numbers (internet-based SIM, VoIP numbers) cannot receive this binding SMS reliably and are excluded from UPI registration to prevent fraud. This is specified in NPCI's UPI onboarding technical guidelines. As per NPCI's UPI technical specifications and TRAI's telecom subscriber registration norms.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "IGST Act Section 16 — Zero-Rated Supply, GST Circular on Export of Services, GSTN LUT Filing Procedure, RFD-01 ITC Refund Process Documentation.",
+    "text": "ਮੇਰਾ GST ਇਨਪੁੱਟ ਟੈਕਸ ਕ੍ਰੈਡਿਟ (ITC) ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ ਕਿਉਂਕਿ ਮੇਰੇ ਵਿਦੇਸ਼ੀ ਗਾਹਕ ਦੀ ਅਦਾਇਗੀ GSTN ਵਿੱਚ ਆਮਦਨੀ ਵਜੋਂ ਨਹੀਂ ਦਿਖਾਈ ਦੇ ਰਹੀ। GST ਲਈ ਅੰਤਰਰਾਸ਼ਟਰੀ ਫ੍ਰੀਲਾਂਸ ਆਮਦਨੀ ਦੀ ਰਿਪੋਰਟ ਕਿਵੇਂ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ? (ਇਸ ਬਾਰੇ r/personalfinanceindia / r/india 'ਤੇ ਚਰਚਾ ਕੀਤੀ ਗਈ ਹੈ)\nInternational freelance services to foreign clients are classified as 'Export of Services' under GST (Place of Supply provisions) and are ZERO-RATED — meaning you charge 0% GST but can claim ITC refund on your business inputs. You must: (1) file LUT (Letter of Undertaking) on GSTN before each financial year to export without collecting GST, (2) report foreign income in GSTR-1 as 'Export of Services (zero-rated)', (3) claim ITC refund via GSTR-3B and Form RFD-01. Without LUT, you must charge 18% IGST and then claim refund, which is more cumbersome. As per IGST Act Section 16 on Zero-Rated Supply.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI LRS Guidelines — Maintenance of Close Relatives, FEMA Purpose Code List S0305, Finance Act 2023 TCS on LRS Maintenance Remittances.",
+    "text": "എന്റെ മകളുടെ ഓസ്‌ട്രേലിയയിലെ അപ്പാർട്ട്മെന്റ് വാടക അടയ്ക്കാൻ ഇന്ത്യയിൽ നിന്ന് പണം അയയ്ക്കാൻ ഞാൻ ആഗ്രഹിക്കുന്നു. ഇത് UPI അല്ലെങ്കിൽ NEFT വഴി ചെയ്യാൻ സാധിക്കുമോ? പരിധി എത്രയാണ്? (r/personalfinanceindia / r/india സന്ദർഭത്തിൽ ചർച്ച ചെയ്തത്)\nUPI is a domestic Indian payment system — it cannot directly send money to Australian bank accounts. For international transfers, you must use SWIFT wire transfers, FEMA-compliant forex remittance services, or LRS-authorized platforms. This falls under LRS (Liberalised Remittance Scheme) as maintenance of a close relative abroad — permitted under FEMA. The annual LRS limit is $250,000. For maintenance remittances, TCS at 20% applies on amounts above ₹7 lakh annually (credit against ITR). As per FEMA LRS Guidelines and RBI Outward Remittance Provisions.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA (Transfer or Issue of Security by a Person Resident Outside India) Regulations, RBI FDI Policy and Automatic Route Sectors, FC-GPR Filing Guidelines.",
+    "text": "నేను ఒక భారతీయ స్టార్టప్ వ్యవస్థాపకను మరియు నా భారతీయ కంపెనీలో విదేశీ పెట్టుబడులు (అమెరికా నుండి ఏంజెల్ ఇన్వెస్టర్) పొందాలనుకుంటున్నాను. సరైన ప్రక్రియ ఏమిటి మరియు ఏ నియంత్రక ఆమోదాలు అవసరం? (r/personalfinanceindia / r/developersIndia సందర్భంలో చర్చించబడింది)\nForeign investment into an Indian company by a US investor falls under FDI (Foreign Direct Investment) regulations under FEMA. For a private limited company: (1) the investment must come under an approved FDI sector (most tech sectors are under automatic route), (2) the company must file Form FC-GPR (Foreign Currency — Gross Provisional Return) with RBI within 30 days of share allotment, (3) the Indian bank handling the inward remittance will issue a FIRC. The money must be received into the company's current account via SWIFT. As per FEMA (Transfer or Issue of Security by a Person Resident Outside India) Regulations.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "India Post Payments Bank (IPPB)",
+    "source": "RBI Payments Bank Directions (₹2 lakh ceiling rule), IPPB Product FAQ (ippbonline.in), Ministry of Finance Payments Bank Regulatory Framework.",
+    "text": "IPPB-ant hi samasya asa ki ₹2 लाखा परस चड ठेवण जावंक ना. म्हका MGNREGA आनी शेतकरी पेन्शन दोनूय मेळटात — आतां खात्यांत एकठांय ₹3.5 लाख जाल्यात. बँकेन आपशींच चड पैसे परत केले. आतां कितें करू?\nIPPB is a Payments Bank regulated by RBI, and Payments Banks have a statutory maximum balance limit of ₹2 lakh per customer. Amounts above this are automatically returned to the sender as per RBI rules. This is a structural limitation and not an error. For people regularly receiving government benefits exceeding this limit, the solution is to either: (1) Open an additional savings account at a regular scheduled commercial bank (PSB) for the overflow amounts. (2) Set up automatic transfer of excess to a linked bank account. (3) Ask the benefit disbursing authority to split transfers between your IPPB account and a regular bank account.",
+    "subdomain": "India Post Payments Bank (IPPB)"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FEMA Current Account Transaction Norms, PayPal India Updated Service Policy 2024, Reserve Bank of India International Remittance Reporting Requirements.",
+    "text": "હું PayPal India માંથી મારા ભારતીય બેંક ખાતામાં પૈસા ઉપાડવાનો પ્રયાસ કરી રહ્યો છું પરંતુ તે અટકી ગયું છે. ભારતમાં PayPal ની મર્યાદાઓ અને પ્રતિબંધો ખૂબ ગૂંચવણભર્યા છે. વર્તમાન સ્થિતિ શું છે? (r/personalfinanceindia / r/india સંદર્ભમાં ચર્ચા થયેલ)\nPayPal India's services have been significantly restricted since 2021 when PayPal shut down domestic payment services in India. For international receipts: PayPal India accounts can still receive international payments and withdraw to Indian bank accounts, but you must link a bank account with matching name and complete full KYC. RBI's mandate for mandatory reporting of international transfers and its 5-day settlement window requirement has led PayPal to impose additional documentation requirements for large transfers. As per RBI FEMA provisions and PayPal India's updated policies.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Single Device Architecture Documentation, PhonePe and GPay Security FAQs, CERT-In Mobile App Session Management Guidelines.",
+    "text": "हमने एक बेर अपने दोस्त के फोन से UPI पेमेंट कइलें का? का हमर UPI खाता ओकर फोन पर ओही एक बेर के इस्तेमाल के बाद भी पहुँच योग्य बचत बा? (ई चर्चा r/personalfinanceindia आ r/developersIndia के संदर्भ में भइल बा)\nUPI apps bind to a single registered device using device fingerprinting during initial setup. A one-time payment does not register your UPI on a friend's phone unless you went through the full UPI registration process (entering bank card last 6 digits and setting a new PIN) on their device. If you only entered your UPI PIN to approve a payment on their already-registered UPI app from their own account, your account is not accessible on their phone. However, if you logged into your own UPI app on their phone, you should log out immediately. As per NPCI's single-device UPI architecture.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FIRC Issuance Guidelines, NPCI eFIRC Framework, GST Act — Export of Services Zero-Rating, Income Tax Department Foreign Income Documentation.",
+    "text": "What is a FIRC (Foreign Inward Remittance Certificate) and why do I need one as a freelancer receiving international payments? (Discussed on r/personalfinanceindia / r/india context)\nA FIRC (Foreign Inward Remittance Certificate) is an official document issued by your Indian bank certifying that you received a specific amount of foreign currency from abroad. As a freelancer, you need it for: (1) income tax documentation — it proves the source and legitimacy of foreign income, (2) GST zero-rating of export services — FIRCs are required to claim GST refund on export of services, (3) professional proof — US/EU clients sometimes need it for their accounting. FIRCs are now issued as eBFIRC (e-FIRC) by NPCI/banks digitally. As per RBI's FIRC Issuance Guidelines and GST Act Export of Services provisions.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "UPI Lite & Credit on UPI",
+    "source": "RBI UPI-RuPay Credit Card Circular (2022), NPCI RuPay Credit Card on UPI Product Guide, Drishti IAS UPI 10 Years Article (April 2026), BHIM UPI App Credit Card Linking Documentation.",
+    "text": "मला ऑफलाइन दुकानांमध्ये पेमेंट करण्यासाठी माझे RuPay क्रेडिट कार्ड BHIM UPI शी लिंक करायचे आहे. ही प्रक्रिया कशी काम करते? हे सुरक्षित आहे का? मी आधीच ऑनलाइन शॉपिंगसाठी भौतिक RuPay क्रेडिट कार्ड वापरतो.\nRuPay credit cards on UPI were enabled by RBI from 2022-23. It allows you to link your physical RuPay credit card to BHIM UPI or other UPI apps and pay via UPI QR code using your credit line — instead of debit from your bank. Advantages: (1) Earn credit card rewards/cashback on all UPI transactions. (2) Get 30-45 day credit float. (3) Accepted everywhere UPI QR codes are accepted — no need to swipe a physical card. Currently, RuPay credit cards from select banks (SBI, BOB, Indian Bank, etc.) are linkable. Visa/Mastercard credit cards are NOT linkable to UPI as of 2025. Safety is equivalent to regular UPI — 2-factor authentication with UPI PIN applies.",
+    "subdomain": "UPI Lite & Credit on UPI"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "RBI Circular RBI/2017-18/15, Consumer Protection Act 2019, Banking Ombudsman Scheme 2021, National Consumer Disputes Redressal Commission precedents.",
+    "text": "मुझे अपने फोन पर एक OTP मिला और 'बैंक हेल्पडेस्क' से एक कॉलर ने कहा कि यह KYC सत्यापन के लिए है और मुझे उन्हें OTP बताना चाहिए। मैंने उसे साझा कर दिया और मेरा खाता खाली हो गया। क्या बैंक को जिम्मेदार ठहराया जा सकता है? (चर्चा r/personalfinanceindia / r/india संदर्भ में)\nWhen a customer voluntarily shares an OTP with another person, even a fraudster impersonating a bank, RBI's limited liability framework classifies this as 'negligence on the part of the customer'. This significantly reduces the bank's liability for reimbursement. However, if you can prove that the fraudster had already obtained your credentials via a third-party breach before the call, partial liability protection may apply. As per RBI Circular on Limiting Customer Liability.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Public Wi-Fi Security Advisory, RBI Mobile Banking Security Guidelines, NPCI App Security Framework Documentation.",
+    "text": "I used my phone on a hotel's public Wi-Fi and logged into PhonePe. By next morning, ₹12,000 was missing. Could the Wi-Fi be responsible? (Discussed on r/personalfinanceindia / r/india context)\nPublic Wi-Fi networks can be exploited through man-in-the-middle attacks, where a fraudster intercepts data transmitted between your device and the network. However, apps like PhonePe and BHIM UPI use end-to-end encryption (HTTPS/TLS), so direct data interception is limited. More likely risks include a rogue Wi-Fi hotspot using a similar name to capture your session tokens, or an unpatched OS vulnerability exploited on the network. As per CERT-In's public Wi-Fi security advisory for banking apps.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "GSTN Payment Portal (gst.gov.in) PMT-06 Challan Guide, GSTN FAQs on Payment Modes, Ministry of Finance GST Payment NEFT Instructions, RBI NEFT Payment for Tax Purposes.",
+    "text": "My GST payment is due and I need to pay ₹38,000 via the GSTN portal. I tried UPI but got an error 'UPI transaction limit exceeded'. Can I pay GST via NEFT? What are the steps?\nUPI has a per-transaction limit that varies by bank (typically ₹1 lakh for individuals, ₹2 lakh for certain account types) and the GSTN portal also has its own UPI limit. For GST payments above UPI limits, the preferred alternatives are: (1) Net Banking — directly debit from your account via the GSTN portal's payment gateway. (2) NEFT/RTGS — generate a challan (PMT-06) on the GSTN portal, get the IFSC of the GST Bank, and make the NEFT transfer — payment reflects within 2-3 hours. (3) Over-the-counter at authorized banks — for offline payment. The GST portal (gst.gov.in) provides all these options under 'Create Challan'.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "NPCI UPI One World International Expansion Documentation, Monzo and Starling UK Student Account Eligibility, RBI Outward Remittance Guidelines for Students.",
+    "text": "நான் இந்தியாவிலிருந்து UK-க்குப் படிக்கச் செல்கிறேன். அங்கே உள்ள கட்டணங்களைச் செலுத்த எனது இந்திய UPI செயலிகளைப் பயன்படுத்த முடியுமா, அல்லது உடனடியாக ஒரு UK வங்கிக் கணக்கு தேவைப்படுமா? (r/personalfinanceindia / r/india சூழலில் விவாதிக்கப்பட்டது)\nUPI is primarily a domestic India payment system. NPCI has expanded UPI internationally to select countries (UAE, Singapore, Bhutan, Nepal, France, UK, and others) but this is for Indian tourists — it allows UPI at specific merchant QR codes that accept international UPI. For day-to-day UK living (rent, groceries, transport), you will need a UK bank account. UK challenger banks (Monzo, Starling) can be opened digitally in a few days after arrival with just your passport. As per NPCI's UPI One World international expansion documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "ATM Operations & Card Issues",
+    "source": "RBI Guidelines on Debit Card Issuance and Operations, Bank of Baroda/SBI Customer Service Card Capture Policy, RBI CMS Portal guidelines.",
+    "text": "ATM ਮਸ਼ੀਨ ਨੇ ਮੇਰਾ ਡੈਬਿਟ ਕਾਰਡ ਅੰਦਰ ਫਸਾ ਲਿਆ ਹੈ ਅਤੇ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ। ਇੱਥੇ ਕੋਈ ਬੈਂਕ ਸਟਾਫ਼ ਨੇੜੇ ਨਹੀਂ ਹੈ। ਮੈਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ? ਮੈਂ ਇੱਕ ਅਜਿਹੇ ਸ਼ਹਿਰ ਵਿੱਚ ਫਸ ਗਿਆ/ਗਈ ਹਾਂ ਜਿੱਥੇ ਮੈਨੂੰ ਕੋਈ ਜਾਣ-ਪਛਾਣ ਨਹੀਂ ਹੈ, ਮੇਰੇ ਕੋਲ ਨਾ ਤਾਂ ਨਕਦ ਪੈਸੇ ਹਨ ਅਤੇ ਨਾ ਹੀ ਕਾਰਡ।\nWhen an ATM 'swallows' (retains) a card, it's usually a security mechanism triggered by: (1) Too many wrong PIN attempts. (2) Card damage. (3) ATM mechanical fault. Do not leave the ATM immediately — stay near it. The priority is to block the card immediately to prevent unauthorized use while you work on recovery. The retained card will typically be held in the ATM for 3 days before being destroyed by the bank owning the ATM.",
+    "subdomain": "ATM Operations & Card Issues"
+  },
+  {
+    "title": "Kisan Credit Card & Agricultural Banking",
+    "source": "RBI Master Circular on Kisan Credit Card Scheme (updated 2025), RBI Priority Sector Lending Guidelines, NABARD KCC Operational Guidelines, NITI Aayog Agricultural Credit Report 2024.",
+    "text": "हम एक सीमांत किसान हईं — हमरे लगे 0.5 एकड़ जमीन बाटे लेकिन ई हमरे माई के नाँव पर बा। बैंक वाला हमका किसान क्रेडिट कार्ड (KCC) देवे से मना करत बाटे आ कहत बाटे कि जमीन हमरे नाँव पर होखे के चाहीं। लेकिन असल खेती हमे करीं। का कोनो अइसन व्यवस्था बाटे जे काश्तकार या दूसर के जमीन पर खेती करे वाला लोग खातिर हो?\nYes — RBI's KCC guidelines explicitly allow Kisan Credit Cards for farmers who don't hold land title, including: (1) Tenant farmers who cultivate leased land. (2) Oral lessees — those who farm land under informal arrangements. (3) Share croppers who receive a share of the harvest. (4) Allied activity workers — fishermen, poultry/dairy farmers. The bank's refusal citing land title is technically incorrect under RBI KCC Master Circular. However, you will need alternative documentation to prove actual cultivation — like a NOC from landowner (your mother), past crop loan receipts, crop insurance records, or a certificate from the village panchayat or agriculture department.",
+    "subdomain": "Kisan Credit Card & Agricultural Banking"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI V-CIP Guidelines 2021, RBI KYC Master Direction — OVD Framework, NPCI UPI Onboarding Technical Specifications.",
+    "text": "నేను ఒక నియోబ్యాంకుతో డిజిటల్ సేవింగ్స్ ఖాతా తెరవడానికి ప్రయత్నించాను, కానీ నా ఓటర్ ఐడీ KYC కోసం ఆమోదించబడలేదని వస్తుంది. ఎందుకు? నా స్నేహితుడు వారి ఖాతా కోసం ఓటర్ ఐడీని ఉపయోగించారు. (r/personalfinanceindia / r/developersIndia సందర్భంలో చర్చించబడింది)\nRBI's KYC directions categorize Voter ID (EPIC card) as an officially valid document (OVD) for identity and address proof. However, neobanks conducting Video KYC (V-CIP) may restrict to Aadhaar-based e-KYC for digital onboarding because V-CIP requires real-time verification against a database — which is only possible with Aadhaar (via UIDAI API) and passport (via passport API), not Voter ID. This is a fintech implementation choice, not a universal regulatory restriction. Your friend likely used the same neobank at a time when their policy differed, or used a different onboarding method. As per RBI's V-CIP Guidelines and OVD framework.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Fraud Prevention Awareness, RBI Guidelines on OTP Confidentiality, PhonePe Official Security Advisory, India Cybercrime Coordination Centre (I4C).",
+    "text": "I Googled 'PhonePe customer care number' and called the first result. The person on the other end asked for my OTP to 'verify my account'. I gave it. Now money is gone. What happened? (Discussed on r/personalfinanceindia / r/india context)\nFraudsters purchase Google Ads or use SEO to rank fake customer care numbers at the top of search results. These are not official numbers. Sharing an OTP with anyone — including someone claiming to be customer care — is the single most common cause of UPI fraud. No legitimate payment company representative will ever ask for your OTP or UPI PIN over a call. As per NPCI's official communication policy.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "GSTN Payment Portal (gst.gov.in) PMT-06 Challan Guide, GSTN FAQs on Payment Modes, Ministry of Finance GST Payment NEFT Instructions, RBI NEFT Payment for Tax Purposes.",
+    "text": "ਮੇਰਾ GST ਭੁਗਤਾਨ ਬਾਕੀ ਹੈ ਅਤੇ ਮੈਨੂੰ GSTN ਪੋਰਟਲ ਰਾਹੀਂ ₹38,000 ਦਾ ਭੁਗਤਾਨ ਕਰਨਾ ਹੈ। ਮੈਂ UPI ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਪਰ 'UPI transaction limit exceeded' ਦੀ ਗਲਤੀ ਆਈ। ਕੀ ਮੈਂ NEFT ਰਾਹੀਂ GST ਦਾ ਭੁਗਤਾਨ ਕਰ ਸਕਦਾ ਹਾਂ? ਇਸਦੇ ਕਦਮ ਕੀ ਹਨ?\nUPI has a per-transaction limit that varies by bank (typically ₹1 lakh for individuals, ₹2 lakh for certain account types) and the GSTN portal also has its own UPI limit. For GST payments above UPI limits, the preferred alternatives are: (1) Net Banking — directly debit from your account via the GSTN portal's payment gateway. (2) NEFT/RTGS — generate a challan (PMT-06) on the GSTN portal, get the IFSC of the GST Bank, and make the NEFT transfer — payment reflects within 2-3 hours. (3) Over-the-counter at authorized banks — for offline payment. The GST portal (gst.gov.in) provides all these options under 'Create Challan'.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "Feature Phone & Offline UPI",
+    "source": "NPCI UPI 123Pay Consumer Guide (npci.org.in), BHIM *99# User Manual, RBI UPI 123Pay Launch Press Release (March 2022), MicroSave UPI 123Pay Analysis 2023.",
+    "text": "हम एक किसान हईं। हमरे लगे स्मार्टफोन ना बा, बस साधारण फोन बा। का हम भी UPI से पैसा पा सकत हईं या भेज सकत हईं? हमरी बेटी कहलस कि *99# ट्राई करीं।\nYes, UPI is available on basic feature phones through two options: (1) *99# (USSD-based): Dial *99# on any mobile phone connected to any network. A text menu opens. You can check balance, send money, and view mini statement. It works without internet. The process is in Hindi and 12 other regional languages. Each session takes 4-5 minutes and may cost a small USSD charge (usually ₹0.50 or less, charged by telecom). (2) UPI 123Pay: A newer, easier option launched in 2022. Call IVR number, use voice prompts to send money without internet. Currently supports P2P transfers, mobile recharge, and some merchant categories. Your phone number must be linked to your bank account as the primary registered number.",
+    "subdomain": "Feature Phone & Offline UPI"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "MHA Cybercrime Division Advisories, India Cybercrime Coordination Centre (I4C), RBI Vishing Awareness Guidelines, National Cybercrime Reporting Portal.",
+    "text": "એક કોલરે કહ્યું કે મારા ચચેરા ભાઈનો અકસ્માત થયો છે અને હોસ્પિટલના ખર્ચ માટે તાત્કાલિક ₹20,000 UPI દ્વારા જોઈએ છે. મેં ગભરાઈને પૈસા ટ્રાન્સફર કર્યા પણ મારા ચચેરા ભાઈએ કહ્યું કે કોઈ અકસ્માત થયો જ નથી. આ છેતરપિંડીને શું કહેવાય છે? (r/personalfinanceindia / r/india સંદર્ભમાં ચર્ચા)\nThis is called 'emergency impersonation fraud' or 'vishing' — voice phishing using emotional manipulation. Fraudsters gather personal information from social media to make the scenario convincing. The high-pressure urgency prevents victims from verifying. This is common during festive travel seasons and long weekends. As per MHA's cybercrime awareness advisories targeting Indian banking customers.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Kisan Credit Card & Agricultural Banking",
+    "source": "RBI Master Circular on KCC Scheme (2025), NABARD Operational Guidelines for KCC, Agricultural Credit Review Committee recommendations, Ministry of Agriculture KCC 2.0 Digital Transformation report.",
+    "text": "हमर किसान क्रेडिट कार्ड (KCC) के नवीकरण 8 महीना सँ लटकल अछि। बैंक कहैत अछि जे दाम टूटलाक बाद फसल के कीमत बहुत कम भऽ गेल अछि। ओ सब हमर KCC सीमा के ₹1.5 लाख सँ घटा कऽ ₹40,000 करबा चाहैत अछि। एहि सँ हमर खेती के खर्च (input costs) पूरा नहिँ होएत अछि। हमर पास काकी विकल्प अछि?\nBanks do have the right to revise KCC limits based on updated crop value assessments, but they must provide a reasoned written order with the revised limit calculation. If you believe the revised limit is inadequate, you can: (1) Request the bank to factor in allied activity (dairy, poultry, post-harvest storage) under KCC — the total limit can include working capital for these activities. (2) Provide current season's input cost invoices to show actual working capital needs. (3) Under RBI KCC framework, the limit must cover the entire production credit cycle including inputs. (4) The bank cannot reduce the limit arbitrarily without following the KCC Renewal Assessment procedure.",
+    "subdomain": "Kisan Credit Card & Agricultural Banking"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI E-commerce Payment Data Localization Mandate, NASSCOM Payment Infrastructure Advisory 2024, Paddle and Lemon Squeezy Merchant of Record Framework.",
+    "text": "২০২৪ সালে Stripe ভারতীয় ব্যবসাগুলোর জন্য পূর্ণাঙ্গ সমর্থন বন্ধ করে দিয়েছে। আমি একজন ভারতীয় ইন্ডি ডেভেলপার। আমার অ্যাপের জন্য আন্তর্জাতিক পেমেন্ট সংগ্রহ করার সেরা বিকল্পগুলো কী কী? (r/personalfinanceindia / r/developersIndia প্রসঙ্গে আলোচনা করা হয়েছে)\nStripe's India limitations stemmed from RBI's mandate to store payment data locally and specific 2FA requirements that Stripe struggled to implement for Indian cards. The best alternatives for Indian indie developers collecting international payments as of 2025 are: Paddle (acts as Merchant of Record, handles tax compliance globally), Lemon Squeezy (similar MOR model, popular with indie devs), Gumroad (for digital products), Razorpay for domestic, and Skydo or Payoneer for receiving wire transfers from foreign clients. As corroborated by the Indian developer community and NASSCOM's payment infrastructure reviews.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Jan Dhan & Zero-Balance Accounts",
+    "source": "PMJDY RuPay Card Guidelines (pib.gov.in), NPCI RuPay Card FAQs, PMJDY Account Features (bharatschemes.com), RBI Circular on Free Card Replacement.",
+    "text": "हमरा 2022 में जन धन खाता खुलल रहे आ रुपे कार्ड मिलल रहे, लेकिन कार्ड पर हमर नाम गलत छपल बा आ कौनो एटीएम में काम ना कइलस। हमरा शिकायत कइलें लेकिन कोनो कार्रवाई ना भइल। का अब कार्ड खतम हो गइल बा? हमरा नया कार्ड कइसे मिली?\nRuPay debit cards under PMJDY come with a validity of 5 years from issuance. A card with the wrong name is a defective card and the bank is obligated to replace it free of cost. The accidental insurance benefit of ₹2 lakh embedded in the RuPay PMJDY card also gets activated only after the card is used at least once in 90 days — so a non-functional card means you have been losing out on insurance coverage all this while. You need to get a replacement card immediately to restore your insurance eligibility and ATM access.",
+    "subdomain": "Jan Dhan & Zero-Balance Accounts"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Error Code Reference Guide, RBI KYC PAN Linking Mandate, Income Tax Department PAN-Bank Linking Advisory.",
+    "text": "எனது UPI-யில் 'PAN வங்கிக் கணக்குடன் இணைக்கப்படவில்லை' என்ற பிழை காட்டுகிறது. நான் பல வருடங்களுக்கு முன்பே PAN-ஐ இணைத்துவிட்டேன். வங்கியோ அது இணைக்கப்பட்டுள்ளதாகக் கூறுகிறது. இதற்குக் காரணம் என்ன, இதை எப்படித் தீர்ப்பது? (r/personalfinanceindia / r/personalfinanceindia சூழலில் விவாதிக்கப்பட்டது)\nThe error 'PAN not linked' in UPI can stem from: (1) PAN linked at bank level but not propagated to NPCI's mapper, (2) incorrect PAN entry by the bank (character transposition), or (3) UPI apps pulling stale KYC data cached during app registration. The NPCI UPI ecosystem validates PAN via the bank's core banking system and its own central mapper. A mismatch at any level throws this error. As per NPCI's technical error code documentation for UPI apps.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA Notification 13/2000 on Residential Status Change, RBI NRE Account Conversion Guidelines, Income Tax Act NRI to Resident Tax Status Change.",
+    "text": "हम पिछला 5 साल सँ UAE में रहल छी आ हमकर कमाई AED में होएत छै। हम भारत वापस स्थायी रूप सँ जायब चाहैत छी। जब हम वापस जायब तँ हमकर NRI स्टेटस आ बैंक खाता सभ केँ की होयत? (एकर चर्चा r/personalfinanceindia / r/india संदर्भ में भेल छै)\nYour NRI status under FEMA changes when you return to India to stay permanently (or for >182 days in a financial year) — you become a Resident Individual. Upon returning permanently: (1) NRE accounts must be converted to resident accounts within a reasonable time (no strict deadline but banks expect you to update within 3 months), (2) NRO accounts continue as resident accounts automatically, (3) FCNR deposits can be held until maturity. Tax changes: NRE account interest (previously tax-free) becomes taxable once you become a resident. As per FEMA Notification 13/2000 on change of residential status.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI Overseas Direct Investment (ODI) Master Direction 2022, FEMA (Transfer or Issue of Any Foreign Security) Regulations, Income Tax Act Global Income for Indian Residents.",
+    "text": "ഞാൻ ഒരു ഇന്ത്യൻ ഫ്രീലാൻസറാണ്. അന്താരാഷ്ട്ര പേയ്‌മെന്റുകൾ (ഉദാഹരണത്തിന് Stripe വഴി) കൂടുതൽ എളുപ്പത്തിൽ സ്വീകരിക്കുന്നതിനായി ഒരു US LLC രജിസ്റ്റർ ചെയ്യാൻ ആഗ്രഹിക്കുന്നു. ഇത് ഇന്ത്യയിൽ നിന്ന് നിയമപരമാണോ? ഇതിന്റെ നികുതി ബാധ്യതകൾ എന്തൊക്കെയാണ്? (r/personalfinanceindia / r/developersIndia എന്നിവയിൽ ചർച്ച ചെയ്ത സന്ദർഭം)\nRegistering a US LLC as an Indian resident is legally permitted under FEMA's Overseas Direct Investment (ODI) provisions, but requires RBI approval through the Automatic Route for investments up to 400% of net worth, or the Approval Route beyond that. Many Indian developers do this informally (using a US address without proper ODI compliance) which constitutes a FEMA violation. Post-2022, RBI tightened ODI regulations significantly. The income from the LLC must still be declared in India as Indian income since you are a resident. As per RBI ODI Master Direction 2022 and Income Tax Act.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI LRS Guidelines, Finance Act 2023 TCS on LRS Investments, India-US DTAA, SEBI Guidelines on Overseas Investment by Individuals.",
+    "text": "నా వద్ద ₹50 లక్షల పొదుపు ఉంది మరియు దానిని భారతదేశం నుండి US స్టాక్స్ మరియు ETFలలో పెట్టుబడి పెట్టాలనుకుంటున్నాను. ఈ ప్రక్రియ ఏమిటి మరియు పరిమితులు ఏమిటి? (r/personalfinanceindia / r/personalfinanceindia సందర్భంలో చర్చించబడింది)\nIndian residents can invest in US stocks and ETFs under LRS (Liberalised Remittance Scheme) — the annual limit is $250,000 (approximately ₹2 crore) per individual per financial year. Your ₹50 lakh is within this limit. From 2023, a 20% TCS is levied on LRS remittances above ₹7 lakh per year (this is your advance tax, adjusted when you file ITR). US investment gains are taxable in India: dividends are taxed as income, short-term capital gains at your slab rate, long-term gains at 20% with indexation or 10% flat. The India-US DTAA allows credit for US withholding tax. As per RBI LRS Guidelines and Income Tax Act.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Device Registration Protocol, RBI Guidelines on Joint Account Banking Operations, Digital Payments Handbook for Consumers.",
+    "text": "আমি এবং আমার স্ত্রী ঘরোয়া খরচের জন্য একটি UPI অ্যাকাউন্ট শেয়ার করতে চাই। আমার ব্যাঙ্ক অ্যাকাউন্টের সাথে লিঙ্ক করা UPI কি সে তার ফোনে ব্যবহার করতে পারবে? (r/personalfinanceindia / r/india প্রসঙ্গে আলোচনা করা হয়েছে)\nUPI registration requires the SIM card linked to the bank account to be physically present in the device during setup — it uses an SMS-based device binding. So your wife cannot set up UPI on her phone linked to your account if the registered mobile number SIM is only in your phone. Workarounds include: opening a joint account where both phone numbers are registered, opening a separate account in your wife's name, or using the bank's authorized user feature where one exists. As per NPCI's UPI device registration protocol.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "TRAI Telecommunications Consumer Protection Regulations, RBI Annual Report 2023 on Mobile Number Recycling Risk, NPCI Mobile Number Update Guidelines.",
+    "text": "நான் என் தொலைபேசி எண்ணை மாற்றினேன், ஆனால் அதை என் வங்கியில் புதுப்பிக்க மறந்துவிட்டேன். என் பழைய எண் இப்போது ஒரு அந்நியருக்கு ஒதுக்கப்பட்டுள்ளது. என் வங்கிக் கணக்குகள் ஆபத்தில் உள்ளதா? (r/personalfinanceindia / r/india சூழலில் விவாதிக்கப்பட்டது)\nYes, this is a serious risk. TRAI regulations allow telecom operators to re-assign disconnected numbers to new subscribers after 90 days. If the new subscriber of your old number visits a bank branch or uses net banking with the old number still registered, they can potentially receive OTPs and intercept banking communications. RBI has flagged mobile number recycling as a systemic risk in its 2023 Annual Report. As per TRAI's Telecommunications Consumer Protection Regulations.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Dispute Resolution (npci.org.in/bbps), Google Pay BBPS Payment Guide, RBI Circular on Customer Rights for BBPS Transactions, BBPS Operating Circular by NPCI (2024).",
+    "text": "हम Google Pay पर BBPS के जरिए अपना क्रेडिट कार्ड बिल जमा करत रहलहुँ। Google Pay पर भुगतान सफल भेल, मुदा 5 दिन बीत गेलाक बादो क्रेडिट कार्ड कंपनी कहैत अछि जे हुनका लोकनि केर पास ई नहि अछि। हमर क्रेडिट कार्ड पर 'भुगतान बकाया' देखा रहल अछि आ ओ लोकनि लेट पेमेंट फीस काटि रहल छथि। हमर की करबाक चाही?\nBBPS credit card bill payments typically settle within T+1 to T+2 business days. A 5-day delay is unusual. The Google Pay BBPS transaction generates both: (a) a Google Pay transaction ID and (b) a BBPS Transaction Reference Number. The credit card company uses the BBPS reference, not Google Pay's internal ID. Key action: Extract the BBPS Transaction Reference from your Google Pay receipt (it's usually labeled 'BBPS Transaction ID' or similar). This is different from the UPI Transaction ID. The credit card company can trace the payment using this BBPS reference.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FEMA (Deposit) Regulations on NRI Remittances, World Bank Remittance Price Database, Wise and Remitly India Pricing Comparison, US FinCEN Reporting Requirements.",
+    "text": "నేను అమెరికాలో నివసిస్తున్న NRI ని. నా వృద్ధాప్యంలో ఉన్న తల్లిదండ్రులకు భారతదేశానికి డబ్బు పంపాలనుకుంటున్నాను. 2025లో అత్యంత వేగవంతమైన మరియు తక్కువ ఖర్చుతో కూడిన పద్ధతి ఏది? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nNRI inward remittances to India are covered under FEMA's capital and current account provisions and are fully legal. As of 2025, the best options by speed and cost are: (1) Wise — typically 0.5-1% FX margin, credits Indian account in 1-2 days, (2) Remitly — competitive for USD to INR specifically, (3) Western Union / MoneyGram — instant but higher fees, (4) Your US bank's wire transfer — slowest (3-5 days) and most expensive ($25-50 fee). The traditional SWIFT wire is the most expensive option. As per RBI's Foreign Exchange Management (Deposit) Regulations and NASSCOM remittance cost comparison.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "Controller General of Accounts PFMS Guidelines, PayGov India (Bharat Kosh) Payment Status FAQ, CPGRAMS Portal (cpgrams.gov.in), Ministry of Finance Government Digital Payment Protocol.",
+    "text": "আমি একটি সরকারি পোর্টালে একটি প্রকল্পের সুবিধার জন্য আবেদন জমা দিয়েছিলাম এবং UPI-র মাধ্যমে ₹৫০০ প্রক্রিয়াকরণ ফি হিসেবে পরিশোধ করেছি। পেমেন্ট সফল হয়েছে কিন্তু পোর্টালে ত্রুটি দেখাচ্ছে এবং আমার আবেদনটি রেকর্ড করা হয়নি। এখন আমি না রিফান্ড পাচ্ছি না কোনো নিশ্চয়তাও পাচ্ছি না। আমার কী করা উচিত?\nGovernment portal payment failures where money is debited but transaction is unrecorded at the portal level are a known issue. The payment processor (typically PayGov, Bharat Kosh, or SBI Collect) maintains records separately from the application portal. Your UPI app has the Transaction ID/UTR number — this is the evidence you need. Government portal payments are handled by the Controller General of Accounts (CGA) through the Public Financial Management System (PFMS). Refunds for failed portal transactions are governed by the specific ministry's refund policy.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Account Migration Technical Guidelines, FEMA Resident Status Change Provisions, RBI NRO Account Conversion Circular.",
+    "text": "I'm an NRI returning to India permanently. My NRO account is being converted to a resident account. Do I need to re-register for UPI? Will my old UPI ID still work? (Discussed on r/personalfinanceindia / r/india context)\nWhen your NRO account is converted to a resident savings account, the bank updates the account type in their core banking system. Your existing UPI VPA linked to the same account should continue to work without re-registration in most cases, as the underlying account number and IFSC remain unchanged. However, if the conversion triggers a new KYC process with a new account number, a fresh UPI registration will be needed. You should also ensure your Indian mobile number (for OTPs) is active and linked. As per NPCI's UPI account migration guidelines.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Utility Bill Fraud Advisory, MHA Cyber Division Consumer Fraud Alerts, Ministry of Power Consumer Helpline Guidelines, NPCI Fraud Pattern Documentation.",
+    "text": "నా వృద్ధురాలైన అమ్మ, ఈ రాత్రి విద్యుత్ సరఫరా నిలిపివేస్తామని, లేకపోతే UPI ద్వారా ₹10 చెల్లించాలని చెబుతున్న ఒక ప్రకటనపై క్లిక్ చేసింది. ఆమె తన UPI PIN నమోదు చేసింది, కానీ దానికి బదులుగా ₹15,000 ఖాతా నుండి డెబిట్ అయ్యాయి. ఇది ఎలా జరిగింది? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nThis is a utility bill disconnection scam. Fraudsters send SMS or display fake WhatsApp/ad messages stating your electricity/gas connection will be cut. They share a UPI collect request for a small amount (₹5–₹50) to deceive the victim, but the actual PIN-confirmed transaction is for a much larger amount pre-set in the collect field. Elderly people in particular are targeted as they may not carefully read the amount before entering their PIN. As per CERT-In and MHA advisories.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "India Post Payments Bank (IPPB)",
+    "source": "India Post Payments Bank DakPay App Guide (ippbonline.in), Department of Posts POSA-IPPB Linkage Documentation, The Week Article on IPPB Rural Women Banking (December 2024).",
+    "text": "ನನಗೆ ಸ್ಥಳೀಯ ಅಂಚೆ ಕಚೇರಿಯಲ್ಲಿ ಅಂಚೆ ಕಚೇರಿ ಉಳಿತಾಯ ಖಾತೆ (POSA) ಇದೆ. ನನ್ನ ಮಗ ನಾನು ಪ್ರತಿಸಲ ಅಂಚೆ ಕಚೇರಿಗೆ ಹೋಗದೆಯೇ ಡಿಜಿಟಲ್ ಪಾವತಿಗಳನ್ನು ಮಾಡಲು ಅದನ್ನು UPI ಗೆ ಲಿಂಕ್ ಮಾಡಲು ಬಯಸುತ್ತಾನೆ. ಇದು ಸಾಧ್ಯವೇ? ಹೇಗೆ?\nPost Office Savings Accounts (POSA) can be linked to IPPB (India Post Payments Bank) to enable UPI functionality. This is done through the IPPB mobile app called 'DakPay'. Once your POSA is linked to an IPPB account, you can use BHIM UPI and DakPay for digital payments. IPPB also facilitates QR code payments and bill payments. The POSA-IPPB linkage is done at your local post office or via the DakPay app itself. Note: IPPB accounts have a maximum balance limit of ₹2 lakh (as it's a payments bank), but POSA remains separate.",
+    "subdomain": "India Post Payments Bank (IPPB)"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Participant Guidelines on KYC Name Display, Lok Sabha Questions on UPI Privacy, RBI KYC Master Directions 2016.",
+    "text": "ਮੇਰੇ UPI ਐਪ ਵਿੱਚ ਜਦੋਂ ਕੋਈ ਮੈਨੂੰ ਪੈਸੇ ਭੇਜਣ ਲਈ ਮੇਰਾ UPI ID ਟਾਈਪ ਕਰਦਾ ਹੈ, ਤਾਂ ਮੇਰਾ ਪੂਰਾ ਨਾਮ ਮੇਰੀ ਜਾਤੀ ਵਾਲੇ ਉਪਨਾਮ ਸਮੇਤ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ। ਮੈਨੂੰ ਇਸ ਗੱਲ ਤੋਂ ਖਾਸ ਕਰਕੇ ਵੱਖ-ਵੱਖ ਜਾਤੀਆਂ ਵਿਚਕਾਰ ਲੈਣ-ਦੇਣ ਵੇਲੇ ਬਹੁਤ ਅਸਹਿਜਤਾ ਮਹਿਸੂਸ ਹੁੰਦੀ ਹੈ। ਕੀ ਮੇਰਾ ਉਪਨਾਮ ਲੁਕਾਉਣ ਦਾ ਕੋਈ ਤਰੀਕਾ ਹੈ? (ਇਹ ਚਰਚਾ r/personalfinanceindia ਅਤੇ r/india ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕੀਤੀ ਗਈ ਹੈ)\nThe name displayed during a UPI transaction is pulled directly from the KYC records submitted to the bank, which is the legal name on the Aadhaar or PAN card. NPCI mandates that the legal name be displayed to prevent fraud. There is currently no NPCI-approved mechanism for users to customize or shorten the displayed name on a VPA. Some banks allow informal short names but these are not consistently implemented. This is a known privacy concern raised by multiple civil society groups and discussed in Lok Sabha questions about KYC privacy. As per NPCI UPI participant guidelines.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "UIDAI Name Update SOP, Income Tax Department PAN Update Guidelines, RBI KYC Update Master Direction, NPCI UPI Name Change Advisories.",
+    "text": "मैंने शादी के बाद अपना नाम बदल लिया है और इसे अपने बैंक खाते, UPI और आधार में अपडेट करवाना चाहती हूं। UPI एक्सेस में किसी तरह का अंतराल न आए, इसके लिए सही क्रम क्या है? (इसे r/personalfinanceindia / r/india संदर्भ में चर्चा किया गया है)\nName change after marriage must be updated in a specific sequence to avoid UPI disruption: first update Aadhaar (as other documents depend on it), then PAN (using the new Aadhaar), then the bank account (using new Aadhaar and PAN), and finally re-verify UPI. Updating the bank before Aadhaar can cause KYC mismatches in the NPCI ecosystem. The Aadhaar name update process takes 7–10 working days and requires a marriage certificate. As per UIDAI's name update SOP and RBI's KYC update guidelines.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI Payment Aggregator Authorization List, FEMA Export of Services Compliance, Payoneer India Compliance Documentation, Income Tax Act Foreign Freelance Income Reporting.",
+    "text": "ನಾನು US ಗ್ರಾಹಕರಿಂದ ಪಾವತಿಗಳನ್ನು ಸ್ವೀಕರಿಸಲು Payoneer ಬಳಸುವುದನ್ನು ಪರಿಗಣಿಸುತ್ತಿದ್ದೇನೆ. ಭಾರತದಲ್ಲಿ Payoneer ಸಂಪೂರ್ಣವಾಗಿ ಕಾನೂನುಬದ್ಧವೇ ಮತ್ತು RBI ಯಾವುದೇ ನಿರ್ಬಂಧಗಳನ್ನು ವಿಧಿಸಿದೆಯೇ? (ಇದನ್ನು r/personalfinanceindia / r/developersIndia ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nPayoneer operates in India as a licensed Cross-Border Payment Service provider and is fully legal for receiving international freelance income. Payoneer issues you a virtual US bank account (routing number + account number) allowing US clients to pay you via ACH as if paying a US entity. Payoneer then converts and remits INR to your Indian bank account. The transfers comply with FEMA as export service receipts. Payoneer's fee structure includes 0%-2% on bank transfer receipts and a currency conversion markup. As per RBI's Payment Aggregator Framework and Payoneer's India compliance documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI SWIFT Integration Guidelines, FEMA Purpose Code List (RBI Master Direction), Indian Bank SWIFT Code Registry, RBI Nostro Account Framework.",
+    "text": "ਮੇਰਾ ਵਿਦੇਸ਼ੀ ਗਾਹਕ ਸਾਫਟਵੇਅਰ ਵਿਕਾਸ ਸੇਵਾਵਾਂ ਲਈ ਮੈਨੂੰ ਪੈਸੇ ਦੇਣਾ ਚਾਹੁੰਦਾ ਹੈ। ਉਹਨਾਂ ਨੇ ਮੇਰਾ SWIFT/IBAN ਮੰਗਿਆ ਹੈ। ਭਾਰਤੀ ਬੈਂਕ ਖਾਤੇ ਲਈ ਮੈਂ ਉਹਨਾਂ ਨੂੰ ਸਹੀ ਵੇਰਵੇ ਕਿਵੇਂ ਦੇ ਸਕਦਾ ਹਾਂ? (ਇਹ ਚਰਚਾ r/personalfinanceindia / r/india ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕੀਤੀ ਗਈ ਹੈ)\nIndian banks use the SWIFT code system for international wire transfers. Your bank account does not have an IBAN (that's used in Europe/SEPA zones) — instead you need to provide: (1) your full name as on the account, (2) bank account number, (3) IFSC code (for domestic), (4) your bank's SWIFT/BIC code (e.g., HDFCINBB for HDFC, SBININBB for SBI), (5) bank name and full branch address, (6) FEMA purpose code for the transfer type (e.g., P0102 for software services). As per RBI's Nostro account and SWIFT integration guidelines.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI LRS Guidelines, Finance Act 2023 TCS on LRS Investments, India-US DTAA, SEBI Guidelines on Overseas Investment by Individuals.",
+    "text": "ನನ್ನ ಬಳಿ 50 ಲಕ್ಷ ರೂಪಾಯಿ ಉಳಿತಾಯವಿದೆ ಮತ್ತು ನಾನು ಅದನ್ನು ಭಾರತದಿಂದ ಯುಎಸ್ ಸ್ಟಾಕ್‌ಗಳು ಮತ್ತು ಈಟಿಎಫ್‌ಗಳಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ. ಈ ಪ್ರಕ್ರಿಯೆ ಏನು ಮತ್ತು ಮಿತಿಗಳು ಏನು? (r/personalfinanceindia / r/personalfinanceindia ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nIndian residents can invest in US stocks and ETFs under LRS (Liberalised Remittance Scheme) — the annual limit is $250,000 (approximately ₹2 crore) per individual per financial year. Your ₹50 lakh is within this limit. From 2023, a 20% TCS is levied on LRS remittances above ₹7 lakh per year (this is your advance tax, adjusted when you file ITR). US investment gains are taxable in India: dividends are taxed as income, short-term capital gains at your slab rate, long-term gains at 20% with indexation or 10% flat. The India-US DTAA allows credit for US withholding tax. As per RBI LRS Guidelines and Income Tax Act.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI App Security Standards, CERT-In Mobile App Security Guidelines, Android Screen Mirroring Security Documentation.",
+    "text": "क्या अपने फोन की स्क्रीन मिररिंग फीचर का उपयोग करके टीवी पर कास्ट करते समय बैंक बैलेंस चेक करना या UPI लेनदेन करना सुरक्षित है? (इसे r/personalfinanceindia / r/developersIndia संदर्भ में चर्चा किया गया है)\nMost UPI apps (PhonePe, GPay, BHIM) have screenshot and screen recording blocking mechanisms that also apply to screen mirroring in most scenarios. However, this protection is not universal — some screen mirroring protocols (Miracast, AirPlay) may bypass app-level screenshot restrictions. The risk also depends on whether the TV is in a shared space and who can view the screen. Additionally, Smart TVs themselves can have security vulnerabilities. As per NPCI's security implementation for UPI apps.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA 1999 Section 3 (Prohibition on Foreign Currency Transactions Between Residents), RBI Resident Foreign Currency Account Guidelines, SEZ Foreign Currency Payment Exemptions.",
+    "text": "ನನ್ನ ಭಾರತೀಯ ಗ್ರಾಹಕನು ನಾನು ಭಾರತದಲ್ಲಿದ್ದರೂ ಸಹ, ಬ್ಯಾಂಕ್ ವೈರ್ ಮೂಲಕ USD ಯಲ್ಲಿ ಪಾವತಿ ಮಾಡಲು ಬಯಸುತ್ತಿದ್ದಾನೆ. ಭಾರತೀಯ ಕಂಪನಿಯು ಇನ್ನೊಬ್ಬ ಭಾರತೀಯನಿಗೆ USD ಯಲ್ಲಿ ಪಾವತಿ ಮಾಡಬಹುದೇ? FEMA ನಿಯಮಗಳ ಪ್ರಕಾರ ಇದರ ಪರಿಣಾಮಗಳೇನು? (ಇದನ್ನು r/personalfinanceindia / r/india ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nPayments between two Indian residents (companies or individuals) must be in Indian Rupees (INR) — making payments in foreign currency between India residents is a FEMA violation under Section 3 of FEMA 1999. The only exceptions are: (1) payments made in special economic zones (SEZs), (2) forex accounts of banks for specific purposes. If your Indian client wants to pay you for international work delivered abroad, the correct structure is an INR payment or restructuring the contract as an international service export. As per FEMA Section 3 and RBI's Resident Foreign Currency Guidelines.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI Master Circular on Exchange Earners' Foreign Currency (EEFC) Account, FEMA (Foreign Currency Account) Regulations, RBI EEFC Account FAQ.",
+    "text": "நான் ஒரு EEFC (Exchange Earners' Foreign Currency) கணக்கைத் தொடங்க விரும்புகிறேன். இதற்கு யார் தகுதியானவர்கள்? மற்றும் சாதாரண சேமிப்புக் கணக்கில் பணத்தைப் பெறுவதை விட இதன் நன்மைகள் என்ன? (r/personalfinanceindia / r/personalfinanceindia சூழலில் விவாதிக்கப்பட்டது)\nAn EEFC (Exchange Earners' Foreign Currency) account allows Indian residents who earn foreign exchange to hold up to 100% of their foreign receipts in the original currency (USD, EUR, GBP, etc.) without converting to INR immediately. Benefits: (1) avoid INR conversion at unfavorable rates, (2) use the forex for import payments or business expenses in foreign currency, (3) no risk management cost for expected outflows. Eligibility: any resident individual or company with foreign exchange earnings (exporters, freelancers, IT companies). Interest is not paid on EEFC accounts. As per RBI's Master Circular on EEFC Accounts.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "MHA Cybercrime Division KBC Lottery Fraud Advisory, India Cybercrime Coordination Centre (I4C) Alerts, Consumer Protection Advisory on Prize Fraud.",
+    "text": "મને એક કોલ આવ્યો હતો કે મેં KBC લોટરીમાં ₹1 લાખ જીત્યા છે અને મારો ઇનામ મેળવવા માટે UPI દ્વારા ₹5000 GST ચૂકવવું પડશે. તે અધિકારિક લાગ્યું હતું. હું કેવી રીતે ચકાસી શકું કે આ સાચું છે કે નહીં? (r/personalfinanceindia / r/india સંદર્ભમાં ચર્ચા થઈ)\nThis is a lottery scam. Kaun Banega Crorepati (KBC) or any legitimate lottery in India does not contact winners via phone calls requesting upfront payments. Prize money is always disbursed directly to winners after in-person verification. Legitimate wins never require GST or processing fee payments in advance via UPI. As per advisories issued jointly by MHA and Sony (KBC broadcaster) warning against these impersonations.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI Payment Aggregator Authorization List, FEMA Export of Services Compliance, Payoneer India Compliance Documentation, Income Tax Act Foreign Freelance Income Reporting.",
+    "text": "അമേരിക്കൻ ക്ലയന്റുകളിൽ നിന്ന് പേയ്‌മെന്റുകൾ സ്വീകരിക്കാൻ ഞാൻ Payoneer ഉപയോഗിക്കുന്നത് പരിഗണിക്കുന്നു. ഇന്ത്യയിൽ Payoneer പൂർണ്ണമായും നിയമപരമാണോ, RBI-യുടെ വല്ല നിർബന്ധങ്ങളും ഉണ്ടോ? (r/personalfinanceindia / r/developersIndia എന്നിവയിൽ ചർച്ച ചെയ്ത സന്ദർഭത്തിൽ)\nPayoneer operates in India as a licensed Cross-Border Payment Service provider and is fully legal for receiving international freelance income. Payoneer issues you a virtual US bank account (routing number + account number) allowing US clients to pay you via ACH as if paying a US entity. Payoneer then converts and remits INR to your Indian bank account. The transfers comply with FEMA as export service receipts. Payoneer's fee structure includes 0%-2% on bank transfer receipts and a currency conversion markup. As per RBI's Payment Aggregator Framework and Payoneer's India compliance documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "TRAI Telecommunications Consumer Protection Regulations, RBI Annual Report 2023 on Mobile Number Recycling Risk, NPCI Mobile Number Update Guidelines.",
+    "text": "मी माझा फोन नंबर बदलला आहे, पण तो बँकेत अपडेट करायला विसरलो. माझा जुना नंबर आता एका अनोळखी व्यक्तीला देण्यात आला आहे. काय माझी बँक खाती धोक्यात आहेत? (चर्चा r/personalfinanceindia / r/india संदर्भात)\nYes, this is a serious risk. TRAI regulations allow telecom operators to re-assign disconnected numbers to new subscribers after 90 days. If the new subscriber of your old number visits a bank branch or uses net banking with the old number still registered, they can potentially receive OTPs and intercept banking communications. RBI has flagged mobile number recycling as a systemic risk in its 2023 Annual Report. As per TRAI's Telecommunications Consumer Protection Regulations.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "India Post Payments Bank (IPPB)",
+    "source": "India Post Payments Bank Customer Service (ippbonline.in), IPPB Doorstep Banking Product Guidelines, Ministry of Communications IPPB Annual Report 2024-25.",
+    "text": "मी माझ्या दारातच पोस्टमनकडून IPPB (इंडिया पोस्ट पेमेंट्स बँक) मध्ये ₹५,००० रोख जमा केले. पोस्टमनने ते त्याच्या डिव्हाइसमध्ये टाकले, पण 'ट्रान्झॅक्शन पेन्डिंग' असे म्हणाले. ४ दिवस झाले तरी ते पैसे माझ्या खात्यात दिसत नाहीत. कृपया मदत करा.\nIPPB doorstep banking via postmen uses micro-ATM/handheld devices to process cash deposits. A 'transaction pending' status on the postman's device typically means: (1) The device had a network connectivity issue during processing. (2) The transaction may need manual reconciliation by the post office. (3) The postman may have processed it incorrectly. The Department of Posts mandates that all IPPB transactions be reconciled within T+1 working day. Beyond 2-3 working days, this must be escalated.",
+    "subdomain": "India Post Payments Bank (IPPB)"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "UIDAI Aadhaar Bank Account Seeding Guidelines, PMJDY Financial Inclusion Mission Documentation, RBI KYC Master Directions 2016.",
+    "text": "ਮੇਰੇ ਬੈਂਕ ਨੇ ਕਿਹਾ ਹੈ ਕਿ ਮੇਰਾ UPI ਬਲੌਕ ਹੈ ਕਿਉਂਕਿ ਮੇਰਾ ਆਧਾਰ ਮੇਰੇ ਖਾਤੇ ਨਾਲ ਲਿੰਕ ਨਹੀਂ ਹੈ। ਮੈਂ ਸਾਲਾਂ ਪਹਿਲਾਂ ਆਧਾਰ ਲਿੰਕ ਕਰਵਾਇਆ ਸੀ ਪਰ ਬੈਂਕ ਕੋਲ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ ਹੈ। ਮੈਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ? (ਇਹ chਰਚਾ r/personalfinanceindia / r/india ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕੀਤੀ ਗਈ ਹੈ)\nAadhaar-bank account seeding data can be lost or incorrectly stored during bank system migrations, database purges, or manual entry errors at the branch level. This is a known issue particularly for accounts that were seeded in 2016–2018 during the initial drive. The UIDAI's Aadhaar seeding status can be independently verified online via the UIDAI portal. If your Aadhaar was linked previously but the record is lost, you will need to re-link. As per UIDAI's Aadhaar Seeding Guidelines for Banks.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Utility Bill Fraud Advisory, MHA Cyber Division Consumer Fraud Alerts, Ministry of Power Consumer Helpline Guidelines, NPCI Fraud Pattern Documentation.",
+    "text": "എന്റെ പ്രായമായ അമ്മക്ക് ഇന്ന് രാത്രി വൈദ്യുതി ബന്ധം വിച്ഛേദിക്കുമെന്ന് പറഞ്ഞ് ഒരു പരസ്യത്തിൽ ക്ലിക്ക് ചെയ്യാൻ സംഭവിച്ചു. 10 രൂപ UPI വഴി അടച്ചില്ലെങ്കിൽ ബന്ധം വിച്ഛേദിക്കുമെന്നായിരുന്നു അതിൽ. അവർ UPI PIN നൽകിയപ്പോൾ 10 രൂപയ്ക്ക് പകരം 15,000 രൂപ കുറഞ്ഞുപോയി. ഇത് എങ്ങനെയാണ് സംഭവിച്ചത്? (r/personalfinanceindia / r/india എന്നിവിടങ്ങളിൽ ചർച്ച ചെയ്ത സാഹചര്യം)\nThis is a utility bill disconnection scam. Fraudsters send SMS or display fake WhatsApp/ad messages stating your electricity/gas connection will be cut. They share a UPI collect request for a small amount (₹5–₹50) to deceive the victim, but the actual PIN-confirmed transaction is for a much larger amount pre-set in the collect field. Elderly people in particular are targeted as they may not carefully read the amount before entering their PIN. As per CERT-In and MHA advisories.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Authentication Architecture, TRAI SIM Security Guidelines, CERT-In Data Breach Response Advisory.",
+    "text": "ಯಾರಾದರೂ ನನ್ನ ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ಮಾತ್ರ ಹೊಂದಿದ್ದರೆ, ಆದರೆ ನನ್ನ UPI PIN ಇಲ್ಲದಿದ್ದರೆ, ನನ್ನ UPI ಅನ್ನು ದುರುಪಯೋಗಪಡಿಸಿಕೊಳ್ಳಬಹುದೇ? ನನ್ನ ಡೇಟಾ ಬ್ರೀಚ್‌ನಲ್ಲಿ ಸೋರಿಕೆಯಾದ ನಂತರ ನನಗೆ ಚಿಂತೆಯಾಗಿದೆ. (r/personalfinanceindia / r/india ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nA name and mobile number alone are not sufficient to initiate UPI transactions from your account. To transact, an attacker would need: (1) physical or remote access to your registered device, (2) your UPI PIN, and (3) ability to receive OTPs on your registered SIM. However, with just your mobile number, a fraudster can attempt social engineering attacks (pretending to be your bank), SIM swap attacks via your telecom provider, or phishing. The real risk is indirect — your phone number is a social engineering entry point. As per NPCI's authentication architecture documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Fraud Prevention Awareness, RBI Guidelines on OTP Confidentiality, PhonePe Official Security Advisory, India Cybercrime Coordination Centre (I4C).",
+    "text": "ನಾನು ಗೂಗಲ್‌ನಲ್ಲಿ 'PhonePe ಕಸ್ಟಮರ್ ಕೇರ್ ನಂಬರ್' ಎಂದು ಹುಡುಕಿ, ಮೊದಲ ಬಂದ ನಂಬರ್‌ಗೆ ಕರೆ ಮಾಡಿದೆ. ಕರೆ ಮಾಡಿದ ವ್ಯಕ್ತಿ 'ಖಾತೆಯನ್ನು ಪರಿಶೀಲಿಸಲು' ನನ್ನ OTP ಕೇಳಿದರು. ನಾನು ಅದನ್ನು ನೀಡಿದೆ. ಈಗ ಹಣ ಕಾಣೆಯಾಗಿದೆ. ಏನಾಯಿತು? (r/personalfinanceindia / r/india ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nFraudsters purchase Google Ads or use SEO to rank fake customer care numbers at the top of search results. These are not official numbers. Sharing an OTP with anyone — including someone claiming to be customer care — is the single most common cause of UPI fraud. No legitimate payment company representative will ever ask for your OTP or UPI PIN over a call. As per NPCI's official communication policy.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Transaction Data Retention Policy, PhonePe and GPay Data Migration FAQs, RBI Guidelines on Payment Data Storage.",
+    "text": "म्हज्या फोन बदलल्यार व्यवहाराचो इतिहास नश्ट जावचो न्हय, देखून म्हाका म्हज्या UPI ॲपचो डेटा कसो सुरक्षितपणान बॅकअप करूंक मेळटलो? (हें r/personalfinanceindia आनी r/developersIndia चर्चेंत चर्चिल्लें आसा)\nUPI transaction history is stored server-side by the NPCI and the individual PSPs (PhonePe, GPay, etc.), so switching phones does not delete your historical transaction data. When you reinstall your app on a new phone and re-register, all past transactions remain accessible. However, bank-specific SMS receipts on your old phone will not migrate automatically. Local UPI app data (chat, notes) is not typically backed up via Google Backup due to security restrictions. As per NPCI's UPI transaction data retention policy.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Participant Guidelines on KYC Name Display, Lok Sabha Questions on UPI Privacy, RBI KYC Master Directions 2016.",
+    "text": "నేను UPI యాప్‌లో నా UPI ID టైప్ చేసి పేమెంట్ చేయాలని చూసినప్పుడు, నా పూర్తి పేరుతో పాటు నా కులం సర్‌నేమ్ కూడా కనిపిస్తోంది. ఇది నాకు అసౌకర్యంగా ఉంది, ముఖ్యంగా వేరే కులాల వారితో జరిగే లావాదేవీల్లో మరింతగా. దీనికి ఏదైనా పరిష్కారం ఉందా? నా సర్‌నేమ్‌ను దాచే అవకాశం ఏదైనా ఉందా? (ఇది r/personalfinanceindia మరియు r/india ఫోరమ్‌ల్లో చర్చించబడిన అంశం)\nThe name displayed during a UPI transaction is pulled directly from the KYC records submitted to the bank, which is the legal name on the Aadhaar or PAN card. NPCI mandates that the legal name be displayed to prevent fraud. There is currently no NPCI-approved mechanism for users to customize or shorten the displayed name on a VPA. Some banks allow informal short names but these are not consistently implemented. This is a known privacy concern raised by multiple civil society groups and discussed in Lok Sabha questions about KYC privacy. As per NPCI UPI participant guidelines.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Biller List (npci.org.in/bbps), PhonePe BBPS Municipal Services, Ministry of Housing Urban Affairs Smart Cities Digital Payment Guidelines, various state municipal app guides.",
+    "text": "நான் மாநகராட்சி இணையதளம் மூலம் எனது குடிநீர் வரி / சொத்து வரியைச் செலுத்த விரும்பினேன். ஆனால் கட்டண விருப்பத்தில் NEFT மற்றும் சல்லான் மட்டுமே காட்டப்படுகிறது. UPI அல்லது கார்டு விருப்பம் இல்லை. இணையதளத்தில் UPI விருப்பம் இல்லாவிட்டாலும், BHIM அல்லது எந்தவொரு UPI செயலி மூலமாகவும் இதை டிஜிட்டல் முறையில் செலுத்த வழி உள்ளதா?\nMany municipal corporations are now integrated with BBPS (Bharat Bill Payment System) even if their own website doesn't show it prominently. This means you can pay municipal taxes via BBPS on any payment app (PhonePe, Google Pay, Paytm, BHIM) by searching for the municipal corporation under 'Municipal Services' or 'Utility Payments' within the app's bill payment section. BBPS covers over 20,000 billers across utilities, municipalities, and government services. Check if your specific municipal corporation/nagar palika is listed on BBPS. Additionally, many state government portals (like UP's e-nagarpalika, Maharashtra's mahaaonline) have integrated UPI payment options on their dedicated apps.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "UIDAI Aadhaar Bank Account Seeding Guidelines, PMJDY Financial Inclusion Mission Documentation, RBI KYC Master Directions 2016.",
+    "text": "എന്റെ ബാങ്ക് അക്കൗണ്ടുമായി ആധാർ ലിങ്ക് ചെയ്തിട്ടില്ലെന്ന കാരണത്താൽ എന്റെ UPI ബ്ലോക്ക് ചെയ്തിരിക്കുന്നതായി ബാങ്ക് അറിയിച്ചു. വർഷങ്ങൾക്ക് മുൻപ് തന്നെ ഞാൻ ആധാർ ലിങ്ക് ചെയ്തിരുന്നു, എന്നാൽ ബാങ്കിൽ അതിന്റെ രേഖകളില്ല. ഞാൻ എന്ത് ചെയ്യണം? (r/personalfinanceindia / r/india എന്നിവിടങ്ങളിൽ ചർച്ച ചെയ്ത സാഹചര്യം)\nAadhaar-bank account seeding data can be lost or incorrectly stored during bank system migrations, database purges, or manual entry errors at the branch level. This is a known issue particularly for accounts that were seeded in 2016–2018 during the initial drive. The UIDAI's Aadhaar seeding status can be independently verified online via the UIDAI portal. If your Aadhaar was linked previously but the record is lost, you will need to re-link. As per UIDAI's Aadhaar Seeding Guidelines for Banks.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "PMJDY Mission Documentation, NPCI Aadhaar Mapper for DBT, Income Tax Department SFT Reporting Guidelines, RBI KYC Master Directions.",
+    "text": "என்னிடம் இரண்டு சேமிப்புக் கணக்குகள் உள்ளன, அவை வெவ்வேறு வங்கிகளில் உள்ளன ஆனால் ஒரே ஆதாருடன் இணைக்கப்பட்டுள்ளன. இது அனுமதிக்கப்பட்டதா அல்லது வங்கி அல்லது வருமான வரித் துறையிடம் எனக்கு ஏதேனும் பிரச்சனை வருமா? (r/personalfinanceindia / r/personalfinanceindia சூழலில் விவாதிக்கப்பட்டது)\nLinking a single Aadhaar to multiple bank accounts is permitted and there is no regulatory restriction on having accounts in multiple banks. Aadhaar seeding in multiple banks is in fact encouraged for DBT (Direct Benefit Transfer) purposes — the NPCI mapper ensures that government subsidies are credited to one designated primary account. The Income Tax Department is informed of all accounts linked to your PAN through SFT (Statement of Financial Transactions) reporting by banks. There is no legal issue as long as you declare all account income in your ITR. As per PMJDY and DBT Mission documentation.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Guidelines on Digital Payment Security, NPCI UPI Ecosystem Security Framework, CERT-In Password Security Advisory.",
+    "text": "मुझे अपना UPI PIN कितनी बार बदलना चाहिए और सुरक्षित PIN चुनने के लिए सबसे अच्छे तरीके क्या हैं? मेरा वर्तमान PIN मेरा जन्म वर्ष है। (यह चर्चा r/personalfinanceindia / r/india के संदर्भ में की गई है)\nUsing your birth year as a UPI PIN is a significant security risk — it is easily guessable by anyone who knows basic information about you, including data from social media or databases that have been leaked. Best practices for UPI PIN security include: using a 6-digit PIN with no sequential pattern, avoiding birthdates and anniversaries, changing the PIN every 90 days, and never using the same PIN across multiple accounts or apps. As per RBI's digital payment security guidelines.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA 1999 — Current Account Transactions, Income Tax Act Section 5 (Residential Status), India-Singapore DTAA, Income Tax Form 67 for Foreign Tax Credit.",
+    "text": "நான் சிங்கப்பூர் நிறுவனத்திற்கு தொலைதூரத்தில் (remote) பணிபுரிகிறேன் மற்றும் அவர்கள் எனது சம்பளத்தை SGD-யில் செலுத்துகிறார்கள். என்னிடம் இந்திய குடியிருப்பு வங்கிக் கணக்கு உள்ளது. இது சட்டபூர்வமானதா? இதற்கான வரி மற்றும் FEMA விதிமுறைகள் என்ன? (r/personalfinanceindia / r/india சூழலில் விவாதிக்கப்பட்டது)\nReceiving salary from a foreign employer in India is legal under FEMA's current account transaction provisions (export of services — personal labor). As a resident Indian working for a foreign employer, the SGD salary credited to your Indian account is taxable in India as your global income under the Income Tax Act. You must declare this in your ITR under 'Salary' head, converting to INR at the SBI TT rate on the receipt date. GST does not apply to personal employment services. DTAA (Double Tax Avoidance Agreement) between India and Singapore may allow credit for any taxes paid in Singapore. As per FEMA, Income Tax Act, and India-Singapore DTAA.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Authentication Architecture, TRAI SIM Security Guidelines, CERT-In Data Breach Response Advisory.",
+    "text": "क्या कोई मेरा UPI दुरुपयोग कर सकता है अगर उनके पास केवल मेरा नाम और मोबाइल नंबर है लेकिन मेरा UPI PIN नहीं? मेरा डेटा एक ब्रीच में लीक होने के बाद मैं चिंतित हूं। (r/personalfinanceindia / r/india संदर्भ में चर्चा की गई)\nA name and mobile number alone are not sufficient to initiate UPI transactions from your account. To transact, an attacker would need: (1) physical or remote access to your registered device, (2) your UPI PIN, and (3) ability to receive OTPs on your registered SIM. However, with just your mobile number, a fraudster can attempt social engineering attacks (pretending to be your bank), SIM swap attacks via your telecom provider, or phishing. The real risk is indirect — your phone number is a social engineering entry point. As per NPCI's authentication architecture documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA 1999 — Current Account Transactions, Income Tax Act Section 5 (Residential Status), India-Singapore DTAA, Income Tax Form 67 for Foreign Tax Credit.",
+    "text": "હું સિંગાપોરની કંપની માટે રિમોટલી કામ કરું છું અને તેઓ મારો પગાર SGD માં ચૂકવે છે. મારું ભારતીય રેસિડન્ટ ખાતું છે. શું આ કાયદેસર છે અને તેના ટેક્સ અને FEMA સંબંધિત પરિણામો શું છે? (ચર્ચા r/personalfinanceindia / r/india સંદર્ભમાં)\nReceiving salary from a foreign employer in India is legal under FEMA's current account transaction provisions (export of services — personal labor). As a resident Indian working for a foreign employer, the SGD salary credited to your Indian account is taxable in India as your global income under the Income Tax Act. You must declare this in your ITR under 'Salary' head, converting to INR at the SBI TT rate on the receipt date. GST does not apply to personal employment services. DTAA (Double Tax Avoidance Agreement) between India and Singapore may allow credit for any taxes paid in Singapore. As per FEMA, Income Tax Act, and India-Singapore DTAA.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI Payment Aggregator Authorization List, FEMA Export of Services Compliance, Payoneer India Compliance Documentation, Income Tax Act Foreign Freelance Income Reporting.",
+    "text": "हम अमेरिकी ग्राहक सभ से भुगतान पावे खातिर Payoneer के इस्तेमाल करे के बारे में सोचत बानी। का Payoneer भारत में पूरा तरह से कानूनी बा आ का एकरा पर RBI के कोनो पाबंदी बा? (एकर चर्चा r/personalfinanceindia आ r/developersIndia के संदर्भ में भइल बा)\nPayoneer operates in India as a licensed Cross-Border Payment Service provider and is fully legal for receiving international freelance income. Payoneer issues you a virtual US bank account (routing number + account number) allowing US clients to pay you via ACH as if paying a US entity. Payoneer then converts and remits INR to your Indian bank account. The transfers comply with FEMA as export service receipts. Payoneer's fee structure includes 0%-2% on bank transfer receipts and a currency conversion markup. As per RBI's Payment Aggregator Framework and Payoneer's India compliance documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Digital Payment Security Controls Circular 2021, NPCI Consumer Security Guidelines, Personal Finance Security Best Practice Frameworks.",
+    "text": "ਮੈਂ ਆਨਲਾਈਨ ਪੜ੍ਹਿਆ ਹੈ ਕਿ ਮੈਨੂੰ ਸਿਰਫ਼ UPI ਲੈਣ-ਦੇਣ ਲਈ ਇੱਕ ਵੱਖਰਾ ਬੈਂਕ ਖਾਤਾ ਰੱਖਣਾ ਚਾਹੀਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਸੀਮਤ ਬੈਲੇਂਸ ਹੋਵੇ। ਕੀ ਇਹ ਵਾਸਤਵ ਵਿੱਚ ਇੱਕ ਚੰਗੀ ਰਣਨੀਤੀ ਹੈ ਅਤੇ ਮੈਂ ਇਸਨੂੰ ਕਿਵੇਂ ਲਾਗੂ ਕਰਾਂ? (ਇਸ ਬਾਰੇ r/personalfinanceindia ਅਤੇ r/developersIndia 'ਤੇ ਚਰਚਾ ਕੀਤੀ ਗਈ ਹੈ)\nYes, this is one of the most effective personal security strategies for UPI users. By maintaining a low-balance transaction account (ideally at a different bank than your savings), the maximum exposure in any fraud event is limited to only the amount in the transaction account. Your main savings remain insulated. This mirrors the security principle of least privilege — minimizing exposure. As corroborated by personal finance security best practices endorsed by RBI's security framework.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Fraud Awareness Material, RBI Payment Fraud Pattern Reports 2024, National Consumer Helpline Advisory on Refund Scams.",
+    "text": "ఎవరో నాకు UPI ద్వారా అనూహ్యంగా ₹500 పంపారు, ఆపై ఫోన్ చేసి అది పొరపాటున జరిగిందని, 'తప్పుడు బదిలీకి అదనపు ఛార్జీలు' ఉన్నాయని చెప్పి ₹5000 తిరిగి పంపమని అడిగారు. నేను దీన్ని తిరిగి పంపాలా? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nThis is an 'overpayment scam'. Fraudsters intentionally send a small amount to gain trust and create a sense of obligation, then fabricate a story about error charges to extract a much larger amount. Often, the initial ₹500 is sent from a stolen or hacked account and will be reversed later, leaving you at a net loss of the ₹5000 you 'returned'. As per NPCI fraud pattern documentation and RBI advisories on mule account usage.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA 1999 — Export of Services Classification, RBI Payment Intermediary Licensing Framework, Wise India Compliance Documentation, Income Tax Freelance Foreign Income Guidelines.",
+    "text": "હું હૈદરાબાદમાં ફ્રીલાન્સર તરીકે કામ કરું છું અને મારા US ના ક્લાયન્ટ્સ પાસેથી પેમેન્ટ મેળવું છું. હું Wise (પૂર્વે TransferWise) નો ઉપયોગ કરવા માંગુ છું. શું ભારતીયો માટે ફ્રીલાન્સ આવક મેળવવા Wise નો ઉપયોગ કરવો કાયદેસર છે? (આ ચર્ચા r/personalfinanceindia / r/developersIndia સંદર્ભમાં થઈ છે)\nWise operates in India as a licensed entity and is a legal and compliant method for Indian freelancers to receive international payments. Wise provides Indian users a borderless account to receive USD, EUR, GBP, and other currencies, and convert and transfer to Indian bank accounts. The transfers are FEMA-compliant as they are classified as export of services (current account transaction). Wise issues a transfer record that can serve as proof for FIRC purposes. As per RBI FEMA provisions and Wise India's compliance documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FIRC Issuance Guidelines, FEMA Inward Remittance Compliance Framework, RBI FEMA Compounding Provisions for Violations.",
+    "text": "म्हाका एका परकी ग्राहका कडल्यान पैसे मेळिल्ले, पूण म्हाका FIRC (Foreign Inward Remittance Certificate) मेळूंक ना आतां ३ वर्सां जाल्यांत. हांवें आतां FIRC मेळोवंक शकता काय? म्हाका FEMA काळांत दंड भरावचो पडटलो काय? (हें r/personalfinanceindia / r/india चर्चे प्रमाण विचारलां)\nFIRC (Foreign Inward Remittance Certificate) can be issued for past transactions — there is no strict statutory deadline for requesting it from your bank. However, banks may have operational difficulty issuing FIRCs for transactions older than 1-2 years depending on their record retention systems. Regarding FEMA compliance: if the foreign income was received in your Indian bank account, it was automatically FEMA-compliant as an inward remittance — no separate FIRC filing is required with RBI for current account transactions. FEMA compounding penalties apply if income was received outside India without repatriation. As per RBI FEMA Compounding Provisions.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "FEMA 1999 Section 3 (Prohibition on Foreign Currency Transactions Between Residents), RBI Resident Foreign Currency Account Guidelines, SEZ Foreign Currency Payment Exemptions.",
+    "text": "हमार भारतीय ग्राहक हमका USD में बैंक वायर से भुगतान करे चाहत बा, जबकि हम भारत में बाटी। का कोय भारतीय कंपनी कोय भारतीय के USD में भुगतान कर सकत बा? FEMA के का प्रभाव पड़त बा? (ई चर्चा r/personalfinanceindia / r/india संदर्भ में भइल बा)\nPayments between two Indian residents (companies or individuals) must be in Indian Rupees (INR) — making payments in foreign currency between India residents is a FEMA violation under Section 3 of FEMA 1999. The only exceptions are: (1) payments made in special economic zones (SEZs), (2) forex accounts of banks for specific purposes. If your Indian client wants to pay you for international work delivered abroad, the correct structure is an INR payment or restructuring the contract as an international service export. As per FEMA Section 3 and RBI's Resident Foreign Currency Guidelines.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "ATM Operations & Card Issues",
+    "source": "RBI Circular on Harmonisation of TAT and Customer Compensation for Failed Transactions (2019, updated 2024-25), Paytm ATM Refund Guide, RBI CMS Portal (cms.rbi.org.in), The420.in ATM Failed Transaction article 2026.",
+    "text": "हम एगो गैर-अपन बैंक के ATM सँ पैसा निकालब चाहलहुँ, मुदा मशीन कहलकै 'लेन-देन स्वीकृत' आ पैसा बाहर नै निकलल। हमर खाता सँ ₹10,000 काटल गेल देखा रहल अछि। हमरा कोनो रसीद नै भेटल। हमर अधिकार की अछि आ हमरा कते जल्दी पैसा वापस भेटबाक चाही?\nThis is a 'cash not dispensed' ATM transaction failure. Under RBI's Harmonised TAT (Turn-Around Time) circular, your bank must automatically reverse the debit within T+5 working days (T = transaction date). If they fail to do so, you are entitled to ₹100 per day compensation for every day of delay after the 5th working day, credited automatically. You must file a complaint to start the clock — automatic reversal doesn't always happen for non-home ATM transactions without a complaint trigger.",
+    "subdomain": "ATM Operations & Card Issues"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Anti-Phishing Guidelines, CERT-In Email Phishing Advisory, Individual Bank Official Security Policies on Customer Communication.",
+    "text": "ਮੇਰੇ ਬੈਂਕ ਵੱਲੋਂ ਇੱਕ ਈਮੇਲ ਆਈ ਹੈ ਜਿਸ ਵਿੱਚ ਲਿਖਿਆ ਹੈ 'Re-KYC ਜ਼ਰੂਰੀ ਹੈ' ਪਰ ਇਸ ਵਿੱਚ ਔਨਲਾਈਨ ਫਾਰਮ ਭਰਨ ਲਈ ਇੱਕ ਲਿੰਕ ਹੈ। ਮੈਂ ਇਹ ਕਿਵੇਂ ਪਕਾ ਕਰ ਸਕਦਾ ਹਾਂ ਕਿ ਇਹ ਅਸਲੀ ਹੈ ਅਤੇ ਫਿਸ਼ਿੰਗ (phishing) ਦੀ ਕੋਸ਼ਿਸ਼ ਨਹੀਂ? (ਇਸ ਬਾਰੇ r/personalfinanceindia / r/india 'ਤੇ ਚਰਚਾ ਕੀਤੀ ਗਈ ਹੈ)\nBanks do send legitimate re-KYC emails, but these are also heavily spoofed by phishers. The safest approach is to independently verify the request rather than clicking the email link. Legitimate bank re-KYC forms never ask for your full password, CVV, or OTP. A genuine bank URL will be the exact official domain (e.g., hdfcbank.com, sbi.co.in) with HTTPS, not variations like 'hdfc-kyc.com'. As per RBI's anti-phishing guidelines for bank communication.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Documentation (npci.org.in/bbps), Payment and Settlement Systems Act 2007, State Electricity Regulatory Commission Complaint Portal, CPGRAMS (cpgrams.gov.in).",
+    "text": "আমি BBPS (ভারত বিল পেমেন্ট সিস্টেম) এর মাধ্যমে আমার বিদ্যুৎ বিল ₹২,৮০০ পরিশোধ করেছি। টাকা কেটে নেওয়ার পরও বিদ্যুৎ দপ্তরের ওয়েবসাইটে বিল 'অপরিশোধিত' দেখাচ্ছে। মিটারে সংযোগ বিচ্ছিন্ন করার স্টিকার লাগানো হয়েছে। আমি এখন কী করব?\nThis is a known BBPS-to-Discom reconciliation delay issue. BBPS (operated by NPCI) collects the payment and forwards it to the utility company (Discom), but the Discom's billing system may take 24-72 hours to reflect the payment. The BBPS transaction generates a unique 'BBPS Transaction Reference Number' — this is your legal proof of payment under the Payment and Settlement Systems Act. The Discom cannot disconnect your supply if you have valid BBPS payment proof. The BBPS receipt is equivalent to a payment receipt.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "NPCI UPI Error Code Reference Guide, RBI KYC PAN Linking Mandate, Income Tax Department PAN-Bank Linking Advisory.",
+    "text": "મારા UPI માં 'PAN બેંક ખાતા સાથે લિંક નથી' એવી ભૂલ દેખાઈ રહી છે. મેં વર્ષો પહેલાં PAN લિંક કર્યો હતો. બેંક કહે છે કે તે લિંક છે. આનું કારણ શું હોઈ શકે અને તેનો ઉકેલ કેવી રીતે લાવવો? (ચર્ચા r/personalfinanceindia / r/personalfinanceindia સંદર્ભમાં)\nThe error 'PAN not linked' in UPI can stem from: (1) PAN linked at bank level but not propagated to NPCI's mapper, (2) incorrect PAN entry by the bank (character transposition), or (3) UPI apps pulling stale KYC data cached during app registration. The NPCI UPI ecosystem validates PAN via the bank's core banking system and its own central mapper. A mismatch at any level throws this error. As per NPCI's technical error code documentation for UPI apps.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Documentation (npci.org.in/bbps), Payment and Settlement Systems Act 2007, State Electricity Regulatory Commission Complaint Portal, CPGRAMS (cpgrams.gov.in).",
+    "text": "నేను BBPS (భారత్ బిల్ పేమెంట్ సిస్టమ్) ద్వారా నా కరెంటు బిల్లు ₹2,800 చెల్లించాను. డబ్బులు కట్ అయినా, విద్యుత్ శాఖ వెబ్‌సైట్‌లో బిల్లు 'చెల్లించలేదు' (unpaid) అని చూపిస్తోంది. మీటర్‌పై డిస్‌కనెక్ట్ స్టిక్కర్ వేసి ఉంది. నేను ఏం చేయాలి?\nThis is a known BBPS-to-Discom reconciliation delay issue. BBPS (operated by NPCI) collects the payment and forwards it to the utility company (Discom), but the Discom's billing system may take 24-72 hours to reflect the payment. The BBPS transaction generates a unique 'BBPS Transaction Reference Number' — this is your legal proof of payment under the Payment and Settlement Systems Act. The Discom cannot disconnect your supply if you have valid BBPS payment proof. The BBPS receipt is equivalent to a payment receipt.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FEMA (Deposit) Regulations on NRI Remittances, World Bank Remittance Price Database, Wise and Remitly India Pricing Comparison, US FinCEN Reporting Requirements.",
+    "text": "ਮੈਂ ਅਮਰੀਕਾ ਵਿੱਚ ਰਹਿੰਦਾ ਇੱਕ NRI ਹਾਂ ਅਤੇ ਮੈਂ ਆਪਣੇ ਬੁੱਢੇ ਮਾਪਿਆਂ ਨੂੰ ਭਾਰਤ ਵਿੱਚ ਜਲਦੀ ਪੈਸੇ ਭੇਜਣਾ ਚਾਹੁੰਦਾ ਹਾਂ। 2025 ਵਿੱਚ ਸਭ ਤੋਂ ਤੇਜ਼ ਅਤੇ ਸਸਤਾ ਤਰੀਕਾ ਕੀ ਹੈ? (ਇਹ charcha r/personalfinanceindia / r/india ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕੀਤੀ ਗਈ ਹੈ)\nNRI inward remittances to India are covered under FEMA's capital and current account provisions and are fully legal. As of 2025, the best options by speed and cost are: (1) Wise — typically 0.5-1% FX margin, credits Indian account in 1-2 days, (2) Remitly — competitive for USD to INR specifically, (3) Western Union / MoneyGram — instant but higher fees, (4) Your US bank's wire transfer — slowest (3-5 days) and most expensive ($25-50 fee). The traditional SWIFT wire is the most expensive option. As per RBI's Foreign Exchange Management (Deposit) Regulations and NASSCOM remittance cost comparison.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI App Security Standards, CERT-In Mobile App Security Guidelines, Android Screen Mirroring Security Documentation.",
+    "text": "টিভিতে স্ক্রিন মিররিং বা কাস্ট করার সময় কি ফোনের মাধ্যমে ব্যাংক ব্যালেন্স চেক করা বা UPI লেনদেন করা নিরাপদ? (এটি r/personalfinanceindia এবং r/developersIndia-তে আলোচিত প্রসঙ্গ)\nMost UPI apps (PhonePe, GPay, BHIM) have screenshot and screen recording blocking mechanisms that also apply to screen mirroring in most scenarios. However, this protection is not universal — some screen mirroring protocols (Miracast, AirPlay) may bypass app-level screenshot restrictions. The risk also depends on whether the TV is in a shared space and who can view the screen. Additionally, Smart TVs themselves can have security vulnerabilities. As per NPCI's security implementation for UPI apps.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI UPI Authentication Architecture, TRAI SIM Security Guidelines, CERT-In Data Breach Response Advisory.",
+    "text": "શું કોઈ વ્યક્તિ મારા નામ અને મોબાઈલ નંબરથી, પણ મારો UPI PIN વિના, મારા UPI નો દુરુપયોગ કરી શકે છે? મારો ડેટા લીક થયા પછી હું ચિંતિત છું. (r/personalfinanceindia / r/india સંદર્ભમાં ચર્ચા)\nA name and mobile number alone are not sufficient to initiate UPI transactions from your account. To transact, an attacker would need: (1) physical or remote access to your registered device, (2) your UPI PIN, and (3) ability to receive OTPs on your registered SIM. However, with just your mobile number, a fraudster can attempt social engineering attacks (pretending to be your bank), SIM swap attacks via your telecom provider, or phishing. The real risk is indirect — your phone number is a social engineering entry point. As per NPCI's authentication architecture documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "RBI Consumer Awareness Guidelines 2023, NPCI Fraud Prevention Circulars, CERT-In Advisory on Remote Access Trojan Scams, India Cybercrime Coordination Centre (I4C) Alerts.",
+    "text": "SBI കസ്റ്റമർ കെയർ ആണെന്ന് നടിച്ച് ആരോ വിളിച്ച് 'റിമോട്ട് KYC പരിശോധന'യ്ക്കായി AnyDesk ഇൻസ്റ്റാൾ ചെയ്യാൻ ആവശ്യപ്പെട്ടു. ഞാൻ അത് ചെയ്യുമായിരുന്നു. എന്തായിരിക്കും സംഭവിക്കുമായിരുന്നത്? (r/personalfinanceindia / r/india എന്നിവയിൽ ചർച്ച ചെയ്ത സാഹചര്യം)\nThis is a remote access scam. Once AnyDesk or TeamViewer is installed and the access code is shared, the fraudster can view your screen in real time — including your UPI PINs and OTPs — and can initiate transactions themselves without your awareness. Banks never ask customers to install remote desktop software for any purpose including KYC. As confirmed by RBI's official consumer awareness guidelines and CERT-In advisories.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Biller List (npci.org.in/bbps), PhonePe BBPS Municipal Services, Ministry of Housing Urban Affairs Smart Cities Digital Payment Guidelines, various state municipal app guides.",
+    "text": "हम नगर निगम के वेबसाइट से अपना पानी के टैक्स / प्रॉपर्टी टैक्स भरल चाहत रहनी। भुगतान के विकल्प में सिर्फ NEFT आ चालान देखावल जात बा, कोनो UPI या कार्ड के विकल्प ना बा। का कोनो तरीका बा कि हम डिजिटल रूप से BHIM या कोनो UPI ऐप से ई टैक्स भर सकीं, भले ही वेबसाइट पर UPI के विकल्प ना देखावल गइल हो?\nMany municipal corporations are now integrated with BBPS (Bharat Bill Payment System) even if their own website doesn't show it prominently. This means you can pay municipal taxes via BBPS on any payment app (PhonePe, Google Pay, Paytm, BHIM) by searching for the municipal corporation under 'Municipal Services' or 'Utility Payments' within the app's bill payment section. BBPS covers over 20,000 billers across utilities, municipalities, and government services. Check if your specific municipal corporation/nagar palika is listed on BBPS. Additionally, many state government portals (like UP's e-nagarpalika, Maharashtra's mahaaonline) have integrated UPI payment options on their dedicated apps.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Phishing Alert Advisories, RBI Anti-Phishing Guidelines, TRAI Unsolicited Commercial Communications Regulations, SBI Official Security Policy.",
+    "text": "ನನಗೆ 'SBI-ALERTT' ಕಡೆಯಿಂದ ಬಂದಂತೆ ಒಂದು SMS ಬಂದಿದೆ, ನನ್ನ ಖಾತೆಯನ್ನು ಬ್ಲಾಕ್ ಮಾಡಲಾಗುವುದು ಮತ್ತು ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಿ KYC ಅಪ್‌ಡೇಟ್ ಮಾಡಿ ಎಂದು ಹೇಳುತ್ತಿದೆ. ನಾನು ಕ್ಲಿಕ್ ಮಾಡಿ ನನ್ನ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿದೆ. ಇದು ಫಿಶಿಂಗ್ ಆಗಿದೆಯೇ? (r/personalfinanceindia / r/india ಸಂದರ್ಭದಲ್ಲಿ ಚರ್ಚಿಸಲಾಗಿದೆ)\nYes, this is a phishing SMS (smishing). Fraudsters spoof SMS sender IDs to make messages look like they are from your bank. The link directs to a fake website that harvests your credentials. Legitimate banks never ask for credentials, card numbers, PINs, or OTPs via SMS links. Regulatory TRAI mandates make unsolicited links with credential collection illegal. As per CERT-In's phishing attack advisory for Indian banking customers.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "MHA Cybercrime Division Advisories, India Cybercrime Coordination Centre (I4C), RBI Vishing Awareness Guidelines, National Cybercrime Reporting Portal.",
+    "text": "A caller said my cousin met with an accident and needs ₹20,000 immediately via UPI for hospital fees. I panicked and transferred the money but my cousin says no accident happened. What is this fraud called? (Discussed on r/personalfinanceindia / r/india context)\nThis is called 'emergency impersonation fraud' or 'vishing' — voice phishing using emotional manipulation. Fraudsters gather personal information from social media to make the scenario convincing. The high-pressure urgency prevents victims from verifying. This is common during festive travel seasons and long weekends. As per MHA's cybercrime awareness advisories targeting Indian banking customers.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Kisan Credit Card & Agricultural Banking",
+    "source": "RBI Master Circular on Kisan Credit Card Scheme (updated 2025), RBI Priority Sector Lending Guidelines, NABARD KCC Operational Guidelines, NITI Aayog Agricultural Credit Report 2024.",
+    "text": "I am a marginal farmer — I have 0.5 acres of land but it's on my mother's name. The bank is refusing me a Kisan Credit Card saying I need to own the land in my name. But I am the actual cultivator. Is there any provision for tenant farmers or those who cultivate others' land?\nYes — RBI's KCC guidelines explicitly allow Kisan Credit Cards for farmers who don't hold land title, including: (1) Tenant farmers who cultivate leased land. (2) Oral lessees — those who farm land under informal arrangements. (3) Share croppers who receive a share of the harvest. (4) Allied activity workers — fishermen, poultry/dairy farmers. The bank's refusal citing land title is technically incorrect under RBI KCC Master Circular. However, you will need alternative documentation to prove actual cultivation — like a NOC from landowner (your mother), past crop loan receipts, crop insurance records, or a certificate from the village panchayat or agriculture department.",
+    "subdomain": "Kisan Credit Card & Agricultural Banking"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "RBI Circular RBI/2017-18/15 on Customer Liability, TRAI SIM Swap Regulations, Telecom Consumers Protection Regulations 2012.",
+    "text": "My SIM got swapped without my knowledge and within 2 hours ₹80,000 was transferred from my account via UPI. The bank says I'm liable. Is this true? (Discussed on r/personalfinanceindia / r/india context)\nUnder RBI's Limited Liability of Customers circular, if fraud occurs due to a third-party breach (such as a SIM swap without your negligence), and you report it within three working days, your liability is limited or nil depending on the transaction amount. If the fraud involved your active OTP complicity, liability assessment changes. SIM swap fraud qualifies as a third-party breach under most circumstances. As per RBI's Circular on Customer Protection — Limiting Liability of Customers in Unauthorised Electronic Banking Transactions.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "Bank Charges & Account Management",
+    "source": "RBI Master Circular on Customer Service in Banks (2024), Banking Codes and Standards Board of India (BCSBI) Code of Bank's Commitment to Customers, RBI SACHET Portal (sachet.rbi.org.in).",
+    "text": "আমার ব্যাঙ্ক স্টেটমেন্টে 'INCIDENTAL CHARGES' লেবেলযুক্ত ₹১৭৭ একটি চার্জ দেখতে পাচ্ছি। এটা কী তা নিয়ে আমার কোনো ধারণা নেই। কাস্টমার কেয়ারে ফোন করলেও তারা সঠিকভাবে বুঝিয়ে বলতে পারেনি। ব্যাঙ্ক কি প্রতিটি চার্জের ব্যাখ্যা দিতে বাধ্য? আমি কীভাবে এর পরিষ্কার বিবরণী পেতে পারি?\nBanks are legally required to disclose all charges and their reasons to customers. Under RBI's Customer Service Master Circular and the Banking Codes and Standards Board of India (BCSBI), banks must: (1) Publish their complete schedule of charges on their website and at branches. (2) Provide itemized explanation of any charge on request. (3) Not levy charges that are not in their published tariff. 'Incidental charges' is a broad category that includes charges for various services — but you're entitled to know exactly which service triggered it. A vague 'incidental charges' description without further detail may itself be a deficiency.",
+    "subdomain": "Bank Charges & Account Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI FEMA (Deposit) Regulations on NRI Remittances, World Bank Remittance Price Database, Wise and Remitly India Pricing Comparison, US FinCEN Reporting Requirements.",
+    "text": "एक NRI म्हणून जो अमेरिकेंत रावता, म्हाका मेरे पोरग्यांक भारतांत पैसे धाडपाक जाय. २०२५ वर्सा सगळ्यांत बेगीन आनी सगळ्यांत सस्तो मार्ग खंयचो? (हें r/personalfinanceindia / r/india चेर चर्चिल्लें आसा)\nNRI inward remittances to India are covered under FEMA's capital and current account provisions and are fully legal. As of 2025, the best options by speed and cost are: (1) Wise — typically 0.5-1% FX margin, credits Indian account in 1-2 days, (2) Remitly — competitive for USD to INR specifically, (3) Western Union / MoneyGram — instant but higher fees, (4) Your US bank's wire transfer — slowest (3-5 days) and most expensive ($25-50 fee). The traditional SWIFT wire is the most expensive option. As per RBI's Foreign Exchange Management (Deposit) Regulations and NASSCOM remittance cost comparison.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI Fraud Prevention Awareness, RBI Guidelines on OTP Confidentiality, PhonePe Official Security Advisory, India Cybercrime Coordination Centre (I4C).",
+    "text": "मयां 'PhonePe ग्राहक सेवा नंबर' गुगलान सोदलो आनी पयल्या येवपाच्या नंबरार फोन केलो. दुसऱ्या वटेन आशिल्ल्या मनशान माझा खातें 'पडताळपा' खातीर माझो OTP मागलो. मयां तो दिला. आतां पयसे गेले. कितें जालें? (हें r/personalfinanceindia / r/india संदर्भांत चर्चा केल्या)\nFraudsters purchase Google Ads or use SEO to rank fake customer care numbers at the top of search results. These are not official numbers. Sharing an OTP with anyone — including someone claiming to be customer care — is the single most common cause of UPI fraud. No legitimate payment company representative will ever ask for your OTP or UPI PIN over a call. As per NPCI's official communication policy.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "National Cybercrime Reporting Portal Guidelines, MHA Cybercrime Division Real Estate Fraud Alerts, Consumer Protection Act 2019, 99acres Fraud Reporting Mechanism.",
+    "text": "मी 99acres वर पाहिलेल्या एका भाड्याच्या फ्लॅटसाठी UPI द्वारे २५,००० रुपयांची अनामत रक्कम भरली. पैसे भरल्यानंतर मालकाने उत्तर देणे बंद केले आणि तो फ्लॅट अस्तित्वातच नाही. मी काय करावे? (चर्चा r/personalfinanceindia / r/india संदर्भात)\nThis is a rental property fraud, which is extremely common on classified platforms in metro cities. Fraudsters list non-existent or already-occupied properties at below-market prices to attract desperate renters. They collect deposits via UPI and disappear. Once a UPI payment is made voluntarily, reversal is very difficult. As per NPCI's fraud pattern documentation for real estate classified scams.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC 2016 (Updated 2023), Simplified KYC for Rural Customers, Financial Inclusion Mission Documentation.",
+    "text": "બેંક મારા ગામના સરનામાના પુરાવાની માંગણી કરી રહી છે, પરંતુ તેમની ડ્રોપડાઉન સિસ્ટમમાં મારું ગામ સ્વીકારવામાં આવતું નથી. મારી પાસે ફક્ત ગ્રામ પંચાયતનું પ્રમાણપત્ર છે. શું આ KYC માટે સ્વીકાર્ય છે? (ચર્ચા r/personalfinanceindia / r/india સંદર્ભમાં)\nRBI's KYC Master Directions include a comprehensive list of acceptable address proofs, which specifically includes 'Letter from village panchayat/gram panchayat' for rural customers where standard utility bills may not be available. Banks are legally obligated to accept gram panchayat certificates as address proof for KYC purposes. Branch staff may be unaware of this provision. As per RBI's KYC Master Directions (updated 2023) — Simplified Measures for Low-Risk Customers in Rural Areas.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI Fraud Pattern Documentation, RBI Transaction Monitoring Guidelines, Digital Payments Intelligence Platform (DPIP) Alerts.",
+    "text": "എന്റെ UPI സ്റ്റേറ്റ്‌മെന്റിൽ ₹1 ന്റെ ഒരു അപരിചിതമായ ഇടപാട് ഞാൻ ശ്രദ്ധിച്ചു. ഇത്തരം ഒരു ചെറിയ റാൻഡം ഡെബിറ്റിനെക്കുറിച്ച് ഞാൻ ആശങ്കപ്പെടണോ? (r/personalfinanceindia / r/personalfinanceindia സന്ദർഭത്തിൽ ചർച്ച ചെയ്തത്)\nYes, unexplained ₹1 debits should be treated as a potential security indicator. Fraudsters often test compromised accounts with a small ₹1 transaction to confirm the account is active and the payment method works before conducting a larger fraudulent transaction. This is called 'card testing' or 'account probing'. It's also possible you signed up for a subscription service with a ₹1 authentication charge. Either way, an unexplained debit warrants immediate investigation. As per NPCI's fraud pattern documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Digital Payment Security Controls Circular 2021, NPCI Consumer Security Guidelines, Personal Finance Security Best Practice Frameworks.",
+    "text": "నేను ఆన్‌లైన్‌లో చదివాను, UPI లావాదేవీల కోసం మాత్రమే వాడేలా, తక్కువ బ్యాలెన్స్ ఉన్న ప్రత్యేక బ్యాంక్ ఖాతాను కలిగి ఉండాలని. ఇది నిజంగా మంచి వ్యూహమా? దీన్ని ఎలా అమలు చేయాలి? (r/personalfinanceindia / r/developersIndia సందర్భంలో చర్చించబడింది)\nYes, this is one of the most effective personal security strategies for UPI users. By maintaining a low-balance transaction account (ideally at a different bank than your savings), the maximum exposure in any fraud event is limited to only the amount in the transaction account. Your main savings remain insulated. This mirrors the security principle of least privilege — minimizing exposure. As corroborated by personal finance security best practices endorsed by RBI's security framework.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Digital Payment Security Controls Circular 2021, NPCI Consumer Security Guidelines, Personal Finance Security Best Practice Frameworks.",
+    "text": "UPI ഇടപാടുകൾക്കായി മാത്രമായി കുറഞ്ഞ ബാലൻസുള്ള ഒരു പ്രത്യേക ബാങ്ക് അക്കൗണ്ട് സൂക്ഷിക്കണമെന്ന് ഞാൻ ഓൺലൈനിൽ വായിച്ചു. ഇത് യഥാർത്ഥത്തിൽ ഒരു നല്ല തന്ത്രമാണോ, അത് എങ്ങനെയാണ് നടപ്പിലാക്കേണ്ടത്? (r/personalfinanceindia / r/developersIndia എന്നിവയിൽ ചർച്ച ചെയ്ത സാഹചര്യത്തിൽ)\nYes, this is one of the most effective personal security strategies for UPI users. By maintaining a low-balance transaction account (ideally at a different bank than your savings), the maximum exposure in any fraud event is limited to only the amount in the transaction account. Your main savings remain insulated. This mirrors the security principle of least privilege — minimizing exposure. As corroborated by personal finance security best practices endorsed by RBI's security framework.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "NPCI Fraud Pattern Documentation, RBI Transaction Monitoring Guidelines, Digital Payments Intelligence Platform (DPIP) Alerts.",
+    "text": "எனது UPI ஸ்டேட்மெண்டில் ₹1 மதிப்புள்ள ஒரு தெரியாத பரிவர்த்தனையைக் கவனித்தேன். இந்தச் சிறிய சீரற்ற பற்று வரவு குறித்து நான் கவலைப்பட வேண்டுமா? (r/personalfinanceindia / r/personalfinanceindia சூழலில் விவாதிக்கப்பட்டது)\nYes, unexplained ₹1 debits should be treated as a potential security indicator. Fraudsters often test compromised accounts with a small ₹1 transaction to confirm the account is active and the payment method works before conducting a larger fraudulent transaction. This is called 'card testing' or 'account probing'. It's also possible you signed up for a subscription service with a ₹1 authentication charge. Either way, an unexplained debit warrants immediate investigation. As per NPCI's fraud pattern documentation.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "Controller General of Accounts PFMS Guidelines, PayGov India (Bharat Kosh) Payment Status FAQ, CPGRAMS Portal (cpgrams.gov.in), Ministry of Finance Government Digital Payment Protocol.",
+    "text": "मैंने एक सरकारी पोर्टल पर एक योजना लाभ के लिए आवेदन जमा किया और UPI के माध्यम से ₹500 प्रसंस्करण शुल्क का भुगतान किया। भुगतान सफल रहा, लेकिन पोर्टल पर त्रुटि दिखाई दी और मेरा आवेदन दर्ज नहीं हुआ। अब न तो मुझे रिफंड मिल रहा है और न ही कोई पुष्टि। मुझे क्या करना चाहिए?\nGovernment portal payment failures where money is debited but transaction is unrecorded at the portal level are a known issue. The payment processor (typically PayGov, Bharat Kosh, or SBI Collect) maintains records separately from the application portal. Your UPI app has the Transaction ID/UTR number — this is the evidence you need. Government portal payments are handled by the Controller General of Accounts (CGA) through the Public Financial Management System (PFMS). Refunds for failed portal transactions are governed by the specific ministry's refund policy.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "CERT-In Mobile Malware Advisory, NPCI UPI Security Guidelines for Consumers, Google Play Protect Documentation, Android Security Bulletin.",
+    "text": "నేను 'క్యాష్‌బ్యాక్' ఉందని చెప్పుకునే ఒక మార్చబడిన PhonePe APK ని ఒక టెలిగ్రామ్ గ్రూప్ నుండి డౌన్‌లోడ్ చేశాను. దాన్ని ఇన్‌స్టాల్ చేసిన తర్వాత, నా UPI లావాదేవీలు విఫలమవుతున్నాయి. ఏం జరిగింది? (r/personalfinanceindia / r/india సందర్భంలో చర్చించబడింది)\nThe APK was almost certainly a trojan or overlay malware designed to steal your UPI credentials. Modified unofficial apps for payment platforms are a primary malware delivery method. These fake apps often display overlay screens on top of the real app to capture your PIN, or run background keyloggers. NPCI and Google Play Protect specifically block sideloaded APKs from running certified UPI flows. As per CERT-In's mobile malware advisory for Android UPI users.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "NPCI UPI One World International Expansion Documentation, Monzo and Starling UK Student Account Eligibility, RBI Outward Remittance Guidelines for Students.",
+    "text": "हम भारत सँ यूके पढ़ाई करबा जा रहल छी। की हमर भारतीय UPI ऐप्स केर इस्तेमाल यूके मे भुगतान लेल कएल जा सकैत अछि या तँ हमरा तुरंत यूके केर बैंक खाता खोलब पड़त? (एकर चर्चा r/personalfinanceindia / r/india संदर्भ मे भेल अछि)\nUPI is primarily a domestic India payment system. NPCI has expanded UPI internationally to select countries (UAE, Singapore, Bhutan, Nepal, France, UK, and others) but this is for Indian tourists — it allows UPI at specific merchant QR codes that accept international UPI. For day-to-day UK living (rent, groceries, transport), you will need a UK bank account. UK challenger banks (Monzo, Starling) can be opened digitally in a few days after arrival with just your passport. As per NPCI's UPI One World international expansion documentation.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "FASTag & Vehicle Payments",
+    "source": "NHAI NETC FASTag Dispute Resolution (ihmcl.com), RBI FASTag Circular, FASTag NETC Operating Procedures (NPCI), NHAI Helpline 1033.",
+    "text": "हमार FASTag से एकै टोल प्लाजा पर दुगुना कटौती भइल बा। टोल रसीद में एकै समय पर एकै गाड़ी खातिर दुगो एंट्री देखावल गइल बा। ₹130 दुगो बेर कट गइल बा। ई दुगुना कटौती के रिफंड कइसे हासिल करी?\nFASTag double-deductions at toll plazas can occur due to: (1) Tag scan errors where the system registers the vehicle twice. (2) Sensor malfunction at the toll lane. (3) Slow deduction notification leading to retry. Under NHAI's FASTag dispute resolution mechanism, you have the right to raise a dispute for duplicate/incorrect deductions. All FASTag transactions are logged by NHAI's National Electronic Toll Collection (NETC) system and the deducting bank maintains transaction records — both can be queried.",
+    "subdomain": "FASTag & Vehicle Payments"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "TRAI Telecommunications Consumer Protection Regulations, RBI Annual Report 2023 on Mobile Number Recycling Risk, NPCI Mobile Number Update Guidelines.",
+    "text": "ਮੈਂ ਆਪਣਾ ਫ਼ੋਨ ਨੰਬਰ ਬਦਲ ਦਿੱਤਾ ਹੈ ਪਰ ਬੈਂਕ ਨਾਲ ਇਹ ਅਪਡੇਟ ਕਰਨਾ ਭੁੱਲ ਗਿਆ। ਮੇਰਾ ਪੁਰਾਣਾ ਨੰਬਰ ਹੁਣ ਕਿਸੇ ਅਜਨਬੀ ਨੂੰ ਦਿੱਤਾ ਜਾ ਚੁੱਕਾ ਹੈ। ਕੀ ਮੇਰੇ ਬੈਂਕ ਖਾਤੇ ਖਤਰੇ ਵਿੱਚ ਹਨ? (ਇਹ ਵਿਸ਼ਾ r/personalfinanceindia ਅਤੇ r/india 'ਤੇ ਚਰਚਾ ਕੀਤਾ ਗਿਆ ਹੈ)\nYes, this is a serious risk. TRAI regulations allow telecom operators to re-assign disconnected numbers to new subscribers after 90 days. If the new subscriber of your old number visits a bank branch or uses net banking with the old number still registered, they can potentially receive OTPs and intercept banking communications. RBI has flagged mobile number recycling as a systemic risk in its 2023 Annual Report. As per TRAI's Telecommunications Consumer Protection Regulations.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "International Payments & FEMA",
+    "source": "RBI SWIFT Integration Guidelines, FEMA Purpose Code List (RBI Master Direction), Indian Bank SWIFT Code Registry, RBI Nostro Account Framework.",
+    "text": "আমার বিদেশি ক্লায়েন্ট সফটওয়্যার ডেভেলপমেন্ট পরিষেবার জন্য আমাকে পেমেন্ট করতে চান। তারা আমার SWIFT/IBAN চেয়েছেন। ভারতীয় ব্যাংক অ্যাকাউন্টের জন্য কীভাবে আমি তাদের সঠিক বিবরণ দেব? (r/personalfinanceindia / r/india প্রসঙ্গে আলোচনা করা হয়েছে)\nIndian banks use the SWIFT code system for international wire transfers. Your bank account does not have an IBAN (that's used in Europe/SEPA zones) — instead you need to provide: (1) your full name as on the account, (2) bank account number, (3) IFSC code (for domestic), (4) your bank's SWIFT/BIC code (e.g., HDFCINBB for HDFC, SBININBB for SBI), (5) bank name and full branch address, (6) FEMA purpose code for the transfer type (e.g., P0102 for software services). As per RBI's Nostro account and SWIFT integration guidelines.",
+    "subdomain": "International Payments & FEMA"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC — Small Account Provisions, UIDAI Aadhaar e-KYC API Documentation, RBI V-CIP Guidelines 2021.",
+    "text": "डिजिटल तरीके से बैंक खाता खोलने के लिए e-KYC प्रक्रिया क्या है? यह भौतिक (physical) KYC से कैसे अलग है? क्या e-KYC खातों के साथ कोई लेन-देन सीमा है? (इसे r/personalfinanceindia / r/developersIndia संदर्भ में चर्चा किया गया है)\ne-KYC (Electronic KYC) uses Aadhaar-based OTP or biometric authentication via UIDAI's API to verify identity digitally, eliminating the need for physical document submission. It can be completed entirely online within minutes. However, accounts opened via Aadhaar OTP-based e-KYC are subject to reduced transaction limits under RBI's small accounts provision — typically aggregate credit up to ₹1 lakh per year and balance not exceeding ₹50,000. Full KYC (biometric or V-CIP) removes these restrictions. As per RBI's KYC Master Directions and Small Accounts provisions.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Dispute Resolution (npci.org.in/bbps), Google Pay BBPS Payment Guide, RBI Circular on Customer Rights for BBPS Transactions, BBPS Operating Circular by NPCI (2024).",
+    "text": "हमीं Google Pay चेर BBPS वापरून माझ्या क्रेडिट कार्डाचें बिल भरपाक यत्न केल्लो. Google Pay चेर पेमंट जालें, पूण 5 दीस जावन लेगीत क्रेडिट कार्ड कंपनीक तें मेळूंक ना. माझ्या क्रेडिट कार्डाचेर 'payment due' अशें दाखयता आनी ते लेट पेमंट फी आकारतात. हांवें कितें करचें?\nBBPS credit card bill payments typically settle within T+1 to T+2 business days. A 5-day delay is unusual. The Google Pay BBPS transaction generates both: (a) a Google Pay transaction ID and (b) a BBPS Transaction Reference Number. The credit card company uses the BBPS reference, not Google Pay's internal ID. Key action: Extract the BBPS Transaction Reference from your Google Pay receipt (it's usually labeled 'BBPS Transaction ID' or similar). This is different from the UPI Transaction ID. The credit card company can trace the payment using this BBPS reference.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "Income Tax India e-Pay Tax Portal (incometax.gov.in), NSDL Challan 280 Payment Guide, NPCI UPI for Government Payments, Ministry of Finance Digital Tax Payment Guidelines.",
+    "text": "हम अपना इनकम टैक्स (सेल्फ-असेसमेंट टैक्स) ऑनलाइन अपना SBI नेट बैंकिंग इस्तेमाल क के भरे के कोसिस कइली, लेकिन NSDL TIN पोर्टल के पेज आखिरी पेमेंट स्टेप पर बार-बार टाइम आउट हो रहल बा। हम UPI के जरिए इनकम टैक्स कइसे भर सकी? आरू इनकम टैक्स खातिर आरू कौन-कौन डिजिटल पेमेंट मोड काम करेला?\nIncome tax payments via the Income Tax e-filing portal (incometax.gov.in / tin.tin.nsdl.com) support multiple payment modes: (1) Net Banking — 40+ banks supported. If SBI net banking times out, try during non-peak hours (early morning or late evening) or use a different browser. (2) Debit Card — Visa/Mastercard/RuPay. (3) UPI — available via Challan 280 on the Income Tax portal. Select 'UPI' as payment mode, enter UPI ID, confirm via your UPI app. (4) NEFT/RTGS — available for larger tax amounts. (5) Over-the-counter at bank branches for cash payments. UPI is often the most reliable option for individual taxpayers.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "UPI Lite & Credit on UPI",
+    "source": "NPCI UPI Lite Product Documentation (npci.org.in), RBI Press Release on UPI Lite (2022), Drishti IAS UPI 10 Years Article (April 2026), PhonePe/BHIM UPI Lite User Guides.",
+    "text": "What is UPI Lite and how is it different from regular UPI? I make many small payments under ₹200 at vegetable markets and tea stalls. Will UPI Lite help me? How do I set it up?\nUPI Lite is a feature within UPI apps that maintains a small 'on-device wallet' (up to ₹2,000 balance) for making quick payments up to ₹500 per transaction without requiring PIN authentication or real-time bank server connection. Benefits for small frequent payments: (1) No UPI PIN needed for each transaction — just tap and pay. (2) Works even in low internet connectivity areas since it doesn't need real-time bank server connection for each payment. (3) Faster than regular UPI (no OTP wait). (4) Reduces UPI transaction failures caused by server congestion at peak times. You load UPI Lite from your bank balance and it works like a digital cash purse.",
+    "subdomain": "UPI Lite & Credit on UPI"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "NPCI UPI Product Design Documentation, RBI Consumer Awareness Material, Digital Payments Intelligence Platform (DPIP) Guidelines.",
+    "text": "എന്റെ ഒരു സുഹൃത്ത് വാട്‌സ്ആപ്പ് ഗ്രൂപ്പിൽ 'ചാരിറ്റിക്കായി സംഭാവന നൽകുക' എന്ന പോസ്റ്റിനൊപ്പം എന്റെ UPI ID പരസ്യമായി പങ്കുവെച്ചു. ഞാൻ ഭയപ്പെട്ടു പോയി — എന്റെ UPI ID മാത്രം ഉപയോഗിച്ച് ആരെങ്കിലും ദുരുപയോഗം ചെയ്യാൻ സാധ്യതയുണ്ടോ? (r/personalfinanceindia / r/india എന്നിവിടങ്ങളിൽ ചർച്ച ചെയ്ത സാഹചര്യം)\nSharing a UPI ID (VPA) publicly is generally safe in terms of financial risk — your UPI ID can only be used to send you money, not withdraw from your account. However, there are secondary risks: fraudsters can use your UPI ID to impersonate you and create fake collection campaigns, your name (shown when someone enters your UPI ID to pay) reveals your full legal name, and some social engineering attacks use publicly known UPI IDs to increase credibility. As per NPCI's UPI design documentation.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "RBI Master Direction on KYC 2016 (Updated 2023), PMLA KYC Obligations for Banks, RBI FAQ on Periodic Re-KYC.",
+    "text": "हंव बँकेचो रिलेशनशिप मॅनेजर आसां आनी एक ग्राहक हेर सांगता की तांकां पुनः-KYC करपाची गरज ना, कारण 'आधार आजिवन वैध आसा'. हांव तांकां पुनः-KYC ची जबाबदारी कशी सारकी समजावन दिवंक शकतां? (हें r/personalfinanceindia / r/india संदर्भांत चर्चिलां)\nAadhaar itself is a lifetime identifier (the 12-digit number never expires), but the KYC record at the bank level is subject to periodic refresh under PMLA and RBI guidelines. Re-KYC is not about Aadhaar validity — it is about ensuring the bank has current, accurate information about the customer's address, risk profile, and purpose of account. RBI's Master Direction on KYC mandates re-KYC at intervals based on risk category, independent of whether Aadhaar is used. As per RBI's KYC Master Direction — Periodic Updation provisions.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Account Security & Management",
+    "source": "RBI Guidelines on Digital Payment Security, NPCI UPI Ecosystem Security Framework, CERT-In Password Security Advisory.",
+    "text": "ਮੈਨੂੰ ਆਪਣਾ UPI PIN ਕਿੰਨੀ ਵਾਰ ਬਦਲਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਇੱਕ ਸੁਰੱਖਿਅਤ PIN ਚੁਣਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕੇ ਕੀ ਹਨ? ਮੇਰਾ ਮੌਜੂਦਾ PIN ਮੇਰਾ ਜਨਮ ਸਾਲ ਹੈ। (ਇਹ ਚਰਚਾ r/personalfinanceindia / r/india ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਕੀਤੀ ਗਈ ਹੈ)\nUsing your birth year as a UPI PIN is a significant security risk — it is easily guessable by anyone who knows basic information about you, including data from social media or databases that have been leaked. Best practices for UPI PIN security include: using a 6-digit PIN with no sequential pattern, avoiding birthdates and anniversaries, changing the PIN every 90 days, and never using the same PIN across multiple accounts or apps. As per RBI's digital payment security guidelines.",
+    "subdomain": "Account Security & Management"
+  },
+  {
+    "title": "Bank Charges & Account Management",
+    "source": "RBI Circular on Levy of Minimum Balance Charges (2015, 2024 update), HDFC Bank Salary Account Terms and Conditions, RBI SACHET Portal (sachet.rbi.org.in), RBI CMS Portal.",
+    "text": "माझ्या एचडीएफसी बँकेतील पगार खात्याचे रूपांतर मी ६ महिने बेरोजगार असल्यामुळे बँकेने सामान्य बचत खात्यात केले आहे. आता किमान शिल्लक न ठेवल्याबद्दल दरमहा ₹६०० शुल्क कापले जात आहे आणि दंडाच्या रूपात माझी शिल्लक ₹३,६०० ने कमी झाली आहे. माझ्या संमतीशिवाय हे रूपांतर करणे कायदेशीर आहे का?\nSalary account conversion is a standard bank practice — when salary credits stop for 3+ months, most banks automatically convert to a regular savings account, which is typically disclosed in the account opening terms and conditions. This is generally legal IF it was disclosed in the T&Cs. However: (1) The bank must have given you advance notice (usually by SMS or email) before converting and before starting to levy charges. (2) RBI mandates that minimum balance charges cannot exceed the shortfall amount proportionally — ₹600/month seems high and should be verified against your account balance. (3) Once employed again and your salary is being credited, you can request the account to be converted back to a salary account retroactively.",
+    "subdomain": "Bank Charges & Account Management"
+  },
+  {
+    "title": "UPI Fraud Prevention",
+    "source": "MHA Cybercrime Division KBC Lottery Fraud Advisory, India Cybercrime Coordination Centre (I4C) Alerts, Consumer Protection Advisory on Prize Fraud.",
+    "text": "I received a call saying I won ₹1 lakh in a KBC lottery and must pay ₹5,000 GST via UPI to claim my prize. It seemed official. How can I verify if this is real? (Discussed on r/personalfinanceindia / r/india context)\nThis is a lottery scam. Kaun Banega Crorepati (KBC) or any legitimate lottery in India does not contact winners via phone calls requesting upfront payments. Prize money is always disbursed directly to winners after in-person verification. Legitimate wins never require GST or processing fee payments in advance via UPI. As per advisories issued jointly by MHA and Sony (KBC broadcaster) warning against these impersonations.",
+    "subdomain": "UPI Fraud Prevention"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "CERSAI CKYC Registry Guidelines, SEBI CKYC Regulations 2016, PMLA KYC Rules Amendment 2019, Ministry of Finance CKYC Framework.",
+    "text": "CKYC എന്നാൽ എന്താണ്, അത് എങ്ങനെയാണ് പ്രവർത്തിക്കുന്നത്? ഞാൻ ഒരു ബാങ്കിൽ CKYC പൂർത്തിയാക്കിയിട്ടുണ്ടെങ്കിൽ, പുതിയ ഒരു ബാങ്കിൽ വീണ്ടും KYC ചെയ്യണോ? (r/personalfinanceindia / r/personalfinanceindia സന്ദർഭത്തിൽ ചർച്ച ചെയ്തത്)\nCentral KYC (CKYC) is a centralized KYC registry managed by CERSAI under the Ministry of Finance. Once you complete KYC with any regulated entity (bank, mutual fund, broker), a unique 14-digit CKYC number is issued to you. Any subsequent regulated entity can fetch your KYC records from the CKYC registry using your CKYC number, eliminating the need for fresh documentation. However, the new entity must still perform liveness verification. CKYC is mandatory for new accounts opened after 1 February 2017. As per PMLA Rules and SEBI CKYC Regulations.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "India Post Payments Bank (IPPB)",
+    "source": "India Post Payments Bank Customer Service (ippbonline.in), IPPB Doorstep Banking Product Guidelines, Ministry of Communications IPPB Annual Report 2024-25.",
+    "text": "நான் எங்கள் வீட்டு வாசலில் இருந்த அஞ்சலாளர் மூலம் IPPB (இந்தியா போஸ்ட் பேமெண்ட்ஸ் வங்கி) கணக்கில் ₹5,000 ரொக்கமாக டெபாசிட் செய்தேன். அஞ்சலாளர் அதை அவரது சாதனத்தில் பதிவு செய்தார், ஆனால் 'பரிவர்த்தனை நிலுவையில் உள்ளது' (transaction pending) என்று கூறினார். 4 நாட்கள் ஆகியும் பணம் என் கணக்கில் வரவில்லை. உதவுங்கள்.\nIPPB doorstep banking via postmen uses micro-ATM/handheld devices to process cash deposits. A 'transaction pending' status on the postman's device typically means: (1) The device had a network connectivity issue during processing. (2) The transaction may need manual reconciliation by the post office. (3) The postman may have processed it incorrectly. The Department of Posts mandates that all IPPB transactions be reconciled within T+1 working day. Beyond 2-3 working days, this must be escalated.",
+    "subdomain": "India Post Payments Bank (IPPB)"
+  },
+  {
+    "title": "BBPS & Utility Bill Payments",
+    "source": "NPCI BBPS Documentation (npci.org.in/bbps), Payment and Settlement Systems Act 2007, State Electricity Regulatory Commission Complaint Portal, CPGRAMS (cpgrams.gov.in).",
+    "text": "I paid my electricity bill of ₹2,800 via BBPS (Bharat Bill Payment System). Even though the money has been deducted, the electricity department's website is still showing the bill as 'unpaid'. A disconnection notice sticker has been pasted on my meter. What should I do?\nThis is a known BBPS-to-Discom reconciliation delay issue. BBPS (operated by NPCI) collects the payment and forwards it to the utility company (Discom), but the Discom's billing system may take 24-72 hours to reflect the payment. The BBPS transaction generates a unique 'BBPS Transaction Reference Number' — this is your legal proof of payment under the Payment and Settlement Systems Act. The Discom cannot disconnect your supply if you have valid BBPS payment proof. The BBPS receipt is equivalent to a payment receipt.",
+    "subdomain": "BBPS & Utility Bill Payments"
+  },
+  {
+    "title": "KYC & Compliance",
+    "source": "CERSAI CKYC Registry Guidelines, SEBI CKYC Regulations 2016, PMLA KYC Rules Amendment 2019, Ministry of Finance CKYC Framework.",
+    "text": "CKYC म्हळ्यार कितें आनी तें कशें काम करता? जर म्हाका एका बँके कडेन CKYC पूर्ण केलां, जाल्यार नव्या बँके कडेन परत KYC करचें पडटलें का? (हें r/personalfinanceindia / r/personalfinanceindia च्या संदर्भांत चर्चिलां)\nCentral KYC (CKYC) is a centralized KYC registry managed by CERSAI under the Ministry of Finance. Once you complete KYC with any regulated entity (bank, mutual fund, broker), a unique 14-digit CKYC number is issued to you. Any subsequent regulated entity can fetch your KYC records from the CKYC registry using your CKYC number, eliminating the need for fresh documentation. However, the new entity must still perform liveness verification. CKYC is mandatory for new accounts opened after 1 February 2017. As per PMLA Rules and SEBI CKYC Regulations.",
+    "subdomain": "KYC & Compliance"
+  },
+  {
+    "title": "Government Portal & Utility Payments",
+    "source": "Controller General of Accounts PFMS Guidelines, PayGov India (Bharat Kosh) Payment Status FAQ, CPGRAMS Portal (cpgrams.gov.in), Ministry of Finance Government Digital Payment Protocol.",
+    "text": "ഞാൻ ഒരു സർക്കാർ പോർട്ടലിൽ ഒരു പദ്ധതി പ്രയോജനത്തിനായി അപേക്ഷ സമർപ്പിക്കുകയും പ്രോസസിംഗ് ഫീസായി ₹500 UPI വഴി അടയ്ക്കുകയും ചെയ്തു. പേയ്‌മെന്റ് വിജയിച്ചുവെങ്കിലും പോർട്ടലിൽ പിഴവ് കാണിക്കുകയും എന്റെ അപേക്ഷ രേഖപ്പെടുത്തപ്പെടുകയും ചെയ്തില്ല. ഇപ്പോൾ എനിക്ക് റീഫണ്ടോ സ്ഥിരീകരണമോ ലഭിക്കുന്നില്ല. ഞാൻ എന്ത് ചെയ്യണം?\nGovernment portal payment failures where money is debited but transaction is unrecorded at the portal level are a known issue. The payment processor (typically PayGov, Bharat Kosh, or SBI Collect) maintains records separately from the application portal. Your UPI app has the Transaction ID/UTR number — this is the evidence you need. Government portal payments are handled by the Controller General of Accounts (CGA) through the Public Financial Management System (PFMS). Refunds for failed portal transactions are governed by the specific ministry's refund policy.",
+    "subdomain": "Government Portal & Utility Payments"
+  },
+  {
+    "title": "Feature Phone & Offline UPI",
+    "source": "NPCI UPI 123Pay Consumer Guide (npci.org.in), BHIM *99# User Manual, RBI UPI 123Pay Launch Press Release (March 2022), MicroSave UPI 123Pay Analysis 2023.",
+    "text": "हंव एक शेतकार आसां. हांगा स्मार्टफोन ना, फकत साधो फोन आसा. कितें म्हुणून, हांव UPI वरवीं पैसे मेळोवंक शकतां काय धाडूंक शकतां? माझ्या धुवेन म्हुणलें *99# चालू करून पळोवया.\nYes, UPI is available on basic feature phones through two options: (1) *99# (USSD-based): Dial *99# on any mobile phone connected to any network. A text menu opens. You can check balance, send money, and view mini statement. It works without internet. The process is in Hindi and 12 other regional languages. Each session takes 4-5 minutes and may cost a small USSD charge (usually ₹0.50 or less, charged by telecom). (2) UPI 123Pay: A newer, easier option launched in 2022. Call IVR number, use voice prompts to send money without internet. Currently supports P2P transfers, mobile recharge, and some merchant categories. Your phone number must be linked to your bank account as the primary registered number.",
+    "subdomain": "Feature Phone & Offline UPI"
+  },
+  {
+    "title": "Bank Charges & Account Management",
+    "source": "RBI Circular on Free SMS/Email Alerts for Electronic Transactions (2014, reaffirmed 2023), RBI Master Circular on Customer Service, SACHET Portal (sachet.rbi.org.in).",
+    "text": "माझा बँक प्रत्येक व्यवहाराच्या अलर्टसाठी SMS मागे ₹१८ आकारत आहे. मला महिन्याला २०-२५ व्यवहार होतात, त्यामुळे फक्त SMS चार्जेसमध्ये मला महिन्याला ₹४५० भरावे लागतात. यावर काही मोफत पर्याय आहे का? इतर बँका असा खर्च आकारत नाहीत असे दिसते.\nRBI mandated in 2014 that all banks must provide free SMS/email alerts for all electronic transactions — including UPI, NEFT, IMPS, ATM withdrawals. However, RBI also allowed banks to charge for SMS alerts on some non-electronic transactions (like cash deposits). The key distinction: (1) For electronic transactions, SMS alerts must be free. (2) For non-electronic transactions (cash withdrawals at branch, cash deposits), some charge is permitted but must be disclosed. If you're being charged for UPI/ATM/NEFT SMS alerts, that's against RBI guidelines. Additionally, registering for email alerts (free) and push notifications on your bank's mobile app (also free) can completely replace SMS alerts.",
+    "subdomain": "Bank Charges & Account Management"
+  }
+]
