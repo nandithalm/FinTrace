@@ -1,0 +1,20 @@
+[
+  {
+    "customer_id": "CUST001",
+    "name": "Aarav Sharma",
+    "consent_enabled": true,
+    "risk_level": "low",
+    "credit_score": 742,
+    "monthly_income": 75000,
+    "preferred_language": "en"
+  },
+  {
+    "customer_id": "CUST002",
+    "name": "Meera Rao",
+    "consent_enabled": false,
+    "risk_level": "low",
+    "credit_score": 710,
+    "monthly_income": 62000,
+    "preferred_language": "kn"
+  }
+]

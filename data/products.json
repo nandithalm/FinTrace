@@ -1,0 +1,24 @@
+{
+  "rates": {
+    "savings_account": "3.0% p.a.",
+    "fixed_deposit": "6.8% p.a.",
+    "personal_loan": "11.5% onwards",
+    "home_loan": "8.4% onwards"
+  },
+  "loan_rules": [
+    {
+      "loan_type": "personal",
+      "min_credit_score": 700,
+      "min_income": 40000,
+      "interest_rate": "11.5% onwards",
+      "max_amount": 300000
+    },
+    {
+      "loan_type": "home",
+      "min_credit_score": 720,
+      "min_income": 60000,
+      "interest_rate": "8.4% onwards",
+      "max_amount": 5000000
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "account_type": "savings",
+    "account_number": "XXXXXX4821",
+    "available_balance": 48250.00,
+    "currency": "INR"
+  },
+  {
+    "customer_id": "CUST001",
+    "account_id": "ACC002",
+    "account_type": "current",
+    "account_number": "XXXXXX1190",
+    "available_balance": 128900.00,
+    "currency": "INR"
+  }
+]

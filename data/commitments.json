@@ -1,0 +1,14 @@
+[
+  {
+    "customer_id": "CUST001",
+    "label": "Credit card bill",
+    "amount": 8000,
+    "due": "2026-09-28"
+  },
+  {
+    "customer_id": "CUST001",
+    "label": "SIP",
+    "amount": 4000,
+    "due": "2026-09-30"
+  }
+]

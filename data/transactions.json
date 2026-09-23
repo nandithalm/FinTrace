@@ -1,0 +1,192 @@
+[
+  {
+    "txn_id": "T001",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-22",
+    "merchant": "Swiggy",
+    "category": "Food",
+    "amount": -1840,
+    "masked_counterparty": "Swiggy ****1022"
+  },
+  {
+    "txn_id": "T002",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-20",
+    "merchant": "Zomato",
+    "category": "Food",
+    "amount": -1120,
+    "masked_counterparty": "Zomato ****4410"
+  },
+  {
+    "txn_id": "T003",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-18",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "amount": -3000,
+    "masked_counterparty": "Amazon ****7781"
+  },
+  {
+    "txn_id": "T004",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-15",
+    "merchant": "Other",
+    "category": "Food",
+    "amount": -1320,
+    "masked_counterparty": "Other ****2201"
+  },
+  {
+    "txn_id": "T005",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-12",
+    "merchant": "Flipkart",
+    "category": "Shopping",
+    "amount": -2350,
+    "masked_counterparty": "Flipkart ****9033"
+  },
+  {
+    "txn_id": "T006",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-10",
+    "merchant": "BESCOM",
+    "category": "Bills",
+    "amount": -1800,
+    "masked_counterparty": "BESCOM ****5510"
+  },
+  {
+    "txn_id": "T007",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-08",
+    "merchant": "Airtel",
+    "category": "Bills",
+    "amount": -1400,
+    "masked_counterparty": "Airtel ****6642"
+  },
+  {
+    "txn_id": "T008",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-05",
+    "merchant": "IRCTC",
+    "category": "Travel",
+    "amount": -3590,
+    "masked_counterparty": "IRCTC ****1188"
+  },
+  {
+    "txn_id": "T009",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-03",
+    "merchant": "Apollo Pharmacy",
+    "category": "Other",
+    "amount": -2000,
+    "masked_counterparty": "Apollo Pharmacy ****3304"
+  },
+  {
+    "txn_id": "T010",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-09-01",
+    "merchant": "Employer",
+    "category": "Income",
+    "amount": 75000,
+    "masked_counterparty": "Employer"
+  },
+  {
+    "txn_id": "T011",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-22",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "amount": -2000,
+    "masked_counterparty": "Amazon ****7781"
+  },
+  {
+    "txn_id": "T012",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-18",
+    "merchant": "Swiggy",
+    "category": "Food",
+    "amount": -1200,
+    "masked_counterparty": "Swiggy ****1022"
+  },
+  {
+    "txn_id": "T013",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-14",
+    "merchant": "BESCOM",
+    "category": "Bills",
+    "amount": -1600,
+    "masked_counterparty": "BESCOM ****5510"
+  },
+  {
+    "txn_id": "T014",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-12",
+    "merchant": "Zomato",
+    "category": "Food",
+    "amount": -980,
+    "masked_counterparty": "Zomato ****4410"
+  },
+  {
+    "txn_id": "T015",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-10",
+    "merchant": "IRCTC",
+    "category": "Travel",
+    "amount": -2200,
+    "masked_counterparty": "IRCTC ****1188"
+  },
+  {
+    "txn_id": "T016",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-08",
+    "merchant": "Flipkart",
+    "category": "Shopping",
+    "amount": -1500,
+    "masked_counterparty": "Flipkart ****9033"
+  },
+  {
+    "txn_id": "T017",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-06",
+    "merchant": "Airtel",
+    "category": "Bills",
+    "amount": -1200,
+    "masked_counterparty": "Airtel ****6642"
+  },
+  {
+    "txn_id": "T018",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-04",
+    "merchant": "Apollo Pharmacy",
+    "category": "Other",
+    "amount": -1500,
+    "masked_counterparty": "Apollo Pharmacy ****3304"
+  },
+  {
+    "txn_id": "T019",
+    "customer_id": "CUST001",
+    "account_id": "ACC001",
+    "date": "2026-08-01",
+    "merchant": "Employer",
+    "category": "Income",
+    "amount": 75000,
+    "masked_counterparty": "Employer"
+  }
+]
