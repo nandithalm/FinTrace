@@ -26,6 +26,9 @@ PUBLIC_INTENTS = frozenset(
         "human_handoff",
         "unsafe_refusal",
         "fallback",
+        "small_talk",
+        "unusual_spend",
+        "affordability_what_if",
     }
 )
 

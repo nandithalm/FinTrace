@@ -62,6 +62,38 @@ _EMPTY = {
     "kn": "ದಯವಿಟ್ಟು ಬ್ಯಾಂಕಿಂಗ್ ಪ್ರಶ್ನೆಯನ್ನು ಬರೆಯಿರಿ.",
 }
 
+_SMALL_TALK_GREETING = {
+    "en": (
+        "Hi! I'm FinTrace — a simulated banking assistant. I can help with balance, "
+        "recent transactions, spending, why your balance changed, loan eligibility, "
+        "interest rates, and policy topics like UPI, KYC, and loan documents."
+    ),
+    "hi": (
+        "नमस्ते! मैं FinTrace हूँ (सिम्युलेटेड डेटा)। बैलेंस, लेनदेन, खर्च, लोन पात्रता, "
+        "ब्याज दर और UPI/KYC जैसी नीति में मदद कर सकता हूँ।"
+    ),
+    "kn": (
+        "ನಮಸ್ಕಾರ! ನಾನು FinTrace (ಸಿಮ್ಯುಲೇಟೆಡ್). ಬ್ಯಾಲೆನ್ಸ್, ವಹಿವಾಟು, ಖರ್ಚು, ಸಾಲ ಅರ್ಹತೆ, "
+        "ಬಡ್ಡಿ ದರ ಮತ್ತು UPI/KYC ನೀತಿ ಕುರಿತು ಸಹಾಯ ಮಾಡಬಹುದು."
+    ),
+}
+
+_SMALL_TALK_HELP = {
+    "en": (
+        "You can ask in everyday words — for example: “What is my balance?”, "
+        "“Show recent transactions”, “Why did my money go down?”, “Am I eligible for a home loan?”, "
+        "“FD rate”, or “How does UPI work?”. All answers use simulated data."
+    ),
+    "hi": "आप सामान्य भाषा में पूछ सकते हैं: बैलेंस, हाल के लेनदेन, खर्च, लोन, ब्याज दर, या UPI/KYC।",
+    "kn": "ಸಾಮಾನ್ಯ ಪದಗಳಲ್ಲಿ ಕೇಳಿ: ಬ್ಯಾಲೆನ್ಸ್, ವಹಿವಾಟು, ಖರ್ಚು, ಸಾಲ, ಬಡ್ಡಿ ದರ, ಅಥವಾ UPI/KYC.",
+}
+
+_SMALL_TALK_THANKS = {
+    "en": "You're welcome! Ask anytime about your simulated accounts or bank policy.",
+    "hi": "आपका स्वागत है! सिम्युलेटेड खाते या बैंक नीति के बारे में पूछें।",
+    "kn": "ಸ್ವಾಗತ! ಸಿಮ್ಯುಲೇಟೆಡ್ ಖಾತೆ ಅಥವಾ ಬ್ಯಾಂಕ್ ನೀತಿ ಕುರಿತು ಕೇಳಿ.",
+}
+
 
 def format_inr(amount, decimals: bool = True) -> str:
     value = float(amount)
@@ -125,6 +157,16 @@ def insufficient(language: str) -> str:
 
 def empty(language: str) -> str:
     return _EMPTY[_lang(language)]
+
+
+def small_talk(language: str, message: str = "") -> str:
+    text = (message or "").strip()
+    lang = _lang(language)
+    if re.fullmatch(r"(thanks?|thank you|thx|धन्यवाद|शुक्रिया|ಧನ್ಯವಾದ)[\s!.,?]*", text, re.I):
+        return _SMALL_TALK_THANKS[lang]
+    if re.search(r"\bhelp\b|what can you do|how can you help|मदद|ಹೇಗೆ ಸಹಾಯ", text, re.I):
+        return _SMALL_TALK_HELP[lang]
+    return _SMALL_TALK_GREETING[lang]
 
 
 def balance(language: str, facts: dict) -> str:
@@ -248,11 +290,13 @@ def spend(language: str, facts: dict) -> str:
     merchants = facts.get("by_merchant") or []
     lang = _lang(language)
     if merchants:
-        bits = [
-            f"{item.get('merchant')} {format_inr(item.get('total') or 0, decimals=False)}"
-            for item in merchants
-        ]
-        listing = ", ".join(bits)
+        bits = []
+        for item in merchants:
+            name = item.get("merchant")
+            if name == "Other" and category == "Food":
+                name = "other food merchants"
+            bits.append(f"{name} {format_inr(item.get('total') or 0, decimals=False)}")
+        listing = ", ".join(bits[:-1]) + ", and " + bits[-1] if len(bits) > 1 else (bits[0] if bits else "")
         if lang == "hi":
             return f"{period} के {category or 'खर्च'} व्यापारी: {listing}।"
         if lang == "kn":
@@ -269,6 +313,50 @@ def spend(language: str, facts: dict) -> str:
     if lang == "kn":
         return f"ನೀವು {period} {total} ಖರ್ಚು ಮಾಡಿದ್ದೀರಿ (ಸಿಮ್ಯುಲೇಟೆಡ್)."
     return f"You spent {total} {period} (simulated)."
+
+
+def unusual(language: str, facts: dict) -> str:
+    flags = facts.get("flags") or []
+    if not flags:
+        return insufficient(language)
+    bits = [
+        f"{item.get('category')} (+{format_inr(item.get('delta') or 0, decimals=False)})"
+        for item in flags[:2]
+    ]
+    detail = " and ".join(bits)
+    spend = format_inr(facts.get("this_month_spend") or 0, decimals=False)
+    lang = _lang(language)
+    if lang == "hi":
+        return f"इस महीने खर्च {spend} है। असामान्य वृद्धि: {detail}। यह सिम्युलेटेड लेनदेन है।"
+    if lang == "kn":
+        return f"ಈ ತಿಂಗಳ ಖರ್ಚು {spend}. ಅಸಾಮಾನ್ಯ ಏರಿಕೆ: {detail}. ಇದು ಅನುಕರಣೆ ವಹಿವಾಟು."
+    return (
+        f"This month's simulated spend is {spend}. Unusual increases versus last month: {detail}."
+    )
+
+
+def afford(language: str, facts: dict) -> str:
+    if "projected_remaining" not in facts:
+        return insufficient(language)
+    purchase = format_inr(facts.get("amount") or 0, decimals=False)
+    remaining = format_inr(facts.get("remaining_after_purchase") or 0, decimals=False)
+    commitments = format_inr(facts.get("commitments") or 0, decimals=False)
+    projected = format_inr(facts.get("projected_remaining") or 0, decimals=False)
+    lang = _lang(language)
+    if lang == "hi":
+        return (
+            f"{purchase} खर्चने के बाद शेष {remaining}। आने वाली प्रतिबद्धताएँ {commitments}। "
+            f"अनुमानित शेष {projected}। सिम्युलेटेड।"
+        )
+    if lang == "kn":
+        return (
+            f"{purchase} ಖರ್ಚಿನ ನಂತರ ಉಳಿಕೆ {remaining}. ಬಾಧ್ಯತೆಗಳು {commitments}. "
+            f"ಅಂದಾಜು ಉಳಿಕೆ {projected}. ಅನುಕರಣೆ."
+        )
+    return (
+        f"After a {purchase} purchase, {remaining} would remain. Upcoming commitments are {commitments}. "
+        f"Projected remaining is {projected}. This uses simulated data."
+    )
 
 
 def policy(language: str, facts: dict) -> str:
@@ -291,6 +379,8 @@ def render(intent: str, language: str, facts: dict, message: str = "") -> str:
         return unsafe(language)
     if intent == "human_handoff":
         return handoff(language)
+    if intent == "small_talk":
+        return small_talk(language, message)
     if intent == "balance_check" and "available_balance" in (facts or {}):
         return balance(language, facts)
     if intent == "interest_rate_query":
@@ -303,6 +393,10 @@ def render(intent: str, language: str, facts: dict, message: str = "") -> str:
         return why_balance(language, facts or {})
     if intent == "spend_drilldown":
         return spend(language, facts or {})
+    if intent == "unusual_spend":
+        return unusual(language, facts or {})
+    if intent == "affordability_what_if":
+        return afford(language, facts or {})
     if intent == "policy_rag":
         return policy(language, facts or {})
     if not (message or "").strip():

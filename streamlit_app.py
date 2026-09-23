@@ -15,6 +15,7 @@ import json
 import streamlit as st
 
 from app.i18n import CHIP_QUERIES, t
+from app.mock_bank import get_customer_profile
 from app.orchestrator import handle_turn
 
 NAVY = "#0B1F3A"
@@ -34,7 +35,15 @@ html, body, [class*="css"] {{
 .stApp {{
   background: linear-gradient(180deg, {CREAM} 0%, {MINT} 42%, #ffffff 100%);
 }}
-#MainMenu, footer, header {{ visibility: hidden; }}
+#MainMenu, footer {{ visibility: hidden; }}
+[data-testid="stHeader"] {{
+  background: transparent;
+}}
+[data-testid="collapsedControl"] {{
+  visibility: visible !important;
+  display: flex !important;
+  color: {NAVY} !important;
+}}
 
 .ft-banner {{
   background: {NAVY};
@@ -74,40 +83,12 @@ html, body, [class*="css"] {{
   color: {SLATE};
   font-size: 0.85rem;
 }}
-.ft-pills {{
-  display: flex;
-  gap: 10px;
-  margin: 8px 0 16px 0;
-  flex-wrap: wrap;
+.block-container {{
+  max-width: 820px;
+  padding-top: 1.25rem;
 }}
-.ft-pill {{
-  background: white;
-  border: 1px solid {MINT};
-  color: {TEAL};
-  border-radius: 999px;
-  padding: 4px 12px;
-  font-size: 0.75rem;
-  font-weight: 600;
-}}
-.user-bubble {{
-  background: {TEAL};
-  color: white;
-  padding: 10px 14px;
-  border-radius: 16px 16px 4px 16px;
-  margin: 6px 0 6px auto;
-  max-width: 88%;
-  font-size: 0.95rem;
-}}
-.bot-bubble {{
-  background: white;
-  color: {NAVY};
-  padding: 12px 16px;
-  border-radius: 16px 16px 16px 4px;
-  margin: 6px auto 6px 0;
-  max-width: 92%;
-  border: 1px solid {MINT};
-  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.06);
-  font-size: 0.95rem;
+[data-testid="stChatMessage"] {{
+  background: transparent;
 }}
 .fact-card {{
   background: {MINT};
@@ -159,7 +140,7 @@ div.stButton > button:hover {{
   word-break: break-word;
   white-space: pre-wrap;
 }}
-.xray, .step, .user-bubble, .bot-bubble {{
+.xray, .step {{
   overflow-wrap: anywhere;
   word-break: break-word;
 }}
@@ -267,10 +248,15 @@ def _xray(lang: str) -> None:
     language = html.escape(str(resp.get("language") or ""))
     api = html.escape(str(trace.get("api_called") or "—"))
     nlu_src = html.escape(str(trace.get("nlu_source") or "—"))
+    try:
+        conf_pct = f"{int(round(float(resp.get('confidence') or 0) * 100))}%"
+    except (TypeError, ValueError):
+        conf_pct = "—"
 
     st.markdown(
         f'<div class="step"><strong>1. {t(lang, "intent")}</strong><br>'
         f'Intent: <code>{intent}</code> · Language: <code>{language}</code><br>'
+        f'{t(lang, "confidence")}: <code>{conf_pct}</code><br>'
         f'Entities: <code>{entity_line}</code></div>',
         unsafe_allow_html=True,
     )
@@ -301,6 +287,26 @@ def _xray(lang: str) -> None:
         with st.expander(t(lang, "facts"), expanded=False):
             st.json(facts)
     st.markdown("</div>", unsafe_allow_html=True)
+
+
+def _profile_strip(customer_id: str, lang: str) -> None:
+    profile = get_customer_profile(customer_id)
+    if not profile or profile.get("error"):
+        return
+    if profile.get("consent_blocked"):
+        st.caption(f"{profile.get('name', customer_id)} · {t(lang, 'profile_consent_off')}")
+        return
+    parts = [
+        profile.get("name"),
+        profile.get("branch"),
+        profile.get("masked_phone"),
+        profile.get("masked_email"),
+        f"IFSC {profile.get('ifsc')}" if profile.get("ifsc") else None,
+        profile.get("nominee_first_name") and f"Nominee: {profile['nominee_first_name']}",
+    ]
+    line = " · ".join(p for p in parts if p)
+    if line:
+        st.caption(line)
 
 
 def main() -> None:
@@ -336,80 +342,53 @@ def main() -> None:
             else "CUST002 · Meera (consent off)",
             key="customer_id",
         )
-        st.button(
+        if st.button(
             t(lang, "analyze"),
-            disabled=True,
             help=t(lang, "analyze_hint"),
             use_container_width=True,
-        )
+        ):
+            st.session_state.pending_query = "Analyze my transactions"
         st.divider()
         st.caption(t(lang, "sidebar_title"))
         _xray(st.session_state.ui_language)
 
     st.markdown(f'<div class="ft-banner">{t(lang, "banner")}</div>', unsafe_allow_html=True)
+    _profile_strip(st.session_state.customer_id, lang)
 
-    left, right = st.columns([1.15, 0.85], gap="large")
-    with left:
-        st.markdown(
-            f'<div class="ft-brand"><div class="ft-logo">F</div>'
-            f'<div><div class="ft-name">{t(lang, "product")}</div>'
-            f'<div class="ft-sub">{t(lang, "tagline")} · {t(lang, "hero_line")}</div>'
-            f"</div></div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f'<div class="ft-pills">'
-            f'<span class="ft-pill">{t(lang, "secure")}</span>'
-            f'<span class="ft-pill">{t(lang, "instant")}</span>'
-            f'<span class="ft-pill">{t(lang, "personal")}</span>'
-            f"</div>",
-            unsafe_allow_html=True,
-        )
+    if not st.session_state.messages:
+        with st.chat_message("assistant"):
+            st.write(t(lang, "welcome_short"))
 
-        if not st.session_state.messages:
-            st.markdown(
-                f'<div class="bot-bubble">{t(lang, "welcome")}<br><br>'
-                f'{t(lang, "welcome_body")}<br><br>{t(lang, "welcome_ask")}</div>',
-                unsafe_allow_html=True,
-            )
+    for msg in st.session_state.messages:
+        role = "user" if msg["role"] == "user" else "assistant"
+        with st.chat_message(role):
+            st.write(msg["content"])
+            if role == "assistant":
+                card = _render_facts(msg.get("facts") or {}, msg.get("intent") or "")
+                if card:
+                    st.markdown(card, unsafe_allow_html=True)
 
-        for msg in st.session_state.messages:
-            if msg["role"] == "user":
-                st.markdown(
-                    f'<div class="user-bubble">{html.escape(msg["content"])}</div>',
-                    unsafe_allow_html=True,
-                )
-            else:
-                html_block = f'<div class="bot-bubble">{html.escape(msg["content"])}'
-                html_block += _render_facts(msg.get("facts") or {}, msg.get("intent") or "")
-                html_block += "</div>"
-                st.markdown(html_block, unsafe_allow_html=True)
+    st.caption(t(lang, "chips_label"))
+    chips = [
+        "chip_balance",
+        "chip_txns",
+        "chip_loan",
+        "chip_upi",
+        "chip_why",
+        "chip_rates",
+    ]
+    cols = st.columns(len(chips))
+    for i, key in enumerate(chips):
+        with cols[i]:
+            if st.button(t(lang, key), key=f"chip_{key}", use_container_width=True):
+                st.session_state.pending_query = CHIP_QUERIES[lang][key]
 
-        st.caption(t(lang, "chips_label"))
-        chips = [
-            "chip_balance",
-            "chip_txns",
-            "chip_loan",
-            "chip_upi",
-            "chip_why",
-            "chip_rates",
-        ]
-        cols = st.columns(3)
-        for i, key in enumerate(chips):
-            with cols[i % 3]:
-                if st.button(t(lang, key), key=f"chip_{key}", use_container_width=True):
-                    st.session_state.pending_query = CHIP_QUERIES[lang][key]
-
-        typed = st.chat_input(t(lang, "placeholder"))
-        query = st.session_state.pending_query or typed
-        if query:
-            st.session_state.pending_query = None
-            _send(query)
-            st.rerun()
-
-    with right:
-        st.markdown(f"#### {t(lang, 'xray_title')}")
-        _xray(lang)
+    typed = st.chat_input(t(lang, "placeholder"))
+    query = st.session_state.pending_query or typed
+    if query:
+        st.session_state.pending_query = None
+        _send(query)
+        st.rerun()
 
 
 main()

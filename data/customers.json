@@ -6,7 +6,13 @@
     "risk_level": "low",
     "credit_score": 742,
     "monthly_income": 75000,
-    "preferred_language": "en"
+    "preferred_language": "en",
+    "phone": "9876543221",
+    "email": "aarav@mail.com",
+    "branch": "Koramangala, Bengaluru",
+    "ifsc": "FINT0000482",
+    "account_open_date": "2019-03-14",
+    "nominee_first_name": "Priya"
   },
   {
     "customer_id": "CUST002",
@@ -15,6 +21,12 @@
     "risk_level": "low",
     "credit_score": 710,
     "monthly_income": 62000,
-    "preferred_language": "kn"
+    "preferred_language": "kn",
+    "phone": "9123456789",
+    "email": "meera@mail.com",
+    "branch": "Indiranagar, Bengaluru",
+    "ifsc": "FINT0000119",
+    "account_open_date": "2021-07-02",
+    "nominee_first_name": "Ravi"
   }
 ]

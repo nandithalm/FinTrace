@@ -13,7 +13,13 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
-from app.mock_privacy import error_body, mask_account_number, require_consent
+from app.mock_privacy import (
+    error_body,
+    mask_account_number,
+    mask_email,
+    mask_phone,
+    require_consent,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -60,6 +66,30 @@ def get_customer(customer_id: str) -> Optional[dict]:
         if row["customer_id"] == customer_id:
             return row
     return None
+
+
+def get_customer_profile(customer_id: str) -> dict:
+    """Masked profile fields for the UI strip. No full account numbers."""
+    customer = get_customer(customer_id)
+    if customer is None:
+        return error_body("MOCK_DATA_NOT_FOUND", "No simulated customer matches that id.")
+    if not customer.get("consent_enabled"):
+        return {
+            "name": customer.get("name"),
+            "consent_enabled": False,
+            "consent_blocked": True,
+        }
+    return {
+        "name": customer.get("name"),
+        "branch": customer.get("branch"),
+        "masked_phone": mask_phone(customer.get("phone", "")),
+        "masked_email": mask_email(customer.get("email", "")),
+        "ifsc": customer.get("ifsc"),
+        "nominee_first_name": customer.get("nominee_first_name"),
+        "account_open_date": customer.get("account_open_date"),
+        "consent_enabled": True,
+        "consent_blocked": False,
+    }
 
 
 def health() -> dict:

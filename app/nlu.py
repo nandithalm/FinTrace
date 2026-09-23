@@ -10,8 +10,6 @@ from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeou
 
 from app.env import gemini_enabled, gemini_api_key, gemini_model
 
-_GEMINI_OK = True
-
 ALLOWED_INTENTS = {
     "balance_check",
     "transaction_history",
@@ -23,6 +21,9 @@ ALLOWED_INTENTS = {
     "human_handoff",
     "unsafe_refusal",
     "fallback",
+    "small_talk",
+    "unusual_spend",
+    "affordability_what_if",
 }
 
 _SPEND_CONTEXT = {"spend_drilldown", "transaction_history", "why_balance_change"}
@@ -221,14 +222,54 @@ def _rate_key(text: str) -> str:
 
 
 def _is_rate(text: str) -> bool:
-    return bool(re.search(r"\brates?\b|\binterest\b|ब्याज|रेट|ಬಡ್ಡಿ|ದರ", text, re.I))
+    return bool(
+        re.search(
+            r"\brates?\b|\binterest\b|\bfd\s*rate\b|ब्याज|रेट|ಬಡ್ಡಿ|ದರ",
+            text,
+            re.I,
+        )
+    )
+
+
+def _is_greeting(text: str) -> bool:
+    stripped = (text or "").strip()
+    return bool(
+        re.fullmatch(
+            r"(hi|hello|hey|hiya|howdy|good\s+(morning|afternoon|evening)|"
+            r"namaste|नमस्ते|ನಮಸ್ಕಾರ)[\s!.,?]*",
+            stripped,
+            re.I,
+        )
+    )
+
+
+def _is_help(text: str) -> bool:
+    return bool(
+        re.search(
+            r"\bhelp\b|what can you do|how can you help|what do you do|"
+            r"मदद|क्या कर सकते|ಹೇಗೆ ಸಹಾಯ",
+            text or "",
+            re.I,
+        )
+    )
+
+
+def _is_thanks(text: str) -> bool:
+    return bool(
+        re.fullmatch(
+            r"(thanks?|thank you|thx|धन्यवाद|शुक्रिया|ಧನ್ಯವಾದ)[\s!.,?]*",
+            (text or "").strip(),
+            re.I,
+        )
+    )
 
 
 def _is_strong_policy(text: str) -> bool:
     return bool(
         re.search(
             r"document|documents|दस्तावेज|ದಾಖಲೆ|\bkyc\b|\bupi\b|\bneft\b|\brtgs\b|\bimps\b"
-            r"|dispute|debit card|credit card|account opening|\bpolicy\b",
+            r"|dispute|debit card|credit card|account opening|\bpolicy\b"
+            r"|how does .* work|how .* works|what is upi|upi limit",
             text,
             re.I,
         )
@@ -245,7 +286,13 @@ def keyword_classify(message: str, ui_language: str) -> dict:
 
     if is_unsafe(text):
         return _pack("unsafe_refusal", 0.95, entities, language, False, "fallback")
-    if re.search(r"\bagent\b|\bhuman\b|complaint|escalate|एजेंट", text, re.I):
+    if _is_greeting(text):
+        return _pack("small_talk", 0.88, entities, language, False, "fallback")
+    if _is_thanks(text):
+        return _pack("small_talk", 0.85, entities, language, False, "fallback")
+    if _is_help(text):
+        return _pack("small_talk", 0.85, entities, language, False, "fallback")
+    if re.search(r"\bagent\b|\bhuman\b|complaint|escalate|एजेंट|speak to", text, re.I):
         return _pack("human_handoff", 0.75, entities, language, False, "fallback")
     if _is_strong_policy(text):
         entities["policy_topic"] = _policy_topic(text)
@@ -262,7 +309,12 @@ def keyword_classify(message: str, ui_language: str) -> dict:
     if re.search(r"fixed deposit|\bfd\b", text, re.I):
         entities["policy_topic"] = "fd_savings"
         return _pack("policy_rag", 0.75, entities, language, False, "fallback")
-    if re.search(r"\bwhy\b|lower|last month|कम|क्यों|ಏಕೆ|ಕಳೆದ ತಿಂಗಳ", text, re.I):
+    if re.search(
+        r"\bwhy\b|lower|went down|go down|dropped|money down|balance down|less money|"
+        r"spent more|last month|कम|क्यों|ಏಕೆ|ಕಳೆದ ತಿಂಗಳ",
+        text,
+        re.I,
+    ):
         entities["period"] = _period(text) or "this_month"
         return _pack("why_balance_change", 0.75, entities, language, False, "fallback")
     if re.search(
@@ -273,17 +325,31 @@ def keyword_classify(message: str, ui_language: str) -> dict:
     ):
         entities["loan_type"] = _loan_type(text)
         return _pack("loan_eligibility", 0.75, entities, language, False, "fallback")
+    if re.search(r"\banaly[sz]e\b|unusual", text, re.I):
+        return _pack("unusual_spend", 0.75, entities, language, False, "fallback")
+    if re.search(r"\bafford\b|what-if|what if", text, re.I):
+        entities["amount"] = 20000
+        return _pack("affordability_what_if", 0.75, entities, language, False, "fallback")
     if re.search(r"\bspend(?:ing)?\b|\bspent\b|shopping|लेनदेन खर्च", text, re.I):
         entities["category"] = _category(text)
         entities["period"] = _period(text)
         entities["merchant_focus"] = bool(re.search(r"which merchant", text, re.I))
         return _pack("spend_drilldown", 0.75, entities, language, False, "fallback")
-    if re.search(r"transaction|लेनदेन|ವಹಿವಾಟು", text, re.I):
+    if re.search(
+        r"transaction|transactions|txn|txns|statement|recent|history|लेनदेन|ವಹಿವಾಟು",
+        text,
+        re.I,
+    ):
         entities["transaction_limit"] = _limit(text)
         entities["category"] = _category(text)
         entities["period"] = _period(text)
         return _pack("transaction_history", 0.75, entities, language, False, "fallback")
-    if re.search(r"\bbalance\b|बैलेंस|ಬ್ಯಾಲೆನ್ಸ್", text, re.I):
+    if re.search(
+        r"\bbalance\b|how much (?:money|do i have)|account balance|my savings|my current|"
+        r"बैलेंस|बचत|ಬ್ಯಾಲೆನ್ಸ್",
+        text,
+        re.I,
+    ):
         entities["account_type"] = _account_type(text)
         return _pack("balance_check", 0.75, entities, language, False, "fallback")
     return _pack("fallback", 0.30, entities, language, False, "fallback")
@@ -301,8 +367,7 @@ def _session_prompt(session: Optional[dict]) -> str:
 
 
 def _gemini_nlu(message: str, session: Optional[dict], ui_language: str) -> Optional[dict]:
-    global _GEMINI_OK
-    if not _GEMINI_OK or not gemini_enabled():
+    if not gemini_enabled():
         return None
     key = gemini_api_key()
     if not key:
@@ -311,7 +376,6 @@ def _gemini_nlu(message: str, session: Optional[dict], ui_language: str) -> Opti
         from google import genai
         from google.genai import types
     except ImportError:
-        _GEMINI_OK = False
         return None
 
     def _call() -> Optional[str]:
@@ -326,9 +390,8 @@ def _gemini_nlu(message: str, session: Optional[dict], ui_language: str) -> Opti
 
     try:
         with ThreadPoolExecutor(max_workers=1) as pool:
-            raw = pool.submit(_call).result(timeout=4)
+            raw = pool.submit(_call).result(timeout=8)
     except (Exception, FuturesTimeout):
-        _GEMINI_OK = False
         return None
     if not raw:
         return None

@@ -17,8 +17,6 @@ from app import nlu, session_store, templates
 from app.env import gemini_api_key, gemini_enabled, gemini_model
 from app.safety import is_unsafe
 
-_GEMINI_WORD_OK = True
-
 ACCOUNT_INTENTS = frozenset(
     {
         "balance_check",
@@ -26,6 +24,8 @@ ACCOUNT_INTENTS = frozenset(
         "loan_eligibility",
         "why_balance_change",
         "spend_drilldown",
+        "unusual_spend",
+        "affordability_what_if",
     }
 )
 
@@ -98,6 +98,28 @@ def get_why_balance(customer_id: str) -> dict:
     if fn is None:
         return _error("INSUFFICIENT_FACTS", "get_why_balance is not defined.")
     return fn(customer_id)
+
+
+def get_unusual_spend(customer_id: str) -> dict:
+    try:
+        import app.insights as insights
+    except ImportError:
+        return _error("INSUFFICIENT_FACTS", "Insight engine is not available.")
+    fn = getattr(insights, "getUnusualSpend", None) or getattr(insights, "get_unusual_spend", None)
+    if fn is None:
+        return _error("INSUFFICIENT_FACTS", "getUnusualSpend is not defined.")
+    return fn(customer_id)
+
+
+def get_affordability(customer_id: str, amount: float = 20000) -> dict:
+    try:
+        import app.insights as insights
+    except ImportError:
+        return _error("INSUFFICIENT_FACTS", "Insight engine is not available.")
+    fn = getattr(insights, "getAffordability", None) or getattr(insights, "get_affordability", None)
+    if fn is None:
+        return _error("INSUFFICIENT_FACTS", "getAffordability is not defined.")
+    return fn(customer_id, amount=amount)
 
 
 def get_spend_breakdown(
@@ -215,6 +237,15 @@ def _route(intent: str, customer_id: str, message: str, entities: dict) -> tuple
         count = len(payload.get("drivers") or []) if "error" not in payload else 0
         return payload, "getWhyBalance", count, "mock"
 
+    if intent == "unusual_spend":
+        payload = get_unusual_spend(customer_id)
+        count = len(payload.get("flags") or []) if "error" not in payload else 0
+        return payload, "getUnusualSpend", count, "mock"
+
+    if intent == "affordability_what_if":
+        payload = get_affordability(customer_id, amount=float(entities.get("amount") or 20000))
+        return payload, "getAffordability", 1, "mock"
+
     if intent == "spend_drilldown":
         group_by = "merchant" if entities.get("merchant_focus") else None
         payload = get_spend_breakdown(
@@ -246,8 +277,16 @@ def _route(intent: str, customer_id: str, message: str, entities: dict) -> tuple
     return {}, "", 0, "mock"
 
 
-def _word(message: str, intent: str, language: str, facts: dict, first_turn: bool, started: float) -> str:
-    if intent in {"unsafe_refusal", "human_handoff", "fallback"}:
+def _word(
+    message: str,
+    intent: str,
+    language: str,
+    facts: dict,
+    first_turn: bool,
+    started: float,
+    nlu_source: str = "fallback",
+) -> str:
+    if intent in {"unsafe_refusal", "human_handoff", "fallback", "small_talk"}:
         return templates.render(intent, language, facts, message)
     if "error" in (facts or {}):
         code = facts["error"]["code"]
@@ -258,8 +297,8 @@ def _word(message: str, intent: str, language: str, facts: dict, first_turn: boo
         return templates.insufficient(language)
 
     elapsed = time.perf_counter() - started
-    global _GEMINI_WORD_OK
-    if _GEMINI_WORD_OK and gemini_enabled() and elapsed < 6:
+    use_gemini = gemini_enabled() and (nlu_source == "gemini" or elapsed < 12)
+    if use_gemini and elapsed < 12:
         try:
             from google import genai
             from google.genai import types
@@ -285,11 +324,11 @@ def _word(message: str, intent: str, language: str, facts: dict, first_turn: boo
                 return (getattr(response, "text", "") or "").strip()
 
             with ThreadPoolExecutor(max_workers=1) as pool:
-                text = pool.submit(_call).result(timeout=4)
+                text = pool.submit(_call).result(timeout=8)
             if text:
                 return text
         except (Exception, FuturesTimeout):
-            _GEMINI_WORD_OK = False
+            pass
     return templates.render(intent, language, facts or {}, message)
 
 
@@ -427,13 +466,21 @@ def handle_turn(
     grounded = bool(facts) and error is None and intent not in {"fallback", "human_handoff", "unsafe_refusal"}
     if intent == "policy_rag":
         grounded = error is None and row_count > 0
-    if intent in {"fallback", "human_handoff"}:
+    if intent in {"fallback", "human_handoff", "small_talk"}:
         grounded = False
         facts = {}
         api_called = ""
         row_count = 0
 
-    reply = _word(message, intent, language, facts if error or facts else {}, first_turn, started)
+    reply = _word(
+        message,
+        intent,
+        language,
+        facts if error or facts else {},
+        first_turn,
+        started,
+        nlu_source=parsed["nlu_source"],
+    )
 
     if intent == "unsafe_refusal":
         session_store.clear(session_id)

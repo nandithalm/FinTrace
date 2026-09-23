@@ -14,7 +14,7 @@ from collections import defaultdict
 from datetime import date, datetime
 from typing import Any
 
-from app.paths import TRANSACTIONS_PATH
+from app.paths import DATA_DIR, TRANSACTIONS_PATH
 
 THIS_MONTH = (date(2026, 9, 1), date(2026, 9, 23))
 LAST_MONTH = (date(2026, 8, 1), date(2026, 8, 31))
@@ -140,6 +140,51 @@ def getSpendBreakdown(
         "by_category": by_category,
         "currency": "INR",
         "row_count": len(by_category),
+    }
+
+
+def getUnusualSpend(customer_id: str) -> dict[str, Any]:
+    """Categories that rose versus last month. Numbers come from getWhyBalance."""
+    why = getWhyBalance(customer_id)
+    flags = [item for item in why.get("drivers") or [] if float(item.get("delta") or 0) > 0]
+    return {
+        "unusual": bool(flags),
+        "flags": flags,
+        "this_month_spend": why.get("this_month_spend"),
+        "currency": "INR",
+    }
+
+
+def getAffordability(customer_id: str, amount: float = 20000) -> dict[str, Any]:
+    """Locked what-if: savings minus purchase minus upcoming commitments."""
+    purchase = float(amount or 0)
+    accounts = json.loads((DATA_DIR / "accounts.json").read_text(encoding="utf-8"))
+    savings = next(
+        (
+            float(row["available_balance"])
+            for row in accounts
+            if row.get("customer_id") == customer_id and row.get("account_type") == "savings"
+        ),
+        0.0,
+    )
+    commitments_path = DATA_DIR / "commitments.json"
+    due = 0.0
+    if commitments_path.exists():
+        commitments = json.loads(commitments_path.read_text(encoding="utf-8"))
+        due = sum(
+            float(row.get("amount") or 0)
+            for row in commitments
+            if row.get("customer_id") == customer_id
+        )
+    remaining = savings - purchase
+    projected = remaining - due
+    return {
+        "amount": _inr(purchase),
+        "available_balance": _inr(savings),
+        "remaining_after_purchase": _inr(remaining),
+        "commitments": _inr(due),
+        "projected_remaining": _inr(projected),
+        "currency": "INR",
     }
 
 
