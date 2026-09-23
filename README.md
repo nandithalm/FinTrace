@@ -13,29 +13,33 @@ data/                 synthetic JSON
 data/kb/              policy markdown + HF cache
 data/chroma/          local vector index (generated)
 tests/                labeled-query eval
-streamlit_app.py      Streamlit UI (to be built)
+streamlit_app.py      Streamlit UI
 ```
 
 ## Specs
 
 Read [docs/00_README.md](docs/00_README.md), then `01` → `10`.
 
-## Branches
+## On main now
 
-| Branch | Owner |
+| Track | Status |
 |---|---|
-| `builder-one` | Builder 1 — Streamlit UI + `handle_turn` contract |
-| (your branch) | Builder 2 / 3 / 4 — mock bank, NLU, RAG |
+| Builder 1 — Streamlit chat, i18n, trace sidebar | merged |
+| Builder 2 — mock JSON, masking, consent | merged |
+| Builder 3 — `handle_turn`, NLU, safety, templates | merged |
+| Builder 4 — policy KB, Chroma, why-balance, eval | not merged yet |
 
-Merge into `main` when each track is ready. UI already calls `app.orchestrator.handle_turn` with the contract in `docs/05_API_CONTRACT.md`. Builder 3 replaces the fixture by setting `USE_FIXTURE = False` and implementing `real_handle_turn`.
+The UI calls `app.orchestrator.handle_turn` using the contract in [docs/05_API_CONTRACT.md](docs/05_API_CONTRACT.md).
 
-## Run (Builder 1 UI)
+## Run
 
 ```text
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+pip install google-genai chromadb sentence-transformers datasets pytest
+copy .env.example .env
 streamlit run streamlit_app.py
 ```
 
-Full stack (after other builders land): also install `google-genai chromadb sentence-transformers datasets pytest`, copy `.env.example` to `.env`, run `python -m app.rag_ingest`.
+After Builder 4 lands: run `python -m app.rag_ingest` so policy questions retrieve real KB chunks. Without that, `policy_rag` returns a grounded miss instead of inventing documents.
